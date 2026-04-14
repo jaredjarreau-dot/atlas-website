@@ -14,14 +14,14 @@
 }
 
 :root {
-    --navy:   #0D1B2A;
-    --gold:   #C9A84C;
-    --gold-light: #dfc27a;
-    --offwhite: #F8F7F4;
+    --navy:   #0B1E3B;
+    --gold:   #CD853F;
+    --gold-light: #d9955a;
+    --offwhite: #F0F0F0;
     --text:   #1A1A2E;
     --white:  #FFFFFF;
-    --silver: #8A94A6;
-    --card-border: rgba(201, 168, 76, 0.2);
+    --silver: #B0B0B0;
+    --card-border: rgba(205, 133, 63, 0.2);
     --card-bg-light: #FFFFFF;
     --card-bg-dark: rgba(255,255,255,0.05);
     --section-pad: 100px 24px;
@@ -631,7 +631,7 @@ a {
 #cta {
     padding: 100px 24px 80px;
     background: var(--gold);
-    background-image: linear-gradient(135deg, #C9A84C 0%, #b8923e 100%);
+    background-image: linear-gradient(135deg, #CD853F 0%, #b5702a 100%);
     text-align: center;
 }
 
