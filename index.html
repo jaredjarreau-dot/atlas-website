@@ -9,6 +9,33 @@
 </head>
 <body>
 
+<!-- ============================================================
+     SUBWAY NAV — fixed left spine (desktop only)
+     ============================================================ -->
+<nav id="subway-nav" aria-label="Page navigation">
+    <a class="subway-node active" data-target="hero" title="Hero">
+        <svg viewBox="0 0 28 28"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">HE</text></svg>
+    </a>
+    <a class="subway-node" data-target="problem" title="The Problem">
+        <svg viewBox="0 0 28 28"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">PR</text></svg>
+    </a>
+    <a class="subway-node" data-target="services" title="Services">
+        <svg viewBox="0 0 28 28"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">SV</text></svg>
+    </a>
+    <a class="subway-node" data-target="process" title="How It Works">
+        <svg viewBox="0 0 28 28"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">HW</text></svg>
+    </a>
+    <a class="subway-node" data-target="about" title="About">
+        <svg viewBox="0 0 28 28"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">AB</text></svg>
+    </a>
+    <a class="subway-node" data-target="proof" title="Client Results">
+        <svg viewBox="0 0 28 28"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">CR</text></svg>
+    </a>
+    <a class="subway-node" data-target="cta" title="Contact">
+        <svg viewBox="0 0 28 28"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">CT</text></svg>
+    </a>
+</nav>
+
 
 <!-- ============================================================
      SECTION 1 — HERO
@@ -49,6 +76,27 @@
     </div>
 
     <div class="hero-scroll-hint">Scroll</div>
+
+    <!-- Cartographic grid accent — low opacity, lower-right quadrant -->
+    <div class="hero-map-accent" aria-hidden="true">
+        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMax meet">
+            <!-- Latitude curves -->
+            <path d="M0,50 Q100,40 200,50 Q300,60 400,50" fill="none" stroke="white" stroke-width="0.8"/>
+            <path d="M0,90 Q100,75 200,90 Q300,105 400,90" fill="none" stroke="white" stroke-width="0.8"/>
+            <path d="M0,130 Q100,110 200,130 Q300,150 400,130" fill="none" stroke="white" stroke-width="0.8"/>
+            <path d="M0,170 Q100,145 200,170 Q300,195 400,170" fill="none" stroke="white" stroke-width="0.8"/>
+            <path d="M0,210 Q100,180 200,210 Q300,240 400,210" fill="none" stroke="white" stroke-width="0.8"/>
+            <path d="M0,250 Q100,215 200,250 Q300,285 400,250" fill="none" stroke="white" stroke-width="0.8"/>
+            <path d="M0,290 Q100,250 200,290 Q300,330 400,290" fill="none" stroke="white" stroke-width="0.8"/>
+            <!-- Longitude curves -->
+            <path d="M60,0 Q45,75 60,150 Q75,225 60,300" fill="none" stroke="white" stroke-width="0.8"/>
+            <path d="M120,0 Q100,75 120,150 Q140,225 120,300" fill="none" stroke="white" stroke-width="0.8"/>
+            <path d="M180,0 Q155,75 180,150 Q205,225 180,300" fill="none" stroke="white" stroke-width="0.8"/>
+            <path d="M240,0 Q210,75 240,150 Q270,225 240,300" fill="none" stroke="white" stroke-width="0.8"/>
+            <path d="M300,0 Q265,75 300,150 Q335,225 300,300" fill="none" stroke="white" stroke-width="0.8"/>
+            <path d="M360,0 Q320,75 360,150 Q400,225 360,300" fill="none" stroke="white" stroke-width="0.8"/>
+        </svg>
+    </div>
 
 </section>
 
@@ -363,12 +411,46 @@
      ============================================================ -->
 <footer id="footer-bar">
     <span class="footer-bar-left">
-        &copy; 2025 Atlas Strategies. All rights reserved.
+        &copy; 2026 Atlas Strategies. All rights reserved.
     </span>
     <span class="footer-bar-center">www.atlas-strategies.co</span>
-    <span class="footer-bar-right">Crafted by Atlas Atelier &bull; Confidential</span>
+    <span class="footer-bar-right">Crafted by Atlas Atelier</span>
 </footer>
 
+
+
+<script>
+    // ── SUBWAY NAV — IntersectionObserver ──────────────────────
+    (function () {
+        const nodes = document.querySelectorAll('.subway-node');
+        const sections = ['hero', 'problem', 'services', 'process', 'about', 'proof', 'cta'];
+
+        // Click to scroll
+        nodes.forEach(function (node) {
+            node.addEventListener('click', function () {
+                const target = document.getElementById(node.dataset.target);
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Track active section
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    const id = entry.target.id;
+                    nodes.forEach(function (node) {
+                        node.classList.toggle('active', node.dataset.target === id);
+                    });
+                }
+            });
+        }, { threshold: 0.35 });
+
+        sections.forEach(function (id) {
+            const el = document.getElementById(id);
+            if (el) observer.observe(el);
+        });
+    })();
+</script>
 
 </body>
 </html>
