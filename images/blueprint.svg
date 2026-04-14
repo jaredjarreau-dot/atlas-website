@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" fill="none">
+  <defs>
+    <!-- Fine grid: 40px -->
+    <pattern id="fg" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="white" stroke-width="0.35"/>
+    </pattern>
+    <!-- Major grid: 200px -->
+    <pattern id="mg" width="200" height="200" patternUnits="userSpaceOnUse">
+      <rect width="200" height="200" fill="url(#fg)"/>
+      <path d="M200 0H0V200" stroke="white" stroke-width="0.9"/>
+    </pattern>
+  </defs>
+
+  <!-- Grid background -->
+  <rect width="1440" height="900" fill="url(#mg)"/>
+
+  <!-- ======== FLOOR PLAN ======== -->
+
+  <!-- Outer building perimeter -->
+  <rect x="155" y="75" width="1130" height="750" stroke="white" stroke-width="5"/>
+
+  <!-- ── Interior vertical walls ── -->
+  <!-- Reception / open office divide @ x=430 -->
+  <line x1="430" y1="75"  x2="430" y2="75"  stroke="white" stroke-width="3"/><!-- placeholder; gaps drawn below -->
+  <line x1="430" y1="75"  x2="430" y2="180" stroke="white" stroke-width="3"/>
+  <line x1="430" y1="230" x2="430" y2="390" stroke="white" stroke-width="3"/>
+  <!-- Open office / principals divide @ x=1080 -->
+  <line x1="1080" y1="75"  x2="1080" y2="390" stroke="white" stroke-width="3"/>
+  <!-- Conf B / Kitchen @ x=730 -->
+  <line x1="730" y1="390" x2="730" y2="600" stroke="white" stroke-width="3"/>
+  <!-- Kitchen / WC @ x=940 -->
+  <line x1="940" y1="390" x2="940" y2="600" stroke="white" stroke-width="3"/>
+  <!-- Storage divider @ x=1080 lower -->
+  <line x1="1080" y1="390" x2="1080" y2="825" stroke="white" stroke-width="3"/>
+  <!-- Left sub-room lower @ x=430 -->
+  <line x1="430" y1="600" x2="430" y2="825" stroke="white" stroke-width="3"/>
+
+  <!-- ── Interior horizontal walls ── -->
+  <!-- Upper / lower split @ y=390 (full width minus gap) -->
+  <line x1="155" y1="390" x2="430" y2="390" stroke="white" stroke-width="3"/>
+  <line x1="430" y1="390" x2="1080" y2="390" stroke="white" stroke-width="3"/>
+  <!-- Lower rooms top @ y=600 (left to storage) -->
+  <line x1="155" y1="600" x2="430" y2="600" stroke="white" stroke-width="3"/>
+  <line x1="430" y1="600" x2="1080" y2="600" stroke="white" stroke-width="3"/>
+
+  <!-- ── Door openings & arcs ── -->
+  <!-- Reception → open office: gap in x=430 wall @ y=180-230 -->
+  <path d="M430,180 A50,50 0 0,1 480,230" stroke="white" stroke-width="1"/>
+  <!-- Conf A → corridor: gap in y=390 wall @ x=210-260 -->
+  <line x1="155" y1="390" x2="210" y2="390" stroke="white" stroke-width="3"/>
+  <line x1="260" y1="390" x2="430" y2="390" stroke="white" stroke-width="3"/>
+  <path d="M210,390 A50,50 0 0,0 260,340" stroke="white" stroke-width="1"/>
+  <!-- Conf B → corridor: gap @ x=500-550 -->
+  <line x1="430" y1="390" x2="500" y2="390" stroke="white" stroke-width="3"/>
+  <line x1="550" y1="390" x2="730" y2="390" stroke="white" stroke-width="3"/>
+  <path d="M500,390 A50,50 0 0,0 550,340" stroke="white" stroke-width="1"/>
+  <!-- Principals suite → open office: gap in x=1080 @ y=160-210 -->
+  <line x1="1080" y1="75"  x2="1080" y2="160" stroke="white" stroke-width="3"/>
+  <line x1="1080" y1="210" x2="1080" y2="390" stroke="white" stroke-width="3"/>
+  <path d="M1080,160 A50,50 0 0,0 1030,210" stroke="white" stroke-width="1"/>
+  <!-- Lower left → corridor door: gap in y=600 @ x=270-320 -->
+  <line x1="155" y1="600" x2="270" y2="600" stroke="white" stroke-width="3"/>
+  <line x1="320" y1="600" x2="430" y2="600" stroke="white" stroke-width="3"/>
+  <path d="M270,600 A50,50 0 0,1 320,550" stroke="white" stroke-width="1"/>
+
+  <!-- ── Window breaks on exterior walls ── -->
+  <!-- Top wall windows -->
+  <line x1="155" y1="75" x2="340" y2="75" stroke="white" stroke-width="5"/>
+  <line x1="385" y1="75" x2="610" y2="75" stroke="white" stroke-width="5"/>
+  <!-- gap @ 340-385 = window -->
+  <line x1="340" y1="68" x2="340" y2="82" stroke="white" stroke-width="1.5"/>
+  <line x1="385" y1="68" x2="385" y2="82" stroke="white" stroke-width="1.5"/>
+  <line x1="340" y1="75" x2="385" y2="75" stroke="white" stroke-width="1"/>
+  <!-- second window -->
+  <line x1="640" y1="75" x2="900" y2="75" stroke="white" stroke-width="5"/>
+  <line x1="640" y1="68" x2="640" y2="82" stroke="white" stroke-width="1.5"/>
+  <line x1="900" y1="68" x2="900" y2="82" stroke="white" stroke-width="1.5"/>
+  <line x1="640" y1="75" x2="900" y2="75" stroke="white" stroke-width="1"/>
+
+  <!-- ── Column grid markers ── -->
+  <circle cx="430"  cy="75"  r="7" stroke="white" stroke-width="1.2" fill="none"/>
+  <circle cx="730"  cy="75"  r="7" stroke="white" stroke-width="1.2" fill="none"/>
+  <circle cx="1080" cy="75"  r="7" stroke="white" stroke-width="1.2" fill="none"/>
+  <circle cx="430"  cy="390" r="7" stroke="white" stroke-width="1.2" fill="none"/>
+  <circle cx="730"  cy="390" r="7" stroke="white" stroke-width="1.2" fill="none"/>
+  <circle cx="940"  cy="390" r="7" stroke="white" stroke-width="1.2" fill="none"/>
+  <circle cx="1080" cy="390" r="7" stroke="white" stroke-width="1.2" fill="none"/>
+  <circle cx="430"  cy="600" r="7" stroke="white" stroke-width="1.2" fill="none"/>
+  <circle cx="1080" cy="600" r="7" stroke="white" stroke-width="1.2" fill="none"/>
+  <circle cx="430"  cy="825" r="7" stroke="white" stroke-width="1.2" fill="none"/>
+  <circle cx="1080" cy="825" r="7" stroke="white" stroke-width="1.2" fill="none"/>
+
+  <!-- ── Grid reference letters (top) ── -->
+  <text x="292"  y="20" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="white">A</text>
+  <text x="580"  y="20" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="white">B</text>
+  <text x="835"  y="20" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="white">C</text>
+  <text x="1010" y="20" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="white">D</text>
+  <text x="1260" y="20" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="white">E</text>
+  <!-- Grid reference numbers (right) -->
+  <text x="1425" y="235" text-anchor="end" font-family="'Courier New',monospace" font-size="12" fill="white">1</text>
+  <text x="1425" y="500" text-anchor="end" font-family="'Courier New',monospace" font-size="12" fill="white">2</text>
+  <text x="1425" y="715" text-anchor="end" font-family="'Courier New',monospace" font-size="12" fill="white">3</text>
+
+  <!-- ── Exterior dimension lines ── -->
+  <!-- Top (full width) -->
+  <line x1="155" y1="45" x2="1285" y2="45" stroke="white" stroke-width="0.8"/>
+  <line x1="155" y1="39" x2="155" y2="51" stroke="white" stroke-width="0.8"/>
+  <line x1="1285" y1="39" x2="1285" y2="51" stroke="white" stroke-width="0.8"/>
+  <polygon points="158,45 168,41 168,49" fill="white"/>
+  <polygon points="1282,45 1272,41 1272,49" fill="white"/>
+  <text x="720" y="41" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="white">28,250 mm</text>
+  <!-- Subdivision A (Reception width) -->
+  <line x1="155" y1="57" x2="430" y2="57" stroke="white" stroke-width="0.5"/>
+  <line x1="155" y1="53" x2="155" y2="61" stroke="white" stroke-width="0.5"/>
+  <line x1="430" y1="53" x2="430" y2="61" stroke="white" stroke-width="0.5"/>
+  <text x="292" y="54" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="white">6,875</text>
+  <!-- Subdivision B (Open office) -->
+  <line x1="430" y1="57" x2="1080" y2="57" stroke="white" stroke-width="0.5"/>
+  <line x1="1080" y1="53" x2="1080" y2="61" stroke="white" stroke-width="0.5"/>
+  <text x="755" y="54" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="white">16,250</text>
+  <!-- Subdivision C (Principals) -->
+  <line x1="1080" y1="57" x2="1285" y2="57" stroke="white" stroke-width="0.5"/>
+  <line x1="1285" y1="53" x2="1285" y2="61" stroke="white" stroke-width="0.5"/>
+  <text x="1182" y="54" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="white">5,125</text>
+  <!-- Left (full height) -->
+  <line x1="118" y1="75" x2="118" y2="825" stroke="white" stroke-width="0.8"/>
+  <line x1="112" y1="75"  x2="124" y2="75"  stroke="white" stroke-width="0.8"/>
+  <line x1="112" y1="825" x2="124" y2="825" stroke="white" stroke-width="0.8"/>
+  <polygon points="118,78 114,88 122,88" fill="white"/>
+  <polygon points="118,822 114,812 122,812" fill="white"/>
+  <text x="100" y="455" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="white" transform="rotate(-90,100,455)">18,750 mm</text>
+
+  <!-- ── Room labels ── -->
+  <text x="292"  y="218" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" fill="white" font-weight="bold">RECEPTION</text>
+  <text x="292"  y="235" text-anchor="middle" font-family="'Courier New',monospace" font-size="9"  fill="white">6.9 × 7.9 m</text>
+  <text x="755"  y="210" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" fill="white" font-weight="bold">OPEN WORKSPACE</text>
+  <text x="755"  y="228" text-anchor="middle" font-family="'Courier New',monospace" font-size="9"  fill="white">16.3 × 7.9 m</text>
+  <text x="1182" y="218" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="white" font-weight="bold">PRINCIPALS</text>
+  <text x="1182" y="234" text-anchor="middle" font-family="'Courier New',monospace" font-size="9"  fill="white">SUITE</text>
+  <text x="292"  y="488" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="white" font-weight="bold">CONF. A</text>
+  <text x="292"  y="504" text-anchor="middle" font-family="'Courier New',monospace" font-size="9"  fill="white">6.9 × 5.3 m</text>
+  <text x="580"  y="488" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="white" font-weight="bold">CONF. B</text>
+  <text x="580"  y="504" text-anchor="middle" font-family="'Courier New',monospace" font-size="9"  fill="white">7.5 × 5.3 m</text>
+  <text x="835"  y="488" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="white" font-weight="bold">KITCHEN</text>
+  <text x="1010" y="488" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="white" font-weight="bold">W/C</text>
+  <text x="1182" y="600" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="white" font-weight="bold">STORAGE /</text>
+  <text x="1182" y="616" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="white" font-weight="bold">ARCHIVE</text>
+  <text x="292"  y="700" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="white" font-weight="bold">PRINT + COPY</text>
+  <text x="755"  y="700" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="white" font-weight="bold">C O R R I D O R</text>
+  <text x="755"  y="718" text-anchor="middle" font-family="'Courier New',monospace" font-size="8"  fill="white">— CIRCULATION —</text>
+
+  <!-- Section cut symbols -->
+  <circle cx="155" cy="232" r="10" stroke="white" stroke-width="1" fill="none"/>
+  <text x="155" cy="232" y="236" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="white">A</text>
+  <line x1="165" y1="232" x2="230" y2="232" stroke="white" stroke-width="0.6" stroke-dasharray="4,3"/>
+
+  <!-- ── North arrow ── -->
+  <g transform="translate(1355,148)">
+    <circle cx="0" cy="0" r="32" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="-32" x2="0"  y2="32"  stroke="white" stroke-width="0.6"/>
+    <line x1="-32" y1="0" x2="32" y2="0"   stroke="white" stroke-width="0.6"/>
+    <!-- NE/SW diagonals -->
+    <line x1="-22" y1="-22" x2="22" y2="22"  stroke="white" stroke-width="0.4"/>
+    <line x1="22"  y1="-22" x2="-22" y2="22" stroke="white" stroke-width="0.4"/>
+    <!-- Arrow pointing north -->
+    <polygon points="0,-26 -8,-8 0,-14 8,-8" fill="white"/>
+    <text x="0" y="-40" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" fill="white">N</text>
+  </g>
+
+  <!-- ── Scale bar ── -->
+  <g transform="translate(185,870)">
+    <rect x="0"   y="-7" width="50" height="14" fill="white"/>
+    <rect x="50"  y="-7" width="50" height="14" fill="none" stroke="white" stroke-width="0.8"/>
+    <rect x="100" y="-7" width="50" height="14" fill="white"/>
+    <rect x="150" y="-7" width="50" height="14" fill="none" stroke="white" stroke-width="0.8"/>
+    <text x="0"   y="-12" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="white">0</text>
+    <text x="100" y="-12" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="white">10 m</text>
+    <text x="200" y="-12" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="white">20 m</text>
+    <text x="100" y="20"  text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="white">SCALE  1 : 200</text>
+  </g>
+
+  <!-- ── Title block ── -->
+  <rect x="1080" y="620" width="205" height="205" stroke="white" stroke-width="1"/>
+  <line x1="1080" y1="650" x2="1285" y2="650" stroke="white" stroke-width="0.5"/>
+  <line x1="1080" y1="676" x2="1285" y2="676" stroke="white" stroke-width="0.5"/>
+  <line x1="1080" y1="715" x2="1285" y2="715" stroke="white" stroke-width="0.5"/>
+  <line x1="1080" y1="745" x2="1285" y2="745" stroke="white" stroke-width="0.5"/>
+  <line x1="1185" y1="745" x2="1185" y2="825" stroke="white" stroke-width="0.5"/>
+  <text x="1182" y="640" text-anchor="middle" font-family="'Courier New',monospace" font-size="9"  fill="white" letter-spacing="2">ATLAS STRATEGIES</text>
+  <text x="1182" y="665" text-anchor="middle" font-family="'Courier New',monospace" font-size="8"  fill="white">ATLAS ATELIER WORKSHOP</text>
+  <text x="1182" y="696" text-anchor="middle" font-family="'Courier New',monospace" font-size="8"  fill="white">STUDIO FLOOR PLAN</text>
+  <text x="1182" y="708" text-anchor="middle" font-family="'Courier New',monospace" font-size="7"  fill="white">GROUND LEVEL — PLAN VIEW</text>
+  <text x="1092" y="730" font-family="'Courier New',monospace" font-size="7" fill="white">SCALE: 1:200</text>
+  <text x="1092" y="742" font-family="'Courier New',monospace" font-size="7" fill="white">SHEET: A1.01</text>
+  <text x="1092" y="760" font-family="'Courier New',monospace" font-size="7" fill="white">DRAWN: J.A.J</text>
+  <text x="1092" y="772" font-family="'Courier New',monospace" font-size="7" fill="white">DATE: 2026-01</text>
+  <text x="1092" y="784" font-family="'Courier New',monospace" font-size="7" fill="white">REV: 04</text>
+  <text x="1235" y="760" text-anchor="middle" font-family="'Courier New',monospace" font-size="7" fill="white">PROJ. NO.</text>
+  <text x="1235" y="772" text-anchor="middle" font-family="'Courier New',monospace" font-size="7" fill="white">AS-2026-01</text>
+  <text x="1235" y="784" text-anchor="middle" font-family="'Courier New',monospace" font-size="7" fill="white">STATUS: IFC</text>
+  <text x="1092" y="818" font-family="'Courier New',monospace" font-size="7" fill="white">© ATLAS ATELIER  2026</text>
+</svg>

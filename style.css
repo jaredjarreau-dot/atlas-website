@@ -155,9 +155,6 @@ a {
 #hero {
     min-height: 100vh;
     background: var(--navy);
-    background-image:
-        radial-gradient(ellipse at 70% 20%, rgba(201,168,76,0.07) 0%, transparent 60%),
-        radial-gradient(ellipse at 20% 80%, rgba(201,168,76,0.05) 0%, transparent 50%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -709,25 +706,64 @@ a {
     text-transform: uppercase;
 }
 
-/* ── HEXAGON TEXTURE — hero & services ───────────────────── */
+/* ── BLUEPRINT TEXTURE — all dark navy sections ──────────── */
 
-#hero {
-    background-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='69.28'%3E%3Cpolygon points='30,1 58,17 58,52.28 30,68.28 2,52.28 2,17' fill='none' stroke='rgba(255,255,255,0.04)' stroke-width='1'/%3E%3C/svg%3E"),
-        radial-gradient(ellipse at 70% 20%, rgba(205,133,63,0.07) 0%, transparent 60%),
-        radial-gradient(ellipse at 20% 80%, rgba(205,133,63,0.05) 0%, transparent 50%);
-    background-size: 60px 69.28px, 100% 100%, 100% 100%;
-    background-position: 0 0, center, center;
-    background-repeat: repeat, no-repeat, no-repeat;
+#hero::before,
+#services::before,
+#proof::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('images/blueprint.svg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.13;
+    pointer-events: none;
+    z-index: 0;
 }
 
-#services {
-    background-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='69.28'%3E%3Cpolygon points='30,1 58,17 58,52.28 30,68.28 2,52.28 2,17' fill='none' stroke='rgba(255,255,255,0.04)' stroke-width='1'/%3E%3C/svg%3E"),
-        radial-gradient(ellipse at 80% 50%, rgba(205,133,63,0.06) 0%, transparent 55%);
-    background-size: 60px 69.28px, 100% 100%;
-    background-position: 0 0, center;
-    background-repeat: repeat, no-repeat;
+/* Keep content above blueprint layer */
+#hero > *,
+#services .container,
+#proof .container {
+    position: relative;
+    z-index: 1;
+}
+
+#services { position: relative; }
+#proof    { position: relative; }
+
+/* ── ANTIQUE MAP TEXTURE — light sections ────────────────── */
+
+#problem,
+#process,
+#about {
+    position: relative;
+}
+
+#problem::before,
+#process::before,
+#about::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.09;
+    pointer-events: none;
+    z-index: 0;
+}
+
+#problem::before { background-image: url('images/map-richmond.svg');  }
+#process::before { background-image: url('images/map-virginia.svg');  }
+#about::before   { background-image: url('images/map-louisiana.svg'); }
+
+#problem .container,
+#process .container,
+#about   .container {
+    position: relative;
+    z-index: 1;
 }
 
 /* ── SUBWAY NAV ───────────────────────────────────────────── */

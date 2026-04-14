@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 860" fill="none">
+
+  <!-- Antique map — State of Louisiana -->
+
+  <!-- ── Decorative border ── -->
+  <rect x="12" y="12" width="676" height="836" stroke="#4A2E0A" stroke-width="2.5"/>
+  <rect x="20" y="20" width="660" height="820" stroke="#4A2E0A" stroke-width="0.8"/>
+  <rect x="15" y="15" width="670" height="830" stroke="#4A2E0A" stroke-width="0.5"/>
+  <!-- Corner ornaments -->
+  <rect x="12"  y="12"  width="26" height="26" fill="#4A2E0A" fill-opacity="0.12"/>
+  <rect x="662" y="12"  width="26" height="26" fill="#4A2E0A" fill-opacity="0.12"/>
+  <rect x="12"  y="822" width="26" height="26" fill="#4A2E0A" fill-opacity="0.12"/>
+  <rect x="662" y="822" width="26" height="26" fill="#4A2E0A" fill-opacity="0.12"/>
+
+  <!-- ── Graticule ── -->
+  <line x1="25" y1="220" x2="675" y2="220" stroke="#4A2E0A" stroke-width="0.35" stroke-dasharray="5,5"/>
+  <line x1="25" y1="440" x2="675" y2="440" stroke="#4A2E0A" stroke-width="0.35" stroke-dasharray="5,5"/>
+  <line x1="25" y1="660" x2="675" y2="660" stroke="#4A2E0A" stroke-width="0.35" stroke-dasharray="5,5"/>
+  <line x1="175" y1="25" x2="175" y2="835" stroke="#4A2E0A" stroke-width="0.35" stroke-dasharray="5,5"/>
+  <line x1="350" y1="25" x2="350" y2="835" stroke="#4A2E0A" stroke-width="0.35" stroke-dasharray="5,5"/>
+  <line x1="525" y1="25" x2="525" y2="835" stroke="#4A2E0A" stroke-width="0.35" stroke-dasharray="5,5"/>
+
+  <!-- ── Louisiana State Outline ("the Boot") ── -->
+  <!-- Working clockwise from NW -->
+  <path d="
+    M 68,148
+    L 625,148
+    L 625,148
+    C 630,148 634,150 636,154
+    L 638,164
+    C 638,172 636,180 632,186
+    L 625,195
+    C 618,203 610,210 600,216
+    L 585,222
+    C 570,228 554,232 538,235
+    L 520,237
+    C 506,238 492,238 478,237
+    L 462,234
+    C 448,231 434,226 420,220
+    L 408,214
+    C 396,208 385,200 375,192
+    L 366,184
+    C 358,176 352,168 347,160
+    L 344,152
+    C 342,148 342,146 344,144
+    L 350,140
+    C 358,138 368,138 380,140
+    L 398,144
+    C 410,148 422,153 432,158
+    L 445,164
+    C 456,170 466,176 475,182
+    L 484,188
+    C 492,194 500,200 507,206
+    L 515,213
+    C 521,219 527,224 533,228
+    L 541,233
+    C 548,237 555,240 562,242
+    L 571,244
+    C 578,245 585,245 592,243
+    L 600,240
+    C 608,236 614,230 618,224
+    L 621,215
+    C 622,206 622,196 620,188
+    L 616,176
+    C 610,162 600,152 588,148
+    Z"
+    stroke="#4A2E0A" stroke-width="0"/>
+  <!-- Actual boot outline (simplified but recognizable) -->
+  <path d="
+    M 68,148
+    L 625,148
+    C 636,148 642,156 640,168
+    C 638,185 630,200 616,212
+    C 602,224 584,232 564,236
+    C 548,239 532,238 516,233
+    C 502,228 490,220 479,210
+    C 468,200 459,189 450,178
+    C 440,167 429,158 416,153
+    C 403,148 388,147 375,150
+    C 362,153 350,160 342,170
+    C 336,178 334,188 336,200
+    C 338,212 344,223 352,233
+    C 360,242 370,250 381,257
+    C 392,264 404,270 417,274
+    C 430,278 443,280 456,280
+    C 472,280 488,277 504,272
+    C 520,267 534,258 547,248
+    C 558,239 568,228 577,216
+    C 586,204 593,192 598,180
+    C 603,170 605,162 604,155"
+    stroke="#4A2E0A" stroke-width="0"/>
+
+  <!-- Clean boot outline -->
+  <!-- Northern border -->
+  <line x1="68" y1="148" x2="628" y2="148" stroke="#4A2E0A" stroke-width="2.2"/>
+  <!-- Eastern border (right side of the boot body) -->
+  <path d="M 628,148 C 634,148 638,154 638,162 L 638,460
+           C 638,470 634,478 628,484 L 618,492
+           C 610,498 600,502 588,504 L 572,506
+           C 558,508 544,507 530,504 L 516,499
+           C 502,494 489,487 478,478 L 466,468
+           C 455,458 446,448 438,437 L 431,426
+           C 425,416 420,406 416,396 L 413,384
+           C 410,374 410,364 412,354 L 416,342
+           C 420,332 426,324 434,318 L 444,312
+           C 454,307 465,304 477,303 L 491,303
+           C 504,303 516,305 527,309 L 539,315
+           C 550,321 560,329 567,339 L 573,350
+           C 578,360 580,371 578,382 L 574,394
+           C 568,406 560,416 549,424 L 537,431
+           C 524,438 510,442 495,444 L 480,445
+           C 466,445 452,443 438,438 L 424,430
+           C 413,423 403,413 396,401 L 390,388
+           C 386,375 386,361 390,348 L 397,336
+           C 404,324 414,314 428,306 L 444,300
+           C 460,295 478,292 495,293 L 512,296
+           C 528,300 543,307 555,318 L 565,330
+           C 573,341 578,354 578,367"
+        stroke="#4A2E0A" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- The "toe" of the boot going SE (the Plaquemines Parish/Delta peninsula) -->
+  <path d="M 578,367 C 576,378 572,390 566,402 L 558,416
+           C 550,430 540,443 528,454 L 514,464
+           C 500,474 484,481 467,486 L 450,489
+           C 434,491 418,490 402,487 L 386,481
+           C 372,475 359,467 348,456 L 339,444
+           C 332,433 328,421 327,408 L 328,394
+           C 330,380 335,368 344,358 L 356,348
+           C 369,339 384,334 400,332 L 418,332
+           C 435,332 451,336 465,343 L 478,352
+           C 490,361 499,372 504,385 L 506,398
+           C 506,411 502,423 494,432 L 484,440"
+        stroke="#4A2E0A" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- Gulf coast (southern edge) -->
+  <path d="M 68,580 C 100,575 135,568 170,562 C 205,556 238,550 268,546
+           C 295,542 320,540 344,540 C 355,540 364,541 372,544"
+        stroke="#4A2E0A" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- West side (goes from NW corner down to Gulf) -->
+  <path d="M 68,148 C 66,148 64,150 64,152 L 64,580" stroke="#4A2E0A" stroke-width="2.2"/>
+  <!-- Connect gulf coast to west border -->
+  <path d="M 64,580 C 65,580 66,580 68,580" stroke="#4A2E0A" stroke-width="2.2"/>
+
+  <!-- Internal terrain + bayous (south/coastal area) -->
+  <path d="M 100,490 C 120,495 138,492 155,486" stroke="#2A4A5A" stroke-width="1.0" stroke-dasharray="3,3"/>
+  <path d="M 130,510 C 148,516 165,514 180,508" stroke="#2A4A5A" stroke-width="1.0" stroke-dasharray="3,3"/>
+  <path d="M 200,525 C 218,530 234,528 248,522" stroke="#2A4A5A" stroke-width="0.8" stroke-dasharray="3,3"/>
+  <path d="M 240,515 C 255,519 270,516 284,510" stroke="#2A4A5A" stroke-width="0.8" stroke-dasharray="3,3"/>
+  <!-- Bayou label area -->
+  <text x="130" y="532" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#2A4A5A">bayou country</text>
+
+  <!-- ── Mississippi River (the main artery) ── -->
+  <path d="M 430,148 C 428,165 426,185 424,208 C 422,230 420,255 418,278
+           C 416,300 414,322 413,344 C 412,362 413,378 416,393
+           C 419,406 424,417 430,427 C 436,437 443,445 450,452
+           C 457,459 463,464 468,470 C 473,476 476,482 477,489
+           L 476,498 C 474,506 469,513 462,518
+           L 450,524 C 440,528 428,531 416,532 L 400,532"
+        stroke="#2A4A5A" stroke-width="5" stroke-linecap="round"/>
+  <!-- Secondary channel (west side of river) -->
+  <path d="M 422,148 C 420,165 418,185 416,208 C 414,230 412,255 410,278
+           C 408,300 406,322 405,344 C 404,362 405,378 408,393"
+        stroke="#2A4A5A" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="390" y="310" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-style="italic" fill="#2A4A5A" transform="rotate(-90,390,310)">Mississippi River</text>
+
+  <!-- ── Mississippi Delta (bird-foot) ── -->
+  <path d="M 477,489 C 478,498 478,507 476,516 L 473,528
+           C 470,540 464,550 457,558 L 448,566
+           C 442,572 434,576 426,578 L 415,578"
+        stroke="#2A4A5A" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Delta fingers (bird-foot) -->
+  <path d="M 463,548 C 460,556 456,564 450,571 L 443,577" stroke="#2A4A5A" stroke-width="2"/>
+  <path d="M 472,545 C 474,555 474,565 471,575 L 467,584 L 462,592" stroke="#2A4A5A" stroke-width="2"/>
+  <path d="M 478,548 C 482,558 485,568 485,580 L 483,592" stroke="#2A4A5A" stroke-width="2"/>
+  <path d="M 482,553 C 487,563 490,574 490,587 L 488,600" stroke="#2A4A5A" stroke-width="1.5"/>
+  <text x="490" y="580" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#2A4A5A">Delta</text>
+
+  <!-- ── Lake Pontchartrain ── -->
+  <ellipse cx="370" cy="466" rx="115" ry="48"
+           fill="#2A4A5A" fill-opacity="0.08" stroke="#2A4A5A" stroke-width="1.5"/>
+  <!-- Wave texture in lake -->
+  <path d="M 290,460 C 305,455 320,465 335,460 S 365,455 380,460" stroke="#2A4A5A" stroke-width="0.6"/>
+  <path d="M 325,472 C 340,467 355,477 370,472 S 400,467 415,472" stroke="#2A4A5A" stroke-width="0.6"/>
+  <text x="370" y="470" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-style="italic" fill="#2A4A5A">Lake Pontchartrain</text>
+
+  <!-- ── Red River ── -->
+  <path d="M 68,245 C 95,242 125,240 155,242 C 185,244 212,250 238,260
+           C 260,269 280,281 300,293 C 318,304 335,315 352,325
+           C 366,334 378,342 390,348"
+        stroke="#2A4A5A" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="175" y="252" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#2A4A5A" transform="rotate(-2,175,252)">Red River</text>
+
+  <!-- ── City markers ── -->
+  <!-- New Orleans -->
+  <circle cx="462" cy="496" r="7" fill="#4A2E0A" fill-opacity="0.4" stroke="#4A2E0A" stroke-width="1.4"/>
+  <text x="490" y="494" font-family="Georgia,serif" font-size="11" font-weight="bold" fill="#4A2E0A">New Orleans</text>
+  <!-- Baton Rouge -->
+  <circle cx="392" cy="435" r="5" fill="#4A2E0A" fill-opacity="0.4" stroke="#4A2E0A" stroke-width="1.2"/>
+  <text x="318" y="430" text-anchor="end" font-family="Georgia,serif" font-size="10" fill="#4A2E0A">Baton Rouge</text>
+  <!-- Shreveport -->
+  <circle cx="130" cy="205" r="4" fill="#4A2E0A" fill-opacity="0.3" stroke="#4A2E0A" stroke-width="1"/>
+  <text x="144" y="202" font-family="Georgia,serif" font-size="9" fill="#4A2E0A">Shreveport</text>
+  <!-- Lake Charles -->
+  <circle cx="95" cy="448" r="4" fill="#4A2E0A" fill-opacity="0.3" stroke="#4A2E0A" stroke-width="1"/>
+  <text x="108" y="444" font-family="Georgia,serif" font-size="9" fill="#4A2E0A">Lake Charles</text>
+
+  <!-- ── Title ── -->
+  <text x="350" y="70" text-anchor="middle" font-family="Georgia,serif" font-size="32" font-weight="bold" fill="#4A2E0A" letter-spacing="4">LOUISIANA</text>
+  <text x="350" y="92" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#4A2E0A" letter-spacing="3">UNION, JUSTICE &amp; CONFIDENCE</text>
+  <line x1="220" y1="98" x2="480" y2="98" stroke="#4A2E0A" stroke-width="0.8"/>
+
+  <!-- ── Compass rose ── -->
+  <g transform="translate(584,222)">
+    <circle cx="0" cy="0" r="38" stroke="#4A2E0A" stroke-width="1"/>
+    <circle cx="0" cy="0" r="30" stroke="#4A2E0A" stroke-width="0.5"/>
+    <polygon points="0,-35 -7,-11 0,-19 7,-11" fill="#4A2E0A"/>
+    <polygon points="0,35  -7,11  0,19  7,11"  fill="#4A2E0A" fill-opacity="0.5"/>
+    <polygon points="-35,0 -11,-6 -19,0 -11,6" fill="#4A2E0A" fill-opacity="0.5"/>
+    <polygon points="35,0  11,-6  19,0  11,6"  fill="#4A2E0A" fill-opacity="0.5"/>
+    <!-- Inter-cardinal -->
+    <line x1="21"  y1="-21" x2="26"  y2="-26" stroke="#4A2E0A" stroke-width="0.8"/>
+    <line x1="-21" y1="-21" x2="-26" y2="-26" stroke="#4A2E0A" stroke-width="0.8"/>
+    <line x1="21"  y1="21"  x2="26"  y2="26"  stroke="#4A2E0A" stroke-width="0.8"/>
+    <line x1="-21" y1="21"  x2="-26" y2="26"  stroke="#4A2E0A" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="3" fill="#4A2E0A"/>
+    <text x="0"   y="-45" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="#4A2E0A">N</text>
+    <text x="0"   y="58"  text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="#4A2E0A">S</text>
+    <text x="-48" y="5"   text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="#4A2E0A">W</text>
+    <text x="48"  y="5"   text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="#4A2E0A">E</text>
+  </g>
+
+  <!-- ── Gulf of Mexico label ── -->
+  <text x="220" y="640" text-anchor="middle" font-family="Georgia,serif" font-size="14" font-style="italic" fill="#2A4A5A" letter-spacing="3">GULF OF MEXICO</text>
+  <!-- Wave marks -->
+  <path d="M 68,620 C 90,615 110,625 130,620 S 165,615 185,620" stroke="#2A4A5A" stroke-width="0.7"/>
+  <path d="M 80,632 C 100,627 120,637 140,632 S 172,627 192,632" stroke="#2A4A5A" stroke-width="0.7"/>
+  <path d="M 220,622 C 240,617 258,627 276,622 S 308,617 326,622" stroke="#2A4A5A" stroke-width="0.7"/>
+
+  <!-- ── Cartouche ── -->
+  <rect x="484" y="700" width="178" height="122" rx="4" stroke="#4A2E0A" stroke-width="1.5" fill="#4A2E0A" fill-opacity="0.05"/>
+  <rect x="490" y="706" width="166" height="110" rx="2" stroke="#4A2E0A" stroke-width="0.5"/>
+  <text x="573" y="726" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-weight="bold" fill="#4A2E0A">A GENERAL MAP</text>
+  <text x="573" y="742" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-weight="bold" fill="#4A2E0A">STATE OF LOUISIANA</text>
+  <line x1="500" y1="748" x2="648" y2="748" stroke="#4A2E0A" stroke-width="0.6"/>
+  <text x="573" y="763" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#4A2E0A">Showing the Principal Rivers</text>
+  <text x="573" y="776" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#4A2E0A">Lakes &amp; Parishes</text>
+  <text x="573" y="791" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#4A2E0A">29°–33°N  |  89°–94°W</text>
+  <text x="573" y="812" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#4A2E0A">© ATLAS ATELIER  2026</text>
+</svg>

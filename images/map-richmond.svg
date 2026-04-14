@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" fill="none">
+
+  <!-- Antique map color palette: warm sepia ink -->
+  <!-- All strokes: #4A2E0A (dark antique brown) unless noted -->
+  <!-- Water features: #2A4A5A (muted ink blue) -->
+
+  <!-- ── Decorative border ── -->
+  <rect x="12" y="12" width="776" height="526" stroke="#4A2E0A" stroke-width="2.5"/>
+  <rect x="20" y="20" width="760" height="510" stroke="#4A2E0A" stroke-width="0.8"/>
+  <!-- Corner ornaments -->
+  <rect x="12" y="12" width="22" height="22" fill="#4A2E0A" fill-opacity="0.15"/>
+  <rect x="766" y="12" width="22" height="22" fill="#4A2E0A" fill-opacity="0.15"/>
+  <rect x="12" y="516" width="22" height="22" fill="#4A2E0A" fill-opacity="0.15"/>
+  <rect x="766" y="516" width="22" height="22" fill="#4A2E0A" fill-opacity="0.15"/>
+
+  <!-- ── Latitude / longitude graticule (faint) ── -->
+  <line x1="25" y1="137" x2="775" y2="137" stroke="#4A2E0A" stroke-width="0.4" stroke-dasharray="6,4"/>
+  <line x1="25" y1="275" x2="775" y2="275" stroke="#4A2E0A" stroke-width="0.4" stroke-dasharray="6,4"/>
+  <line x1="25" y1="413" x2="775" y2="413" stroke="#4A2E0A" stroke-width="0.4" stroke-dasharray="6,4"/>
+  <line x1="187" y1="25" x2="187" y2="525" stroke="#4A2E0A" stroke-width="0.4" stroke-dasharray="6,4"/>
+  <line x1="400" y1="25" x2="400" y2="525" stroke="#4A2E0A" stroke-width="0.4" stroke-dasharray="6,4"/>
+  <line x1="613" y1="25" x2="613" y2="525" stroke="#4A2E0A" stroke-width="0.4" stroke-dasharray="6,4"/>
+
+  <!-- ── Terrain hatching — hills north of river ── -->
+  <!-- North Side ridge lines -->
+  <path d="M100,140 L130,120 L160,138" stroke="#4A2E0A" stroke-width="0.7" stroke-linecap="round"/>
+  <path d="M150,130 L175,112 L200,128" stroke="#4A2E0A" stroke-width="0.7" stroke-linecap="round"/>
+  <path d="M195,138 L220,118 L248,136" stroke="#4A2E0A" stroke-width="0.7" stroke-linecap="round"/>
+  <path d="M130,155 L158,138 L185,154" stroke="#4A2E0A" stroke-width="0.6" stroke-linecap="round"/>
+  <path d="M165,162 L192,145 L218,160" stroke="#4A2E0A" stroke-width="0.6" stroke-linecap="round"/>
+  <!-- Church Hill area hills (east) -->
+  <path d="M560,200 L590,178 L620,196" stroke="#4A2E0A" stroke-width="0.7" stroke-linecap="round"/>
+  <path d="M590,215 L618,195 L648,212" stroke="#4A2E0A" stroke-width="0.7" stroke-linecap="round"/>
+  <path d="M570,228 L600,210 L628,226" stroke="#4A2E0A" stroke-width="0.6" stroke-linecap="round"/>
+
+  <!-- ── James River ── -->
+  <!-- Main channel (thick, flows W to E with horseshoe around Belle Isle) -->
+  <path d="M25,315 C80,316 140,320 195,330 C240,338 270,355 295,375
+           C318,393 335,415 360,432 C385,450 415,458 445,452
+           C475,446 500,432 520,415 C540,398 555,375 570,355
+           C585,338 605,318 650,310 C695,305 730,302 775,300"
+        stroke="#2A4A5A" stroke-width="14" stroke-linecap="round"/>
+  <!-- River banks (secondary lines for depth) -->
+  <path d="M25,308 C80,309 140,313 195,323 C240,331 270,348 295,368
+           C318,386 335,408 360,426 C385,444 415,452 445,446
+           C475,440 500,426 520,409 C540,392 555,369 570,349
+           C585,332 605,312 650,304 C695,299 730,296 775,294"
+        stroke="#2A4A5A" stroke-width="1.5"/>
+  <path d="M25,322 C80,323 140,327 195,337 C240,345 270,362 295,382
+           C318,400 335,422 360,438 C385,456 415,464 445,458
+           C475,452 500,438 520,421 C540,404 555,381 570,361
+           C585,344 605,324 650,316 C695,311 730,308 775,306"
+        stroke="#2A4A5A" stroke-width="1.5"/>
+  <!-- River label -->
+  <text x="400" y="478" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-style="italic" fill="#2A4A5A" letter-spacing="4">JAMES RIVER</text>
+
+  <!-- ── Belle Isle ── -->
+  <ellipse cx="432" cy="433" rx="62" ry="24" fill="#4A2E0A" fill-opacity="0.1" stroke="#4A2E0A" stroke-width="1.5"/>
+  <!-- Island hatching -->
+  <line x1="400" y1="420" x2="415" y2="448" stroke="#4A2E0A" stroke-width="0.6"/>
+  <line x1="418" y1="412" x2="432" y2="455" stroke="#4A2E0A" stroke-width="0.6"/>
+  <line x1="436" y1="410" x2="448" y2="452" stroke="#4A2E0A" stroke-width="0.6"/>
+  <line x1="453" y1="415" x2="463" y2="447" stroke="#4A2E0A" stroke-width="0.6"/>
+  <text x="432" y="437" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#4A2E0A">Belle Isle</text>
+
+  <!-- ── Downtown street grid ── -->
+  <!-- Downtown Richmond — bounded roughly (375,155) to (660,315) -->
+  <!-- Streets run slightly angled (parallel to river, ~5°) - simplified as horizontal/vertical -->
+  <!-- East-West streets -->
+  <line x1="375" y1="175" x2="658" y2="175" stroke="#4A2E0A" stroke-width="1.2"/>
+  <line x1="375" y1="200" x2="658" y2="200" stroke="#4A2E0A" stroke-width="0.8"/>
+  <line x1="375" y1="220" x2="658" y2="220" stroke="#4A2E0A" stroke-width="1.4"/><!-- Broad St (main) -->
+  <line x1="375" y1="240" x2="658" y2="240" stroke="#4A2E0A" stroke-width="0.8"/>
+  <line x1="375" y1="258" x2="658" y2="258" stroke="#4A2E0A" stroke-width="0.8"/>
+  <line x1="375" y1="276" x2="658" y2="276" stroke="#4A2E0A" stroke-width="1.0"/><!-- Main St -->
+  <line x1="375" y1="294" x2="658" y2="294" stroke="#4A2E0A" stroke-width="0.8"/>
+  <line x1="375" y1="312" x2="658" y2="312" stroke="#4A2E0A" stroke-width="0.8"/>
+  <!-- North-South streets -->
+  <line x1="400" y1="155" x2="400" y2="320" stroke="#4A2E0A" stroke-width="0.8"/>
+  <line x1="428" y1="155" x2="428" y2="320" stroke="#4A2E0A" stroke-width="0.8"/>
+  <line x1="456" y1="155" x2="456" y2="320" stroke="#4A2E0A" stroke-width="1.0"/>
+  <line x1="484" y1="155" x2="484" y2="320" stroke="#4A2E0A" stroke-width="0.8"/>
+  <line x1="512" y1="155" x2="512" y2="320" stroke="#4A2E0A" stroke-width="0.8"/>
+  <line x1="540" y1="155" x2="540" y2="320" stroke="#4A2E0A" stroke-width="0.8"/>
+  <line x1="568" y1="155" x2="568" y2="320" stroke="#4A2E0A" stroke-width="0.8"/>
+  <line x1="596" y1="155" x2="596" y2="320" stroke="#4A2E0A" stroke-width="0.8"/>
+  <line x1="624" y1="155" x2="624" y2="320" stroke="#4A2E0A" stroke-width="0.8"/>
+  <line x1="652" y1="155" x2="652" y2="320" stroke="#4A2E0A" stroke-width="0.8"/>
+  <!-- Capitol grounds - small filled square -->
+  <rect x="492" y="223" width="32" height="26" fill="#4A2E0A" fill-opacity="0.2" stroke="#4A2E0A" stroke-width="1"/>
+  <text x="508" y="248" text-anchor="middle" font-family="Georgia,serif" font-size="7" fill="#4A2E0A">Capitol</text>
+
+  <!-- ── The Fan District ── -->
+  <!-- A wedge of streets radiating west-southwest from Monroe Park (~x=375) -->
+  <!-- Bounding lines of the Fan -->
+  <line x1="140" y1="220" x2="375" y2="155" stroke="#4A2E0A" stroke-width="1.0"/><!-- Broad St extension -->
+  <line x1="140" y1="310" x2="375" y2="310" stroke="#4A2E0A" stroke-width="0.8"/><!-- Cary St -->
+  <!-- Radiating streets (numbered) -->
+  <line x1="375" y1="220" x2="140" y2="230" stroke="#4A2E0A" stroke-width="0.6"/>
+  <line x1="375" y1="240" x2="140" y2="246" stroke="#4A2E0A" stroke-width="0.6"/>
+  <line x1="375" y1="258" x2="140" y2="263" stroke="#4A2E0A" stroke-width="0.6"/>
+  <line x1="375" y1="276" x2="140" y2="278" stroke="#4A2E0A" stroke-width="0.6"/>
+  <line x1="375" y1="294" x2="140" y2="294" stroke="#4A2E0A" stroke-width="0.6"/>
+  <!-- Cross streets (perpendicular to fan radials) — slightly curved to follow fan -->
+  <path d="M200,222 C200,232 200,278 200,310" stroke="#4A2E0A" stroke-width="0.6"/>
+  <path d="M240,221 C240,231 240,277 240,310" stroke="#4A2E0A" stroke-width="0.6"/>
+  <path d="M280,220 C280,230 280,276 280,310" stroke="#4A2E0A" stroke-width="0.6"/>
+  <path d="M320,218 C320,228 320,275 320,310" stroke="#4A2E0A" stroke-width="0.6"/>
+  <path d="M355,165 C355,220 355,275 355,315" stroke="#4A2E0A" stroke-width="0.7"/>
+  <!-- Monument Ave (the great boulevard through the Fan) -->
+  <line x1="140" y1="196" x2="375" y2="175" stroke="#4A2E0A" stroke-width="1.6"/>
+  <text x="255" y="192" text-anchor="middle" font-family="Georgia,serif" font-size="8" font-style="italic" fill="#4A2E0A" transform="rotate(-3,255,192)">Monument Ave.</text>
+
+  <!-- ── Oregon Hill south of downtown ── -->
+  <path d="M310,332 C330,318 360,312 380,318" stroke="#4A2E0A" stroke-width="1.0" stroke-linecap="round"/>
+  <path d="M315,342 C335,328 363,322 383,328" stroke="#4A2E0A" stroke-width="0.7"/>
+
+  <!-- ── Shockoe Bottom (east of downtown, creek/low area) ── -->
+  <path d="M660,240 C662,265 660,285 655,312" stroke="#2A4A5A" stroke-width="1.2" stroke-dasharray="4,3"/>
+  <text x="680" y="272" font-family="Georgia,serif" font-size="8" font-style="italic" fill="#2A4A5A">Shockoe</text>
+  <text x="680" y="283" font-family="Georgia,serif" font-size="8" font-style="italic" fill="#2A4A5A">Creek</text>
+
+  <!-- ── Location dot & city name ── -->
+  <circle cx="508" cy="253" r="5" fill="#4A2E0A" fill-opacity="0.5" stroke="#4A2E0A" stroke-width="1"/>
+  <text x="400" y="95" text-anchor="middle" font-family="Georgia,serif" font-size="28" font-weight="bold" fill="#4A2E0A" letter-spacing="5">RICHMOND</text>
+  <text x="400" y="113" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#4A2E0A" letter-spacing="3">VIRGINIA</text>
+  <line x1="300" y1="118" x2="500" y2="118" stroke="#4A2E0A" stroke-width="0.6"/>
+
+  <!-- ── Compass rose ── -->
+  <g transform="translate(680,430)">
+    <!-- Outer circle -->
+    <circle cx="0" cy="0" r="40" stroke="#4A2E0A" stroke-width="1"/>
+    <circle cx="0" cy="0" r="32" stroke="#4A2E0A" stroke-width="0.5"/>
+    <!-- Cardinal arms -->
+    <polygon points="0,-38 -6,-12 0,-22 6,-12" fill="#4A2E0A"/>
+    <polygon points="0,38  -6,12  0,22  6,12"  fill="#4A2E0A" fill-opacity="0.5"/>
+    <polygon points="-38,0 -12,-6 -22,0 -12,6" fill="#4A2E0A" fill-opacity="0.5"/>
+    <polygon points="38,0  12,-6  22,0  12,6"  fill="#4A2E0A" fill-opacity="0.5"/>
+    <!-- Intercardinal tick marks -->
+    <line x1="22"  y1="-22" x2="26"  y2="-26" stroke="#4A2E0A" stroke-width="0.8"/>
+    <line x1="-22" y1="-22" x2="-26" y2="-26" stroke="#4A2E0A" stroke-width="0.8"/>
+    <line x1="22"  y1="22"  x2="26"  y2="26"  stroke="#4A2E0A" stroke-width="0.8"/>
+    <line x1="-22" y1="22"  x2="-26" y2="26"  stroke="#4A2E0A" stroke-width="0.8"/>
+    <!-- Center dot -->
+    <circle cx="0" cy="0" r="3" fill="#4A2E0A"/>
+    <!-- Cardinal letters -->
+    <text x="0"   y="-46" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#4A2E0A">N</text>
+    <text x="0"   y="56"  text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#4A2E0A">S</text>
+    <text x="-50" y="4"   text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#4A2E0A">W</text>
+    <text x="50"  y="4"   text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#4A2E0A">E</text>
+  </g>
+
+  <!-- ── Cartouche / title box ── -->
+  <rect x="35" y="395" width="190" height="110" rx="4" stroke="#4A2E0A" stroke-width="1.5" fill="#4A2E0A" fill-opacity="0.05"/>
+  <rect x="40" y="400" width="180" height="100" rx="2" stroke="#4A2E0A" stroke-width="0.5" fill="none"/>
+  <text x="130" y="422" text-anchor="middle" font-family="Georgia,serif" font-size="11" font-weight="bold" fill="#4A2E0A">A PLAN OF THE</text>
+  <text x="130" y="438" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-weight="bold" fill="#4A2E0A">CITY OF RICHMOND</text>
+  <text x="130" y="455" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="#4A2E0A">Capital of Virginia</text>
+  <line x1="55" y1="461" x2="205" y2="461" stroke="#4A2E0A" stroke-width="0.6"/>
+  <text x="130" y="475" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#4A2E0A">At the Falls of the James River</text>
+  <text x="130" y="492" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#4A2E0A">37°32′ N — 77°28′ W</text>
+</svg>
