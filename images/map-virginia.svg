@@ -1,226 +1,409 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580">
 
-  <!-- Antique map — Commonwealth of Virginia -->
+  <!-- ══════════════════════════════════════════════════════════
+       COMMONWEALTH OF VIRGINIA — Antique State Map
+       Palette: sepia ink #4A2E0A, water #6B9BB8/#2A4A5A,
+       land zones amber/tan, parks sage, vellum base #F5EED8
+       ══════════════════════════════════════════════════════════ -->
 
-  <!-- ── Decorative border ── -->
-  <rect x="12" y="12" width="876" height="556" stroke="#4A2E0A" stroke-width="2.5"/>
-  <rect x="20" y="20" width="860" height="540" stroke="#4A2E0A" stroke-width="0.8"/>
-  <rect x="15" y="15" width="870" height="550" stroke="#4A2E0A" stroke-width="0.5"/>
-  <!-- Corner decorations -->
-  <rect x="12"  y="12"  width="26" height="26" fill="#4A2E0A" fill-opacity="0.12"/>
-  <rect x="862" y="12"  width="26" height="26" fill="#4A2E0A" fill-opacity="0.12"/>
-  <rect x="12"  y="542" width="26" height="26" fill="#4A2E0A" fill-opacity="0.12"/>
-  <rect x="862" y="542" width="26" height="26" fill="#4A2E0A" fill-opacity="0.12"/>
+  <!-- ── Base background (vellum parchment) ── -->
+  <rect x="0" y="0" width="900" height="580" fill="#F5EED8"/>
 
-  <!-- ── Graticule ── -->
-  <line x1="25" y1="145" x2="875" y2="145" stroke="#4A2E0A" stroke-width="0.35" stroke-dasharray="5,5"/>
-  <line x1="25" y1="290" x2="875" y2="290" stroke="#4A2E0A" stroke-width="0.35" stroke-dasharray="5,5"/>
-  <line x1="25" y1="435" x2="875" y2="435" stroke="#4A2E0A" stroke-width="0.35" stroke-dasharray="5,5"/>
-  <line x1="220" y1="25" x2="220" y2="555" stroke="#4A2E0A" stroke-width="0.35" stroke-dasharray="5,5"/>
-  <line x1="450" y1="25" x2="450" y2="555" stroke="#4A2E0A" stroke-width="0.35" stroke-dasharray="5,5"/>
-  <line x1="680" y1="25" x2="680" y2="555" stroke="#4A2E0A" stroke-width="0.35" stroke-dasharray="5,5"/>
+  <!-- ── Decorative border (double rect) ── -->
+  <rect x="10" y="10" width="880" height="560" stroke="#4A2E0A" stroke-width="2.8" fill="none"/>
+  <rect x="18" y="18" width="864" height="544" stroke="#4A2E0A" stroke-width="0.9" fill="none"/>
+  <!-- Corner accent fills -->
+  <rect x="10"  y="10"  width="28" height="28" fill="#4A2E0A" fill-opacity="0.12"/>
+  <rect x="862" y="10"  width="28" height="28" fill="#4A2E0A" fill-opacity="0.12"/>
+  <rect x="10"  y="542" width="28" height="28" fill="#4A2E0A" fill-opacity="0.12"/>
+  <rect x="862" y="542" width="28" height="28" fill="#4A2E0A" fill-opacity="0.12"/>
 
-  <!-- ── Virginia State Outline ── -->
-  <!-- Virginia is roughly rectangular, widening east, with Chesapeake Bay indentation -->
-  <!-- Working clockwise from NW corner -->
+  <!-- ── Graticule (dashed latitude/longitude guides) ── -->
+  <line x1="23" y1="145" x2="877" y2="145" stroke="#4A2E0A" stroke-width="0.35" stroke-dasharray="5,5"/>
+  <line x1="23" y1="290" x2="877" y2="290" stroke="#4A2E0A" stroke-width="0.35" stroke-dasharray="5,5"/>
+  <line x1="23" y1="435" x2="877" y2="435" stroke="#4A2E0A" stroke-width="0.35" stroke-dasharray="5,5"/>
+  <line x1="220" y1="23" x2="220" y2="557" stroke="#4A2E0A" stroke-width="0.35" stroke-dasharray="5,5"/>
+  <line x1="450" y1="23" x2="450" y2="557" stroke="#4A2E0A" stroke-width="0.35" stroke-dasharray="5,5"/>
+  <line x1="680" y1="23" x2="680" y2="557" stroke="#4A2E0A" stroke-width="0.35" stroke-dasharray="5,5"/>
+
+  <!-- ── Chesapeake Bay water fill ── -->
+  <!-- Broad bay body east of the Tidewater region -->
+  <path d="M 810,155 C 830,162 848,178 858,200 C 866,220 866,245 860,268
+           C 854,290 842,310 826,326 C 812,340 795,350 778,356
+           L 762,360 C 748,362 734,360 722,355 L 708,348
+           C 694,340 682,328 672,315 L 664,302
+           C 658,292 654,283 654,275 L 656,262
+           C 660,252 668,244 680,240 L 695,236
+           C 710,232 726,232 740,234 L 754,238
+           C 766,242 776,248 784,256 L 790,265
+           C 796,274 798,284 796,294 L 792,306
+           C 788,316 782,324 774,330
+           L 760,340 C 748,347 734,350 722,349
+           L 810,155 Z"
+        fill="#6B9BB8" fill-opacity="0.65" stroke="#2A4A5A" stroke-width="0.6"/>
+
+  <!-- Atlantic Ocean suggestion (far east) -->
+  <path d="M 858,150 C 874,160 882,180 882,205 C 882,230 875,255 864,275
+           C 854,295 840,312 824,324"
+        stroke="#2A4A5A" stroke-width="1.0" stroke-dasharray="4,3" fill="none"/>
+
+  <!-- ── Virginia State Outline — filled vellum base ── -->
+  <!-- Working clockwise from NW panhandle corner -->
   <path d="
-    M 72,145
-    L 72,148
-    C 80,148 88,150 95,152
-    L 108,150
-    C 116,148 125,148 135,150
-    L 178,142
-    C 200,138 225,132 255,128
-    C 285,124 315,120 345,116
-    C 375,112 410,108 445,104
-    C 480,100 515,98  548,96
-    C 580,95  612,96  645,98
-    C 678,100 710,104 738,110
-    C 760,115 780,120 798,128
-    C 812,134 820,140 825,148
-    L 828,160
-    C 829,168 828,175 826,180
-    L 820,192
-    C 814,205 806,215 796,222
-    L 780,230
-    C 762,238 742,244 720,248
-    L 695,252
-    C 675,255 655,258 638,262
-    C 622,265 608,270 596,276
-    C 582,282 570,290 558,298
-    L 545,308
-    C 534,316 524,323 514,328
-    L 498,334
-    C 482,340 466,344 450,346
-    C 434,348 418,348 402,346
-    L 388,343
-    C 374,340 360,335 348,328
-    L 336,320
-    C 324,312 314,302 305,292
-    L 298,282
-    C 292,273 286,265 280,260
-    C 274,255 268,252 262,251
-    L 248,252
-    C 234,253 220,256 206,260
-    L 192,265
-    C 180,269 168,274 158,280
-    L 148,287
-    C 138,293 128,300 118,308
-    L 108,316
-    C 98,324 88,332 80,340
-    L 75,348
-    C 72,353 70,358 70,364
-    L 70,380
-    C 70,390 72,398 75,406
-    L 80,418
-    C 84,428 88,437 90,445
-    L 92,458
-    C 92,464 91,470 90,476
-    L 87,488
-    C 85,496 82,503 78,510
-    L 74,520
-    C 72,524 71,528 72,531
-    L 74,536
-    C 77,540 80,543 83,544
-    L 100,544
-    C 112,544 122,542 132,538
-    L 148,530
-    C 160,524 172,516 182,507
-    L 194,496
-    C 204,487 213,477 220,467
-    L 228,456
-    C 234,447 239,438 242,430
-    L 244,420
-    C 244,413 243,407 240,402
-    L 235,393
-    C 230,384 224,376 218,370
-    L 212,363
-    C 206,358 200,354 194,352
-    L 182,350
-    C 172,349 162,350 152,353
-    L 140,357
-    C 130,361 120,366 112,372
-    L 104,378
-    C 100,381 97,384 95,387
-    L 93,394
-    C 92,400 93,405 95,410
-    L 100,420
-    C 104,428 110,435 116,440
-    L 124,446
-    C 128,448 132,449 136,449
-    L 145,447
-    C 152,444 158,440 164,434
-    L 170,427
-    C 174,421 177,415 179,409
-    L 180,401
-    C 180,394 178,388 175,383
-    L 170,375
-    C 166,369 162,364 158,360
-    L 154,356
-    C 150,352 146,350 142,350
-    L 135,351
-    C 128,353 122,358 117,364
-    L 112,372
+    M 68,178
+    L 68,185 C 76,186 84,186 92,184
+    L 108,180 C 120,178 132,176 146,176
+    L 168,175 C 185,174 202,173 220,171
+    C 240,169 260,166 282,163
+    C 304,160 328,156 355,152
+    C 382,148 410,144 440,140
+    C 468,136 496,132 524,129
+    C 550,126 576,124 602,122
+    C 628,120 652,120 676,122
+    C 700,124 722,128 742,134
+    C 762,140 778,148 792,158
+    C 804,166 812,176 816,188
+    L 818,200 C 819,210 818,220 815,228
+    L 810,240 C 806,250 800,258 792,264
+    L 778,272 C 764,278 748,282 732,286
+    L 714,290 C 698,293 682,296 666,300
+    C 650,304 635,310 622,318
+    C 608,326 596,336 584,347
+    L 572,358 C 560,368 548,377 535,384
+    L 520,390 C 506,396 492,400 478,402
+    C 462,404 446,403 430,399
+    L 415,393 C 400,387 386,378 374,368
+    L 362,357 C 351,347 342,336 334,326
+    L 326,316 C 318,307 310,300 302,295
+    C 294,290 286,288 278,288
+    L 262,290 C 246,293 230,298 215,306
+    L 200,314 C 186,322 174,332 162,343
+    L 150,354 C 138,365 128,376 120,388
+    L 113,400 C 108,410 105,420 104,430
+    L 104,444 C 104,455 106,466 110,476
+    L 116,490 C 120,500 124,509 126,518
+    L 128,530 C 128,536 127,541 124,545
+    L 118,550 C 113,553 107,554 100,553
+    L 82,550 C 74,547 68,543 65,537
+    L 63,528 C 62,521 64,515 68,509
+    L 76,496 C 80,488 84,480 87,471
+    L 90,458 C 91,449 91,440 89,432
+    L 84,418 C 80,407 74,397 70,386
+    L 67,372 C 65,362 65,352 68,344
+    L 74,330 C 80,318 88,308 96,300
+    L 108,289 C 118,280 128,273 138,267
+    L 152,260 C 162,255 172,251 182,250
+    L 196,250 C 206,251 214,254 220,260
+    C 226,266 230,274 234,284
+    L 240,296 C 244,306 248,316 252,324
+    L 260,336 C 268,347 278,357 290,364
+    L 304,370 C 316,375 330,377 345,376
+    L 360,373 C 374,369 387,362 398,353
+    L 410,343 C 420,333 428,322 434,311
+    L 438,299 C 440,290 440,282 437,275
+    C 434,268 428,263 420,260
+    L 406,256 C 394,253 380,252 366,253
+    L 352,256 C 338,260 324,266 312,275
+    L 300,285 C 290,294 282,305 278,317
+    L 275,330 C 273,340 274,350 278,359
+    L 284,370 C 290,380 298,388 308,394
+    L 321,399 C 332,403 344,404 356,401
+    L 368,395 C 379,389 388,380 394,370
+    L 399,359 C 402,350 402,341 399,333
+    L 393,322 C 387,312 378,304 368,299
+    L 355,295 C 344,292 332,292 320,295
+    L 308,300 C 297,306 288,315 282,326
     Z"
-    stroke="#4A2E0A" stroke-width="2.2" stroke-linejoin="round"/>
+       fill="#F5EED8" stroke="#4A2E0A" stroke-width="2.2" stroke-linejoin="round"/>
 
-  <!-- Chesapeake Bay (simplified inlet on east side) -->
-  <path d="M 825,148 C 838,165 845,185 845,210 C 845,235 838,258 826,278
-           C 814,298 798,314 780,326 C 762,338 742,346 720,350
-           L 700,352 C 685,352 670,350 656,346 L 645,342"
-        stroke="#2A4A5A" stroke-width="1.8"/>
-  <path d="M 845,210 C 848,225 848,240 845,255" stroke="#2A4A5A" stroke-width="1" stroke-dasharray="3,3"/>
+  <!-- ── Filled land zones (amber/tan shades by region) ── -->
 
-  <!-- Eastern Shore (narrow peninsula east of the bay) -->
-  <path d="M 850,148 C 860,155 865,165 865,178 C 865,200 858,220 848,238
-           C 840,254 828,268 815,278" stroke="#4A2E0A" stroke-width="1.5"/>
+  <!-- Tidewater / Hampton Roads (east, near the Bay) -->
+  <path d="M 622,318 C 638,308 655,302 672,298 L 692,294 C 708,291 724,290 738,292
+           L 752,296 C 764,302 772,310 776,320 L 778,332 C 779,342 776,352 770,360
+           L 760,370 C 750,378 738,383 724,385 L 708,385
+           C 692,384 676,379 662,370 L 648,358 C 636,346 626,333 622,318 Z"
+        fill="#D0B878" fill-opacity="0.75"/>
 
-  <!-- Bay fill suggestion -->
-  <path d="M 828,160 C 838,175 843,195 840,218 C 837,240 828,260 815,275
-           L 800,285 C 782,296 762,303 740,305 L 720,305 L 700,302 L 680,296"
-        stroke="#2A4A5A" stroke-width="0.6" fill="none"/>
+  <!-- Northern Virginia / DC suburbs (northeast) -->
+  <path d="M 742,134 C 762,140 778,148 792,158 C 804,166 812,176 816,188
+           L 818,200 C 819,210 818,220 815,228 L 810,240
+           C 806,250 800,258 792,264 L 778,272
+           C 764,278 748,282 732,286 L 714,290
+           C 700,292 686,294 672,298 L 652,304
+           C 638,308 625,314 614,322 L 602,330
+           C 615,315 626,300 636,286 C 646,272 654,258 660,244
+           C 666,230 668,218 666,206 C 664,194 658,183 648,174
+           L 636,166 C 624,158 610,152 596,148
+           C 620,136 652,128 676,122 C 700,124 722,128 742,134 Z"
+        fill="#C8B070" fill-opacity="0.70"/>
 
-  <!-- ── Blue Ridge Mountains ── (diagonal ridge line SW to NE) -->
-  <path d="M 118,460 C 145,440 175,418 210,395 C 242,374 278,354 318,334
-           C 358,315 398,298 440,284 C 476,272 514,264 550,260"
-        stroke="#4A2E0A" stroke-width="2.0" stroke-linecap="round"/>
-  <!-- Mountain hatching (small peaks) -->
-  <path d="M 145,446 L 162,427 L 178,445" stroke="#4A2E0A" stroke-width="0.8"/>
-  <path d="M 175,428 L 192,408 L 208,426" stroke="#4A2E0A" stroke-width="0.8"/>
-  <path d="M 210,410 L 228,390 L 244,408" stroke="#4A2E0A" stroke-width="0.8"/>
-  <path d="M 245,394 L 264,374 L 280,392" stroke="#4A2E0A" stroke-width="0.8"/>
-  <path d="M 278,378 L 296,359 L 314,376" stroke="#4A2E0A" stroke-width="0.8"/>
-  <path d="M 312,360 L 330,342 L 348,358" stroke="#4A2E0A" stroke-width="0.8"/>
-  <path d="M 346,344 L 364,327 L 382,342" stroke="#4A2E0A" stroke-width="0.8"/>
-  <path d="M 380,328 L 398,313 L 415,327" stroke="#4A2E0A" stroke-width="0.8"/>
-  <text x="310" y="310" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-style="italic" fill="#4A2E0A" transform="rotate(-14,310,310)">Blue Ridge Mountains</text>
+  <!-- Piedmont (center band) -->
+  <path d="M 430,399 C 446,403 462,404 478,402 L 520,390
+           C 534,384 548,377 560,368 L 572,358
+           C 582,348 592,337 600,326 L 608,314
+           C 620,298 633,284 648,272 L 664,262
+           C 676,253 690,246 706,242 L 716,240
+           C 700,244 682,250 664,258 C 645,266 626,276 608,288
+           C 590,300 573,314 556,328 C 540,342 524,356 508,368
+           C 492,380 476,390 460,397 L 445,402
+           C 440,402 435,401 430,399 Z"
+        fill="#D4B87A" fill-opacity="0.70"/>
 
-  <!-- ── James River ── -->
-  <path d="M 72,350 C 110,348 148,346 185,344 C 220,342 255,342 288,345
-           C 318,348 345,356 372,368 C 395,378 415,388 435,395
-           C 455,402 475,406 495,406 C 515,406 535,402 555,394
-           C 572,388 588,380 602,370 C 616,360 628,350 640,344
-           C 660,336 685,334 710,336 C 735,338 758,344 778,352 L 826,374"
-        stroke="#2A4A5A" stroke-width="2.2" stroke-linecap="round"/>
-  <text x="450" y="420" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#2A4A5A" letter-spacing="2">James River</text>
+  <!-- Piedmont fill, main body -->
+  <path d="M 355,152 C 382,148 410,144 440,140 C 468,136 496,132 524,129
+           C 550,126 575,124 600,122 C 596,148 586,172 572,192
+           C 558,212 540,230 520,246 C 500,262 478,276 456,288
+           C 434,300 412,310 390,318 C 370,326 350,332 332,335
+           L 316,336 C 305,336 295,333 288,326 L 282,316
+           C 278,306 276,295 278,284 L 282,272
+           C 286,260 294,250 304,243 L 316,237
+           C 328,231 342,228 356,228 L 370,229
+           C 382,231 394,236 404,244 L 412,253
+           C 420,262 425,273 425,284 L 423,296
+           C 420,307 414,316 405,323 L 394,329
+           C 382,334 368,336 354,334 L 340,329
+           C 327,323 316,313 309,301 L 304,288
+           C 300,277 300,265 305,254 L 312,244
+           C 320,234 332,227 345,224 L 360,222
+           C 374,222 387,226 398,234 L 408,244
+           C 416,254 422,266 422,278 L 420,292
+           C 415,310 400,325 382,330 L 364,332
+           Z
+           M 355,152 C 328,156 304,160 282,163 C 262,166 244,168 226,169
+           L 215,170 C 220,165 228,158 238,152 C 255,142 278,136 304,132
+           C 325,128 348,126 372,126 C 396,126 420,128 444,132 L 355,152 Z"
+        fill="#D4B87A" fill-opacity="0.55"/>
 
-  <!-- Potomac River (northern boundary area) -->
-  <path d="M 480,118 C 510,122 540,128 568,136 C 595,144 620,154 645,164
-           C 668,173 690,183 712,192 C 730,200 748,207 766,213 L 798,228"
-        stroke="#2A4A5A" stroke-width="1.8" stroke-linecap="round"/>
-  <text x="610" y="140" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#2A4A5A" transform="rotate(12,610,140)">Potomac River</text>
+  <!-- Shenandoah Valley (central-northwest, between mountain ranges) -->
+  <path d="M 168,175 C 185,174 202,173 220,171 C 240,169 262,166 282,163
+           C 270,178 256,194 240,210 C 224,226 207,241 190,256
+           C 174,270 158,284 144,298 L 130,312
+           C 120,323 112,334 108,345 L 106,358
+           C 104,366 104,374 106,382 L 110,394
+           C 114,404 120,413 128,420 L 138,426
+           C 148,432 158,435 168,434 L 180,430
+           C 192,425 203,416 212,405 L 220,392
+           C 228,380 233,366 234,352 L 232,338
+           C 230,325 224,313 215,304 L 204,296
+           C 194,289 182,285 170,285 L 156,287
+           C 144,290 132,297 124,307 L 116,319
+           C 110,330 107,343 108,356
+           L 104,362 C 104,374 106,386 110,398 Z"
+        fill="#CDAA6A" fill-opacity="0.60"/>
 
-  <!-- Appalachian / Allegheny ridges (further west) -->
-  <path d="M 72,340 C 82,325 94,310 106,296 C 118,282 130,270 142,260
-           C 154,250 166,242 178,238"
-        stroke="#4A2E0A" stroke-width="1.2" stroke-dasharray="4,3"/>
-  <text x="98" y="308" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#4A2E0A" transform="rotate(-40,98,308)">Allegheny</text>
+  <!-- Southwest / Appalachian highlands (far west) -->
+  <path d="M 68,178 L 68,190 C 76,191 84,190 92,188
+           L 108,184 C 120,182 132,180 146,180
+           L 168,179 C 180,178 195,177 210,176
+           C 200,188 188,202 176,218 C 162,234 148,252 136,270
+           C 124,288 113,308 104,328 L 96,348
+           C 88,366 82,384 78,402 L 74,420
+           C 70,436 68,452 68,466 L 68,484
+           C 68,498 70,510 74,520 L 78,532
+           C 80,540 80,548 78,554
+           L 68,560 L 68,178 Z"
+        fill="#C8AC6A" fill-opacity="0.65"/>
+
+  <!-- ── National Parks / Forests (sage green) ── -->
+  <!-- Shenandoah National Park (Blue Ridge spine, NW of center) -->
+  <path d="M 248,290 C 260,278 276,268 294,262 L 312,258
+           C 328,256 344,258 358,264 L 372,272
+           C 382,280 388,290 386,302 L 380,314
+           C 373,325 362,333 348,337 L 332,339
+           C 317,339 303,335 290,326 L 278,314
+           C 267,303 258,296 248,290 Z"
+        fill="#8BAE72" fill-opacity="0.55"/>
+
+  <!-- George Washington National Forest (Shenandoah Valley flanks) -->
+  <path d="M 130,310 C 142,298 156,290 172,286 L 188,284
+           C 200,284 212,288 220,296 L 226,308
+           C 230,318 228,330 222,340 L 214,350
+           C 206,359 196,365 184,366 L 170,365
+           C 156,363 144,356 136,346 L 128,334
+           C 124,324 124,316 130,310 Z"
+        fill="#8BAE72" fill-opacity="0.50"/>
+
+  <!-- Jefferson National Forest (southwest) -->
+  <path d="M 90,385 C 100,373 114,365 130,362 L 146,362
+           C 158,363 168,368 176,376 L 180,388
+           C 181,398 177,408 170,416 L 160,423
+           C 150,429 138,431 126,428 L 113,422
+           C 102,414 94,404 90,392 L 90,385 Z"
+        fill="#8BAE72" fill-opacity="0.50"/>
+
+  <!-- ── James River (sepia water, stroke only) ── -->
+  <path d="M 68,358 C 98,356 128,354 158,354 C 188,354 218,356 245,362
+           C 272,368 296,378 318,390 C 338,400 356,412 374,422
+           C 390,430 406,436 424,439 C 440,441 456,440 472,435
+           C 488,430 502,421 516,410 C 530,399 542,386 554,374
+           C 564,364 574,355 586,348 C 598,341 612,336 628,334
+           C 648,332 670,334 692,340 C 712,346 730,355 746,365
+           L 778,385 C 798,396 814,408 826,420"
+        stroke="#2A4A5A" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+  <text x="470" y="448" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#2A4A5A" letter-spacing="2">James River</text>
+
+  <!-- Rapidan / Rappahannock River -->
+  <path d="M 300,228 C 326,230 352,234 378,240 C 402,246 424,255 446,266
+           C 468,277 488,290 508,302 C 528,314 546,325 564,334 L 580,342"
+        stroke="#2A4A5A" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+  <text x="455" y="295" text-anchor="middle" font-family="Georgia,serif" font-size="8" font-style="italic" fill="#2A4A5A" transform="rotate(10,455,295)">Rappahannock R.</text>
+
+  <!-- Potomac River (northern border) -->
+  <path d="M 440,140 C 464,136 488,133 512,130 C 536,128 560,127 584,127
+           C 608,128 630,132 652,138 C 672,144 690,152 706,162
+           C 720,170 732,180 742,190 L 750,202
+           C 756,212 760,222 760,232 L 758,244
+           C 754,255 746,265 736,273 L 722,280"
+        stroke="#2A4A5A" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  <text x="590" y="124" text-anchor="middle" font-family="Georgia,serif" font-size="8" font-style="italic" fill="#2A4A5A" letter-spacing="1">Potomac River</text>
+
+  <!-- New River (southwest) -->
+  <path d="M 68,430 C 82,424 96,418 110,413 C 124,408 138,405 150,405
+           C 162,405 172,408 180,415 L 186,424
+           C 190,432 191,442 188,451 L 182,460"
+        stroke="#2A4A5A" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+  <text x="124" y="398" text-anchor="middle" font-family="Georgia,serif" font-size="8" font-style="italic" fill="#2A4A5A" transform="rotate(-12,124,398)">New River</text>
+
+  <!-- Shenandoah River -->
+  <path d="M 220,170 C 226,186 230,204 230,222 C 230,238 226,254 220,268
+           C 214,282 206,294 196,304 L 184,314
+           C 173,323 161,330 148,335"
+        stroke="#2A4A5A" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+  <text x="192" y="246" text-anchor="middle" font-family="Georgia,serif" font-size="7" font-style="italic" fill="#2A4A5A" transform="rotate(-78,192,246)">Shenandoah R.</text>
+
+  <!-- ── Blue Ridge Mountains (diagonal ridge SW to NE) ── -->
+  <path d="M 108,448 C 128,432 150,415 174,399 C 198,383 224,368 252,354
+           C 280,340 308,328 338,316 C 366,306 396,297 426,291
+           C 454,286 482,284 510,283 C 534,283 556,285 578,290"
+        stroke="#4A2E0A" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  <!-- Mountain peak hatching triangles -->
+  <polygon points="134,438 146,421 158,437" stroke="#4A2E0A" stroke-width="0.9" fill="#D4B87A" fill-opacity="0.4"/>
+  <polygon points="158,424 170,408 182,424" stroke="#4A2E0A" stroke-width="0.9" fill="#D4B87A" fill-opacity="0.4"/>
+  <polygon points="184,412 196,396 208,412" stroke="#4A2E0A" stroke-width="0.9" fill="#D4B87A" fill-opacity="0.4"/>
+  <polygon points="210,400 222,384 234,400" stroke="#4A2E0A" stroke-width="0.9" fill="#D4B87A" fill-opacity="0.4"/>
+  <polygon points="238,386 250,371 262,386" stroke="#4A2E0A" stroke-width="0.9" fill="#D4B87A" fill-opacity="0.4"/>
+  <polygon points="265,373 277,358 289,373" stroke="#4A2E0A" stroke-width="0.9" fill="#D4B87A" fill-opacity="0.4"/>
+  <polygon points="292,360 304,346 316,360" stroke="#4A2E0A" stroke-width="0.9" fill="#D4B87A" fill-opacity="0.4"/>
+  <polygon points="320,348 332,334 344,348" stroke="#4A2E0A" stroke-width="0.9" fill="#D4B87A" fill-opacity="0.4"/>
+  <polygon points="348,337 360,323 372,337" stroke="#4A2E0A" stroke-width="0.9" fill="#D4B87A" fill-opacity="0.4"/>
+  <polygon points="376,326 388,313 400,326" stroke="#4A2E0A" stroke-width="0.9" fill="#D4B87A" fill-opacity="0.4"/>
+  <text x="342" y="295" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-style="italic" fill="#4A2E0A" transform="rotate(-15,342,295)">Blue Ridge Mountains</text>
+
+  <!-- Allegheny / Appalachian ridges (western flanks) -->
+  <path d="M 68,300 C 80,285 94,270 108,256 C 122,242 136,230 150,220
+           C 164,210 178,202 192,198 L 208,196"
+        stroke="#4A2E0A" stroke-width="1.2" stroke-dasharray="5,3" fill="none"/>
+  <text x="118" y="228" text-anchor="middle" font-family="Georgia,serif" font-size="8" font-style="italic" fill="#4A2E0A" transform="rotate(-50,118,228)">Alleghenies</text>
+
+  <!-- Eastern Shore (narrow peninsula east of Bay) -->
+  <path d="M 832,155 C 842,163 849,174 852,187 C 855,200 854,215 849,230
+           C 844,244 836,256 826,266 C 818,276 808,284 797,289"
+        stroke="#4A2E0A" stroke-width="1.4" fill="none"/>
+  <!-- Eastern Shore land shading -->
+  <path d="M 832,155 C 842,163 849,174 852,187 C 855,200 854,215 849,230
+           C 844,244 836,256 826,266 C 818,276 808,284 797,289
+           L 820,300 C 832,292 844,280 852,265 C 862,248 867,228 866,208
+           C 865,188 858,170 845,156 Z"
+        fill="#D4B87A" fill-opacity="0.40" stroke="none"/>
+  <text x="852" y="222" text-anchor="middle" font-family="Georgia,serif" font-size="7" font-style="italic" fill="#4A2E0A" transform="rotate(80,852,222)">Eastern Shore</text>
 
   <!-- ── City markers ── -->
-  <!-- Richmond -->
-  <circle cx="498" cy="388" r="6" fill="#4A2E0A" fill-opacity="0.4" stroke="#4A2E0A" stroke-width="1.2"/>
-  <text x="498" y="374" text-anchor="middle" font-family="Georgia,serif" font-size="11" font-weight="bold" fill="#4A2E0A">Richmond</text>
-  <!-- Norfolk/Hampton Roads -->
-  <circle cx="770" cy="336" r="5" fill="#4A2E0A" fill-opacity="0.4" stroke="#4A2E0A" stroke-width="1"/>
-  <text x="790" y="330" font-family="Georgia,serif" font-size="9" fill="#4A2E0A">Norfolk</text>
-  <!-- Alexandria/Arlington -->
-  <circle cx="736" cy="184" r="4" fill="#4A2E0A" fill-opacity="0.4" stroke="#4A2E0A" stroke-width="1"/>
-  <text x="756" y="180" font-family="Georgia,serif" font-size="9" fill="#4A2E0A">Alexandria</text>
-  <!-- Roanoke -->
-  <circle cx="320" cy="390" r="4" fill="#4A2E0A" fill-opacity="0.3" stroke="#4A2E0A" stroke-width="1"/>
-  <text x="330" y="386" font-family="Georgia,serif" font-size="9" fill="#4A2E0A">Roanoke</text>
-  <!-- Charlottesville -->
-  <circle cx="558" cy="348" r="4" fill="#4A2E0A" fill-opacity="0.3" stroke="#4A2E0A" stroke-width="1"/>
-  <text x="568" y="344" font-family="Georgia,serif" font-size="9" fill="#4A2E0A">Charlottesville</text>
+  <!-- Richmond (state capital, center-east) -->
+  <circle cx="498" cy="390" r="7" fill="#4A2E0A" fill-opacity="0.35" stroke="#4A2E0A" stroke-width="1.4"/>
+  <circle cx="498" cy="390" r="2.5" fill="#4A2E0A"/>
+  <text x="498" y="375" text-anchor="middle" font-family="Georgia,serif" font-size="12" font-weight="bold" fill="#4A2E0A">Richmond</text>
 
-  <!-- ── Title ── -->
-  <text x="450" y="68" text-anchor="middle" font-family="Georgia,serif" font-size="30" font-weight="bold" fill="#4A2E0A" letter-spacing="6">VIRGINIA</text>
-  <text x="450" y="88" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#4A2E0A" letter-spacing="3">SIC SEMPER TYRANNIS</text>
-  <line x1="330" y1="93" x2="570" y2="93" stroke="#4A2E0A" stroke-width="0.8"/>
+  <!-- Norfolk / Hampton Roads (southeast coast) -->
+  <circle cx="752" cy="348" r="5.5" fill="#4A2E0A" fill-opacity="0.30" stroke="#4A2E0A" stroke-width="1.1"/>
+  <circle cx="752" cy="348" r="2" fill="#4A2E0A"/>
+  <text x="752" y="335" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-weight="bold" fill="#4A2E0A">Norfolk</text>
 
-  <!-- ── Compass rose ── -->
-  <g transform="translate(130,150)">
-    <circle cx="0" cy="0" r="36" stroke="#4A2E0A" stroke-width="1"/>
-    <circle cx="0" cy="0" r="28" stroke="#4A2E0A" stroke-width="0.5"/>
-    <polygon points="0,-33 -6,-10 0,-18 6,-10" fill="#4A2E0A"/>
-    <polygon points="0,33  -6,10  0,18  6,10"  fill="#4A2E0A" fill-opacity="0.5"/>
-    <polygon points="-33,0 -10,-5 -18,0 -10,5" fill="#4A2E0A" fill-opacity="0.5"/>
-    <polygon points="33,0  10,-5  18,0  10,5"  fill="#4A2E0A" fill-opacity="0.5"/>
-    <circle cx="0" cy="0" r="2.5" fill="#4A2E0A"/>
-    <text x="0"   y="-42" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#4A2E0A">N</text>
-    <text x="0"   y="51"  text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#4A2E0A">S</text>
-    <text x="-45" y="4"   text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#4A2E0A">W</text>
-    <text x="45"  y="4"   text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#4A2E0A">E</text>
+  <!-- Alexandria (northeast, near DC) -->
+  <circle cx="736" cy="228" r="5" fill="#4A2E0A" fill-opacity="0.30" stroke="#4A2E0A" stroke-width="1.0"/>
+  <circle cx="736" cy="228" r="2" fill="#4A2E0A"/>
+  <text x="736" y="215" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-weight="bold" fill="#4A2E0A">Alexandria</text>
+
+  <!-- Roanoke (west-center, Shenandoah Valley) -->
+  <circle cx="268" cy="392" r="5" fill="#4A2E0A" fill-opacity="0.30" stroke="#4A2E0A" stroke-width="1.0"/>
+  <circle cx="268" cy="392" r="2" fill="#4A2E0A"/>
+  <text x="268" y="380" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-weight="bold" fill="#4A2E0A">Roanoke</text>
+
+  <!-- Charlottesville (center, Piedmont) -->
+  <circle cx="438" cy="334" r="4.5" fill="#4A2E0A" fill-opacity="0.30" stroke="#4A2E0A" stroke-width="1.0"/>
+  <circle cx="438" cy="334" r="1.8" fill="#4A2E0A"/>
+  <text x="438" y="323" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#4A2E0A">Charlottesville</text>
+
+  <!-- Fredericksburg -->
+  <circle cx="582" cy="260" r="4" fill="#4A2E0A" fill-opacity="0.25" stroke="#4A2E0A" stroke-width="0.9"/>
+  <text x="600" y="258" font-family="Georgia,serif" font-size="8" fill="#4A2E0A">Fredericksburg</text>
+
+  <!-- Winchester (Shenandoah Valley north) -->
+  <circle cx="354" cy="196" r="4" fill="#4A2E0A" fill-opacity="0.25" stroke="#4A2E0A" stroke-width="0.9"/>
+  <text x="364" y="192" font-family="Georgia,serif" font-size="8" fill="#4A2E0A">Winchester</text>
+
+  <!-- ── Region labels ── -->
+  <text x="152" y="350" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#4A2E0A" transform="rotate(-70,152,350)">Shenandoah</text>
+  <text x="152" y="372" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#4A2E0A" transform="rotate(-70,152,372)">Valley</text>
+  <text x="85" y="370" text-anchor="middle" font-family="Georgia,serif" font-size="8" font-style="italic" fill="#4A2E0A" transform="rotate(-80,85,370)">Appalachian Highlands</text>
+  <text x="620" y="268" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-style="italic" fill="#4A2E0A">Piedmont</text>
+  <text x="698" y="318" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#4A2E0A">Tidewater</text>
+
+  <!-- ── Title at top ── -->
+  <text x="450" y="58" text-anchor="middle" font-family="Georgia,serif" font-size="32" font-weight="bold" fill="#4A2E0A" letter-spacing="8">VIRGINIA</text>
+  <text x="450" y="80" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#4A2E0A" letter-spacing="4">SIC SEMPER TYRANNIS</text>
+  <line x1="320" y1="86" x2="580" y2="86" stroke="#4A2E0A" stroke-width="1.0"/>
+  <line x1="330" y1="89" x2="570" y2="89" stroke="#4A2E0A" stroke-width="0.4"/>
+
+  <!-- ── Compass Rose (upper left, amber fill background) ── -->
+  <g transform="translate(118,148)">
+    <circle cx="0" cy="0" r="40" fill="#D4B87A" fill-opacity="0.30" stroke="#4A2E0A" stroke-width="1.1"/>
+    <circle cx="0" cy="0" r="32" fill="none" stroke="#4A2E0A" stroke-width="0.5"/>
+    <!-- N arrow (dark) -->
+    <polygon points="0,-37 -6,-12 0,-20 6,-12" fill="#4A2E0A"/>
+    <!-- S arrow (half-tone) -->
+    <polygon points="0,37  -6,12  0,20  6,12"  fill="#4A2E0A" fill-opacity="0.45"/>
+    <!-- W arrow -->
+    <polygon points="-37,0 -12,-5 -20,0 -12,5" fill="#4A2E0A" fill-opacity="0.45"/>
+    <!-- E arrow -->
+    <polygon points="37,0  12,-5  20,0  12,5"  fill="#4A2E0A" fill-opacity="0.45"/>
+    <!-- Intermediate points -->
+    <polygon points="-26,-26 -10,-18 -18,-10" fill="#4A2E0A" fill-opacity="0.25"/>
+    <polygon points="26,-26  10,-18  18,-10" fill="#4A2E0A" fill-opacity="0.25"/>
+    <polygon points="-26,26  -10,18  -18,10" fill="#4A2E0A" fill-opacity="0.25"/>
+    <polygon points="26,26   10,18   18,10"  fill="#4A2E0A" fill-opacity="0.25"/>
+    <circle cx="0" cy="0" r="3.5" fill="#4A2E0A"/>
+    <circle cx="0" cy="0" r="1.5" fill="#F5EED8"/>
+    <text x="0"   y="-48" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-weight="bold" fill="#4A2E0A">N</text>
+    <text x="0"   y="56"  text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#4A2E0A">S</text>
+    <text x="-50" y="4"   text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#4A2E0A">W</text>
+    <text x="50"  y="4"   text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#4A2E0A">E</text>
   </g>
 
-  <!-- ── Cartouche ── -->
-  <rect x="32" y="430" width="188" height="108" rx="4" stroke="#4A2E0A" stroke-width="1.5" fill="#4A2E0A" fill-opacity="0.05"/>
-  <rect x="37" y="435" width="178" height="98"  rx="2" stroke="#4A2E0A" stroke-width="0.5"/>
-  <text x="126" y="454" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-weight="bold" fill="#4A2E0A">A MAP OF THE</text>
-  <text x="126" y="470" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-weight="bold" fill="#4A2E0A">COMMONWEALTH</text>
-  <text x="126" y="486" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-weight="bold" fill="#4A2E0A">OF VIRGINIA</text>
-  <line x1="48" y1="492" x2="204" y2="492" stroke="#4A2E0A" stroke-width="0.6"/>
-  <text x="126" y="506" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#4A2E0A">Showing Counties &amp; Principal</text>
-  <text x="126" y="519" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#4A2E0A">Rivers of the Old Dominion</text>
-  <text x="126" y="532" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#4A2E0A">36°31′–39°28′ N</text>
+  <!-- ── Cartouche (lower left, amber/tan fill background) ── -->
+  <rect x="28" y="446" width="195" height="122" rx="5" fill="#D4B87A" fill-opacity="0.28" stroke="#4A2E0A" stroke-width="1.6"/>
+  <rect x="34" y="452" width="183" height="110" rx="3" fill="none" stroke="#4A2E0A" stroke-width="0.5"/>
+  <text x="125" y="472" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-weight="bold" fill="#4A2E0A" letter-spacing="1">A MAP OF THE</text>
+  <text x="125" y="490" text-anchor="middle" font-family="Georgia,serif" font-size="14" font-weight="bold" fill="#4A2E0A" letter-spacing="1">COMMONWEALTH</text>
+  <text x="125" y="507" text-anchor="middle" font-family="Georgia,serif" font-size="14" font-weight="bold" fill="#4A2E0A" letter-spacing="1">OF VIRGINIA</text>
+  <line x1="44"  y1="513" x2="206" y2="513" stroke="#4A2E0A" stroke-width="0.7"/>
+  <text x="125" y="526" text-anchor="middle" font-family="Georgia,serif" font-size="8" font-style="italic" fill="#4A2E0A">Shewing Counties, Rivers</text>
+  <text x="125" y="538" text-anchor="middle" font-family="Georgia,serif" font-size="8" font-style="italic" fill="#4A2E0A">&amp; Settlements of the Old Dominion</text>
+  <text x="125" y="552" text-anchor="middle" font-family="Georgia,serif" font-size="7.5" fill="#4A2E0A">36°32′–39°28′ N  75°14′–83°40′ W</text>
+  <text x="125" y="562" text-anchor="middle" font-family="Georgia,serif" font-size="7" fill="#4A2E0A">© ATLAS ATELIER  2026</text>
+
+  <!-- ── Scale bar (lower right) ── -->
+  <g transform="translate(655,530)">
+    <line x1="0" y1="0" x2="160" y2="0" stroke="#4A2E0A" stroke-width="1.0"/>
+    <line x1="0"   y1="-4" x2="0"   y2="4" stroke="#4A2E0A" stroke-width="1.0"/>
+    <line x1="80"  y1="-3" x2="80"  y2="3" stroke="#4A2E0A" stroke-width="0.8"/>
+    <line x1="160" y1="-4" x2="160" y2="4" stroke="#4A2E0A" stroke-width="1.0"/>
+    <rect x="0"  y="-3" width="40"  height="6" fill="#4A2E0A" fill-opacity="0.6"/>
+    <rect x="80" y="-3" width="40"  height="6" fill="#4A2E0A" fill-opacity="0.6"/>
+    <text x="0"   y="-9" text-anchor="middle" font-family="Georgia,serif" font-size="7" fill="#4A2E0A">0</text>
+    <text x="80"  y="-9" text-anchor="middle" font-family="Georgia,serif" font-size="7" fill="#4A2E0A">100</text>
+    <text x="160" y="-9" text-anchor="middle" font-family="Georgia,serif" font-size="7" fill="#4A2E0A">200</text>
+    <text x="80"  y="14" text-anchor="middle" font-family="Georgia,serif" font-size="7" font-style="italic" fill="#4A2E0A">Miles</text>
+  </g>
+
 </svg>
