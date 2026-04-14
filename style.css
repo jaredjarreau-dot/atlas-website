@@ -750,7 +750,7 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.09;
+    opacity: 0.15;
     pointer-events: none;
     z-index: 0;
 }
@@ -853,24 +853,6 @@ a {
     #subway-nav {
         display: none;
     }
-}
-
-/* ── MAP ACCENT — hero cartographic grid ─────────────────── */
-
-.hero-map-accent {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 45%;
-    height: 70%;
-    pointer-events: none;
-    opacity: 0.06;
-    overflow: hidden;
-}
-
-.hero-map-accent svg {
-    width: 100%;
-    height: 100%;
 }
 
 /* ── RESPONSIVE ───────────────────────────────────────────── */
