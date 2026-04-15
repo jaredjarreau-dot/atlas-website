@@ -3,52 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Atlas Strategies helps mid-market organizations build compensation structures that are defensible, clear, and built to last.">
-    <title>Atlas Strategies | Compensation Consulting & Job Architecture</title>
+    <meta name="description" content="Atlas Strategies helps organizations build compensation structures that are defensible, clear, and built to last.">
+    <title>Atlas Strategies | Compensation Consulting &amp; Job Architecture</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- Skip to main content (ADA) -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- Language Switcher -->
+<div id="lang-switcher" role="navigation" aria-label="Language selector">
+    <button id="lang-btn" aria-label="Switch to Spanish / Cambiar a español" onclick="toggleLang()">
+        <span class="lang-globe" aria-hidden="true">&#127760;</span>
+        <span id="lang-btn-label">ES</span>
+    </button>
+</div>
+
+
 <!-- ============================================================
      SUBWAY NAV — fixed left spine (desktop only)
      ============================================================ -->
-<nav id="subway-nav" aria-label="Page navigation">
-    <a class="subway-node active" data-target="hero" title="Hero">
-        <svg viewBox="0 0 28 28"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">HE</text></svg>
+<nav id="subway-nav" aria-label="Page sections">
+    <a class="subway-node active" href="#hero" data-target="hero" aria-label="Hero section" aria-current="location">
+        <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">HE</text></svg>
     </a>
-    <a class="subway-node" data-target="problem" title="The Problem">
-        <svg viewBox="0 0 28 28"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">PR</text></svg>
+    <a class="subway-node" href="#problem" data-target="problem" aria-label="The Problem section">
+        <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">PR</text></svg>
     </a>
-    <a class="subway-node" data-target="services" title="Services">
-        <svg viewBox="0 0 28 28"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">SV</text></svg>
+    <a class="subway-node" href="#services" data-target="services" aria-label="Services section">
+        <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">SV</text></svg>
     </a>
-    <a class="subway-node" data-target="process" title="How It Works">
-        <svg viewBox="0 0 28 28"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">HW</text></svg>
+    <a class="subway-node" href="#process" data-target="process" aria-label="How It Works section">
+        <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">HW</text></svg>
     </a>
-    <a class="subway-node" data-target="about" title="About">
-        <svg viewBox="0 0 28 28"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">AB</text></svg>
+    <a class="subway-node" href="#about" data-target="about" aria-label="About section">
+        <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">AB</text></svg>
     </a>
-    <a class="subway-node" data-target="proof" title="Client Results">
-        <svg viewBox="0 0 28 28"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">CR</text></svg>
+    <a class="subway-node" href="#proof" data-target="proof" aria-label="Client Results section">
+        <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">CR</text></svg>
     </a>
-    <a class="subway-node" data-target="cta" title="Contact">
-        <svg viewBox="0 0 28 28"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">CT</text></svg>
+    <a class="subway-node" href="#cta" data-target="cta" aria-label="Contact section">
+        <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">CT</text></svg>
     </a>
 </nav>
 
+
+<main id="main-content">
 
 <!-- ============================================================
      SECTION 1 — HERO
      ============================================================ -->
 <section id="hero">
 
-    <h1 class="hero-headline">
-        Your pay structure<br>
-        shouldn't be a <em>black box.</em>
+    <h1 class="hero-headline" data-i18n-html="hero-headline">
+        Architecting<br>
+        <em>fair pay</em>
     </h1>
 
-    <p class="hero-sub">
-        Atlas Strategies helps mid-market organizations build compensation structures
+    <p class="hero-sub" data-i18n="hero-sub">
+        Atlas Strategies helps organizations build compensation structures
         that are defensible, clear, and built to last.
     </p>
 
@@ -58,6 +72,8 @@
             class="btn btn-primary"
             target="_blank"
             rel="noopener noreferrer"
+            data-i18n="btn-hero-schedule"
+            aria-label="Schedule a Discovery Session (opens in new tab)"
         >
             Schedule a Discovery Session
         </a>
@@ -66,12 +82,14 @@
             class="btn btn-secondary"
             target="_blank"
             rel="noopener noreferrer"
+            data-i18n="btn-hero-linkedin"
+            aria-label="Connect on LinkedIn (opens in new tab)"
         >
             Connect on LinkedIn
         </a>
     </div>
 
-    <div class="hero-scroll-hint">Scroll</div>
+    <div class="hero-scroll-hint" aria-hidden="true">Scroll</div>
 
 </section>
 
@@ -83,34 +101,34 @@
     <div class="container">
 
         <div class="section-intro">
-            <span class="section-label">The Problem</span>
-            <h2 class="section-headline">Sound familiar?</h2>
+            <span class="section-label" data-i18n="prob-label">The Problem Statements</span>
+            <h2 class="section-headline" data-i18n="prob-headline">Sound familiar?</h2>
         </div>
 
         <div class="grid-3">
 
             <div class="problem-card">
-                <h3>Pay decisions feel arbitrary</h3>
-                <p>
+                <h3 data-i18n="prob-card1-h3">Pay decisions feel arbitrary</h3>
+                <p data-i18n="prob-card1-p">
                     Managers make offers based on gut instinct, not structure.
-                    Equity liability grows quietly in the background — and by the
+                    Pay equity gaps grow quietly in the background — and by the
                     time it surfaces, it's expensive.
                 </p>
             </div>
 
             <div class="problem-card">
-                <h3>Job titles multiply without logic</h3>
-                <p>
+                <h3 data-i18n="prob-card2-h3">Your employees are asking about their career path</h3>
+                <p data-i18n="prob-card2-p">
                     No clear levels, no career ladder, no rationale for who gets
                     paid what. Your best people are asking questions you can't answer.
                 </p>
             </div>
 
             <div class="problem-card">
-                <h3>You know skills matter — but have no infrastructure</h3>
-                <p>
+                <h3 data-i18n="prob-card3-h3">You know skills matter — but have no infrastructure</h3>
+                <p data-i18n="prob-card3-p">
                     Everyone is talking about skills-first talent strategy.
-                    Almost no one has built the foundation to support it.
+                    Do you have the foundation to support it?
                 </p>
             </div>
 
@@ -126,39 +144,33 @@
     <div class="container">
 
         <div class="section-intro">
-            <span class="section-label">Services</span>
-            <h2 class="section-headline">How we work together.</h2>
+            <span class="section-label" data-i18n="svc-label">Services</span>
+            <h2 class="section-headline" data-i18n="svc-headline">The Atlas Blueprint.</h2>
         </div>
 
         <div class="grid-3">
 
             <div class="service-card">
-                <span class="service-icon">⚖️</span>
-                <h3>Compensation Consulting</h3>
-                <p>
-                    Pay philosophy, market benchmarking, salary band construction,
-                    pay equity audits, and variable pay modeling. From strategy
-                    to execution.
+                <span class="service-icon" role="img" aria-label="Toolbox">&#x1F9F0;</span>
+                <h3 data-i18n="svc-card1-h3">Assess</h3>
+                <p data-i18n="svc-card1-p">
+                    We begin in the Atlas Atelier—our workshop—where we map your existing landscape. We analyze your current pay data, titles, and internal equity to set the baseline. We cannot plot a new course until we have an accurate survey of where you are standing today.
                 </p>
             </div>
 
             <div class="service-card">
-                <span class="service-icon">🗂️</span>
-                <h3>Job Architecture &amp; Career Pathways</h3>
-                <p>
-                    Job leveling, grade structures, career pathway design, and
-                    role-to-level mapping. The foundation that makes everything
-                    else work.
+                <span class="service-icon" role="img" aria-label="Map">&#x1F5FA;&#xFE0F;</span>
+                <h3 data-i18n="svc-card2-h3">Design</h3>
+                <p data-i18n="svc-card2-p">
+                    We engineer your Compensation Blueprint, establishing the core philosophy that guides your structural decisions. We design the salary bands, job leveling, and career pathways that serve as the necessary scaffolding for your organization's growth.
                 </p>
             </div>
 
             <div class="service-card">
-                <span class="service-icon">🧭</span>
-                <h3>Skills Mapping</h3>
-                <p>
-                    O*NET-powered skills identification, skills-to-job mapping,
-                    and competency framework design. The evolution from managing
-                    positions to deploying talent.
+                <span class="service-icon" role="img" aria-label="Construction">&#x1F3D7;&#xFE0F;</span>
+                <h3 data-i18n="svc-card3-h3">Build</h3>
+                <p data-i18n="svc-card3-p">
+                    We deliver the interactive tools and frameworks—including benchmarked salary bands and skill-to-job mappings—that allow you to lead with a map in hand.
                 </p>
             </div>
 
@@ -168,21 +180,21 @@
         <div class="pricing-row">
 
             <div class="pricing-tier">
-                <p class="pricing-label">Hourly</p>
-                <p class="pricing-amount">$250<span style="font-size:1.1rem; color:rgba(255,255,255,0.4)">/hr</span></p>
-                <p class="pricing-detail">For targeted advisory &amp; analysis</p>
+                <p class="pricing-label" data-i18n="price-hourly-label">Hourly</p>
+                <p class="pricing-amount">$250<span style="font-size:1.1rem; color:rgba(255,255,255,0.5)" aria-hidden="true">/hr</span><span class="sr-only"> per hour</span></p>
+                <p class="pricing-detail" data-i18n="price-hourly-detail">For targeted advisory &amp; analysis</p>
             </div>
 
             <div class="pricing-tier">
-                <p class="pricing-label">Project</p>
+                <p class="pricing-label" data-i18n="price-project-label">Project</p>
                 <p class="pricing-amount">$15K–$35K</p>
-                <p class="pricing-detail">8–16 week engagements with defined deliverables</p>
+                <p class="pricing-detail" data-i18n="price-project-detail">8–16 week engagements with defined deliverables</p>
             </div>
 
             <div class="pricing-tier">
-                <p class="pricing-label">Retainer</p>
-                <p class="pricing-amount">$2,250<span style="font-size:1.1rem; color:rgba(255,255,255,0.4)">/mo</span></p>
-                <p class="pricing-detail">10 hours/month — ongoing strategic support</p>
+                <p class="pricing-label" data-i18n="price-retainer-label">Retainer</p>
+                <p class="pricing-amount">$2,250<span style="font-size:1.1rem; color:rgba(255,255,255,0.5)" aria-hidden="true">/mo</span><span class="sr-only"> per month</span></p>
+                <p class="pricing-detail" data-i18n="price-retainer-detail">10 hours/month — ongoing strategic support</p>
             </div>
 
         </div>
@@ -198,9 +210,9 @@
     <div class="container">
 
         <div class="section-intro">
-            <span class="section-label">Process</span>
-            <h2 class="section-headline">Join me in the atelier.</h2>
-            <p class="section-sub">
+            <span class="section-label" data-i18n="proc-label">Process</span>
+            <h2 class="section-headline" data-i18n="proc-headline">Join me in the Atlas Atelier.</h2>
+            <p class="section-sub" data-i18n-html="proc-sub">
                 An <em>atelier</em> is a craftsman's private workshop — where bespoke work is done by hand,
                 with intention, from start to finish. That's exactly how every engagement runs here.
             </p>
@@ -209,29 +221,27 @@
         <div class="grid-3">
 
             <div class="step-card">
-                <span class="step-number">1</span>
-                <h3>Discovery Session</h3>
-                <p>
+                <span class="step-number" aria-hidden="true">1</span>
+                <h3 data-i18n="step1-h3">Discovery Session</h3>
+                <p data-i18n="step1-p">
                     30 minutes to understand your situation, your gaps, and whether
                     we're the right fit. No pressure, no pitch.
                 </p>
             </div>
 
             <div class="step-card">
-                <span class="step-number">2</span>
-                <h3>Scoping</h3>
-                <p>
-                    A clear statement of work with defined deliverables, timeline,
-                    and investment. You know exactly what you're getting.
+                <span class="step-number" aria-hidden="true">2</span>
+                <h3 data-i18n="step2-h3">Scope the Work</h3>
+                <p data-i18n="step2-p">
+                    We align on the most effective engagement model for your needs—hourly advisory, fixed-fee projects, or fractional/retainer. You receive a precise roadmap outlining exactly how we will navigate your organizational challenges together.
                 </p>
             </div>
 
             <div class="step-card">
-                <span class="step-number">3</span>
-                <h3>Delivery</h3>
-                <p>
-                    Principal-level work from start to finish. No handoffs to junior
-                    staff. Delivered with the tools and training to make it stick.
+                <span class="step-number" aria-hidden="true">3</span>
+                <h3 data-i18n="step3-h3">Start Building</h3>
+                <p data-i18n="step3-p">
+                    The transition from blueprint to reality. We deliver the finished framework, ensuring it is fully integrated into your operations with the necessary training to make the structure stick.
                 </p>
             </div>
 
@@ -248,34 +258,34 @@
         <div class="grid-2">
 
             <div class="about-photo">
-                <img src="images/headshot.jpg" alt="Jared Jarreau">
-                <div class="about-photo-frame"></div>
+                <img src="images/headshot.jpg" alt="Jared Jarreau, Founder of Atlas Strategies">
+                <div class="about-photo-frame" aria-hidden="true"></div>
             </div>
 
             <div class="about-content">
-                <span class="section-label">About</span>
+                <span class="section-label" data-i18n="about-label">About</span>
                 <h2 class="about-name">Jared Jarreau,<br>SHRM-SCP, CCP, GRP</h2>
                 <p class="about-title">Talent Solutions Architect &nbsp;·&nbsp; Founder, Atlas Strategies</p>
 
-                <p class="about-bio">
+                <p class="about-bio" data-i18n="about-bio1">
                     For over 20 years I've helped organizations navigate the complex intersection
                     of compensation strategy and job architecture — at Capital One, Cabela's,
                     Year Up United, and the State of Louisiana.
                 </p>
-                <p class="about-bio">
-                    I founded Atlas Strategies because mid-market organizations deserve
+                <p class="about-bio" data-i18n="about-bio2">
+                    I founded Atlas Strategies because small and mid-sized organizations deserve
                     senior-level compensation expertise without the enterprise price tag.
                     Every engagement is delivered personally, using proprietary tools built
                     in the Atlas Atelier workshop.
                 </p>
 
-                <div class="credentials">
-                    <span class="credential-badge">SHRM-SCP</span>
-                    <span class="credential-badge">CCP</span>
-                    <span class="credential-badge">GRP</span>
-                    <span class="credential-badge">CEBS (Fall 2026)</span>
-                    <span class="credential-badge long">Advisory Council Member — <a href="https://www.richcomp.org" target="_blank" rel="noopener noreferrer">Richmond Compensation Association</a></span>
-                    <span class="credential-badge long">Moonshot Award — <a href="https://www.rideshiftrva.com" target="_blank" rel="noopener noreferrer">RideShiftRVA</a>, Richmond Civic Hackathon</span>
+                <div class="credentials" role="list" aria-label="Professional credentials">
+                    <span class="credential-badge" role="listitem">SHRM-SCP</span>
+                    <span class="credential-badge" role="listitem">CCP</span>
+                    <span class="credential-badge" role="listitem">GRP</span>
+                    <span class="credential-badge" role="listitem">CEBS (Fall 2026)</span>
+                    <span class="credential-badge long" role="listitem">Advisory Council Member — <a href="https://www.richcomp.org" target="_blank" rel="noopener noreferrer" aria-label="Richmond Compensation Association (opens in new tab)">Richmond Compensation Association</a></span>
+                    <span class="credential-badge long" role="listitem">Moonshot Award — <a href="https://www.rideshiftrva.com" target="_blank" rel="noopener noreferrer" aria-label="RideShiftRVA (opens in new tab)">RideShiftRVA</a>, Richmond Civic Hackathon</span>
                 </div>
             </div>
 
@@ -291,66 +301,61 @@
     <div class="container">
 
         <div class="section-intro">
-            <span class="section-label">Client Results</span>
-            <h2 class="section-headline">What clients say.</h2>
+            <span class="section-label" data-i18n="proof-label">Results</span>
+            <h2 class="section-headline" data-i18n="proof-headline">Field Notes</h2>
         </div>
 
         <div class="grid-3">
 
-            <!-- PLACEHOLDER — replace with real testimonial before launch -->
             <div class="testimonial-card">
-                <p class="testimonial-quote">
+                <p class="testimonial-quote" data-i18n="test1-q">
                     [PLACEHOLDER — Insert real client testimonial here before launch.
                     Replace this entire paragraph with the client quote.]
                 </p>
                 <div class="testimonial-attribution">
-                    <p class="testimonial-name">[Client Name]</p>
-                    <p class="testimonial-role">[Title, Company]</p>
+                    <p class="testimonial-name" data-i18n="test1-name">[Client Name]</p>
+                    <p class="testimonial-role" data-i18n="test1-role">[Title, Company]</p>
                 </div>
             </div>
 
-            <!-- PLACEHOLDER — replace with real testimonial before launch -->
             <div class="testimonial-card">
-                <p class="testimonial-quote">
-                    [PLACEHOLDER — Insert real client testimonial here before launch.
-                    Replace this entire paragraph with the client quote.]
+                <p class="testimonial-quote" data-i18n="test2-q">
+                    In the Atelier, we don't do 'templated' work. I believe in bespoke solutions that respect the unique terrain of your business. If it isn't precise, defensible, and built to achieve your organizational goals, it isn't an Atlas structure.
                 </p>
                 <div class="testimonial-attribution">
-                    <p class="testimonial-name">[Client Name]</p>
-                    <p class="testimonial-role">[Title, Company]</p>
+                    <p class="testimonial-name" data-i18n="test2-name">Jared Jarreau</p>
+                    <p class="testimonial-role" data-i18n="test2-role">My Values</p>
                 </div>
             </div>
 
-            <!-- PLACEHOLDER — replace with real testimonial before launch -->
             <div class="testimonial-card">
-                <p class="testimonial-quote">
-                    [PLACEHOLDER — Insert real client testimonial here before launch.
-                    Replace this entire paragraph with the client quote.]
+                <p class="testimonial-quote" data-i18n="test3-q">
+                    Put your money where your mouth is.
                 </p>
                 <div class="testimonial-attribution">
-                    <p class="testimonial-name">[Client Name]</p>
-                    <p class="testimonial-role">[Title, Company]</p>
+                    <p class="testimonial-name" data-i18n="test3-name">Traditional English Proverb</p>
+                    <p class="testimonial-role" data-i18n="test3-role">If your values aren't reflected in your pay structure, they aren't your values</p>
                 </div>
             </div>
 
         </div>
 
-        <!-- Stats Row — fill in real numbers before launch -->
+        <!-- Stats Row -->
         <div class="stats-row">
 
             <div class="stat-item">
-                <p class="stat-number">[X]</p>
-                <p class="stat-label">Organizations Served</p>
+                <p class="stat-number" aria-label="13">13</p>
+                <p class="stat-label" data-i18n="stat1-label">Survey Vendor Partnerships</p>
             </div>
 
             <div class="stat-item">
-                <p class="stat-number">[X]</p>
-                <p class="stat-label">Roles Benchmarked</p>
+                <p class="stat-number" aria-label="Over 10,000">10k+</p>
+                <p class="stat-label" data-i18n="stat2-label">Roles Benchmarked</p>
             </div>
 
             <div class="stat-item">
-                <p class="stat-number">20+</p>
-                <p class="stat-label">Years of Experience</p>
+                <p class="stat-number" aria-label="Over 20">20+</p>
+                <p class="stat-label" data-i18n="stat3-label">Years of Experience</p>
             </div>
 
         </div>
@@ -364,8 +369,8 @@
      ============================================================ -->
 <section id="cta">
 
-    <h2 class="cta-headline">Ready to build something that works?</h2>
-    <p class="cta-sub">
+    <h2 class="cta-headline" data-i18n="cta-headline">Ready to build something that works?</h2>
+    <p class="cta-sub" data-i18n="cta-sub">
         Let's get into the workshop and start sketching out your organization.
     </p>
 
@@ -374,6 +379,8 @@
         class="btn btn-dark"
         target="_blank"
         rel="noopener noreferrer"
+        data-i18n="btn-cta-schedule"
+        aria-label="Schedule a Discovery Session (opens in new tab)"
     >
         Schedule a Discovery Session
     </a>
@@ -385,51 +392,233 @@
 
 </section>
 
+</main>
+
 
 <!-- ============================================================
      FOOTER BAR
      ============================================================ -->
-<footer id="footer-bar">
-    <span class="footer-bar-left">
+<footer id="footer-bar" role="contentinfo">
+    <span class="footer-bar-left" data-i18n-html="footer-copy">
         &copy; 2026 Atlas Strategies. All rights reserved.
     </span>
     <span class="footer-bar-center">www.atlas-strategies.co</span>
-    <span class="footer-bar-right">Crafted by Atlas Atelier</span>
+    <span class="footer-bar-right" data-i18n="footer-crafted">Crafted by Atlas Atelier</span>
 </footer>
 
 
 
 <script>
-    // ── SUBWAY NAV — IntersectionObserver ──────────────────────
-    (function () {
-        const nodes = document.querySelectorAll('.subway-node');
-        const sections = ['hero', 'problem', 'services', 'process', 'about', 'proof', 'cta'];
+// ── TRANSLATIONS ────────────────────────────────────────────
+var currentLang = 'en';
 
-        // Click to scroll
-        nodes.forEach(function (node) {
-            node.addEventListener('click', function () {
-                const target = document.getElementById(node.dataset.target);
-                if (target) target.scrollIntoView({ behavior: 'smooth' });
-            });
+var i18n = {
+    en: {
+        'hero-headline':         'Architecting<br><em>fair pay</em>',
+        'hero-sub':              'Atlas Strategies helps mid-market organizations build compensation structures that are defensible, clear, and built to last.',
+        'btn-hero-schedule':     'Schedule a Discovery Session',
+        'btn-hero-linkedin':     'Connect on LinkedIn',
+        'prob-label':            'The Problem Statements',
+        'prob-headline':         'Sound familiar?',
+        'prob-card1-h3':         'Pay decisions feel arbitrary',
+        'prob-card1-p':          'Managers make offers based on gut instinct, not structure. Pay equity gaps grow quietly in the background \u2014 and by the time it surfaces, it\u2019s expensive.',
+        'prob-card2-h3':         'Your employees are asking about their career path',
+        'prob-card2-p':          'No clear levels, no career ladder, no rationale for who gets paid what. Your best people are asking questions you can\u2019t answer.',
+        'prob-card3-h3':         'You know skills matter \u2014 but have no infrastructure',
+        'prob-card3-p':          'Everyone is talking about skills-first talent strategy. Do you have the foundation to support it?',
+        'svc-label':             'Services',
+        'svc-headline':          'The Atlas Blueprint.',
+        'svc-card1-h3':          'Assess',
+        'svc-card1-p':           'We begin in the Atlas Atelier\u2014our workshop\u2014where we map your existing landscape. We analyze your current pay data, titles, and internal equity to set the baseline. We cannot plot a new course until we have an accurate survey of where you are standing today.',
+        'svc-card2-h3':          'Design',
+        'svc-card2-p':           'We engineer your Compensation Blueprint, establishing the core philosophy that guides your structural decisions. We design the salary bands, job leveling, and career pathways that serve as the necessary scaffolding for your organization\u2019s growth.',
+        'svc-card3-h3':          'Build',
+        'svc-card3-p':           'We deliver the interactive tools and frameworks\u2014including benchmarked salary bands and skill-to-job mappings\u2014that allow you to lead with a map in hand.',
+        'price-hourly-label':    'Hourly',
+        'price-hourly-detail':   'For targeted advisory &amp; analysis',
+        'price-project-label':   'Project',
+        'price-project-detail':  '8\u201316 week engagements with defined deliverables',
+        'price-retainer-label':  'Retainer',
+        'price-retainer-detail': '10 hours/month \u2014 ongoing strategic support',
+        'proc-label':            'Process',
+        'proc-headline':         'Join me in the atelier.',
+        'proc-sub':              'An <em>atelier</em> is a craftsman\u2019s private workshop \u2014 where bespoke work is done by hand, with intention, from start to finish. That\u2019s exactly how every engagement runs here.',
+        'step1-h3':              'Discovery Session',
+        'step1-p':               '30 minutes to understand your situation, your gaps, and whether we\u2019re the right fit. No pressure, no pitch.',
+        'step2-h3':              'Scope the Work',
+        'step2-p':               'We align on the most effective engagement model for your needs\u2014hourly advisory, fixed-fee projects, or fractional/retainer. You receive a precise roadmap outlining exactly how we will navigate your organizational challenges together.',
+        'step3-h3':              'Start Building',
+        'step3-p':               'The transition from blueprint to reality. We deliver the finished framework, ensuring it is fully integrated into your operations with the necessary training to make the structure stick.',
+        'about-label':           'About',
+        'about-bio1':            'For over 20 years I\u2019ve helped organizations navigate the complex intersection of compensation strategy and job architecture \u2014 at Capital One, Cabela\u2019s, Year Up United, and the State of Louisiana.',
+        'about-bio2':            'I founded Atlas Strategies because mid-market organizations deserve senior-level compensation expertise without the enterprise price tag. Every engagement is delivered personally, using proprietary tools built in the Atlas Atelier workshop.',
+        'proof-label':           'Results',
+        'proof-headline':        'Field Notes',
+        'test1-q':               '[PLACEHOLDER \u2014 Insert real client testimonial here before launch. Replace this entire paragraph with the client quote.]',
+        'test1-name':            '[Client Name]',
+        'test1-role':            '[Title, Company]',
+        'test2-q':               'In the Atelier, we don\u2019t do \u2018templated\u2019 work. I believe in bespoke solutions that respect the unique terrain of your business. If it isn\u2019t precise, defensible, and built to achieve your organizational goals, it isn\u2019t an Atlas structure.',
+        'test2-name':            'Jared Jarreau',
+        'test2-role':            'My Values',
+        'test3-q':               'Put your money where your mouth is.',
+        'test3-name':            'Traditional English Proverb',
+        'test3-role':            'If your values aren\u2019t reflected in your pay structure, they aren\u2019t your values',
+        'stat1-label':           'Survey Vendor Partnerships',
+        'stat2-label':           'Roles Benchmarked',
+        'stat3-label':           'Years of Experience',
+        'cta-headline':          'Ready to build something that works?',
+        'cta-sub':               'Let\u2019s get into the workshop and start sketching out your organization.',
+        'btn-cta-schedule':      'Schedule a Discovery Session',
+        'footer-copy':           '&copy; 2026 Atlas Strategies. All rights reserved.',
+        'footer-crafted':        'Crafted by Atlas Atelier'
+    },
+    es: {
+        'hero-headline':         'Dise\u00f1ando<br><em>una compensaci\u00f3n justa</em>',
+        'hero-sub':              'Atlas Strategies ayuda a organizaciones del mercado medio a construir estructuras de compensaci\u00f3n que son defendibles, claras y dise\u00f1adas para perdurar.',
+        'btn-hero-schedule':     'Agendar una Sesi\u00f3n de Descubrimiento',
+        'btn-hero-linkedin':     'Conectar en LinkedIn',
+        'prob-label':            'Los Problemas',
+        'prob-headline':         '\u00bfLe suena familiar?',
+        'prob-card1-h3':         'Las decisiones salariales parecen arbitrarias',
+        'prob-card1-p':          'Los gerentes hacen ofertas basadas en instinto, no en estructura. Las brechas de equidad salarial crecen silenciosamente \u2014 y cuando emergen, son costosas.',
+        'prob-card2-h3':         'Sus empleados preguntan sobre su trayectoria profesional',
+        'prob-card2-p':          'Sin niveles claros, sin escalera profesional, sin justificaci\u00f3n de qui\u00e9n cobra qu\u00e9. Su gente m\u00e1s valiosa hace preguntas que usted no puede responder.',
+        'prob-card3-h3':         'Sabe que las habilidades importan \u2014 pero no tiene la infraestructura',
+        'prob-card3-p':          'Todos hablan de una estrategia de talento basada en habilidades. \u00bfTiene usted la base para respaldarlo?',
+        'svc-label':             'Servicios',
+        'svc-headline':          'El Plano Atlas.',
+        'svc-card1-h3':          'Evaluar',
+        'svc-card1-p':           'Comenzamos en el Atlas Atelier \u2014 nuestro taller \u2014 donde mapeamos su panorama actual. Analizamos sus datos de remuneraci\u00f3n actuales, t\u00edtulos y equidad interna para establecer la l\u00ednea base. No podemos trazar un nuevo rumbo hasta tener un diagn\u00f3stico preciso de d\u00f3nde se encuentra hoy.',
+        'svc-card2-h3':          'Dise\u00f1ar',
+        'svc-card2-p':           'Dise\u00f1amos su Plano de Compensaci\u00f3n, estableciendo la filosof\u00eda central que gu\u00eda sus decisiones estructurales. Creamos las bandas salariales, la nivelaci\u00f3n de puestos y las trayectorias profesionales que sirven como el andamiaje necesario para el crecimiento de su organizaci\u00f3n.',
+        'svc-card3-h3':          'Construir',
+        'svc-card3-p':           'Entregamos las herramientas y marcos interactivos \u2014 incluidas bandas salariales comparativas y mapeos de habilidades a puestos \u2014 que le permiten liderar con un mapa en mano.',
+        'price-hourly-label':    'Por Hora',
+        'price-hourly-detail':   'Para asesor\u00eda y an\u00e1lisis espec\u00edficos',
+        'price-project-label':   'Proyecto',
+        'price-project-detail':  'Compromisos de 8 a 16 semanas con entregables definidos',
+        'price-retainer-label':  'Mensualidad',
+        'price-retainer-detail': '10 horas/mes \u2014 apoyo estrat\u00e9gico continuo',
+        'proc-label':            'Proceso',
+        'proc-headline':         '\u00danase a m\u00ed en el atelier.',
+        'proc-sub':              'Un <em>atelier</em> es el taller privado de un artesano \u2014 donde se realiza trabajo a medida, con intenci\u00f3n, de principio a fin. As\u00ed es exactamente como funciona cada compromiso aqu\u00ed.',
+        'step1-h3':              'Sesi\u00f3n de Descubrimiento',
+        'step1-p':               '30 minutos para entender su situaci\u00f3n, sus brechas y si somos la opci\u00f3n adecuada. Sin presi\u00f3n, sin discurso de ventas.',
+        'step2-h3':              'Definir el Alcance',
+        'step2-p':               'Nos alineamos en el modelo de compromiso m\u00e1s efectivo para sus necesidades \u2014 asesor\u00eda por hora, proyectos de tarifa fija o modalidad retainer. Usted recibe un plan de trabajo preciso que describe exactamente c\u00f3mo navegaremos juntos sus desaf\u00edos organizacionales.',
+        'step3-h3':              'Comenzar a Construir',
+        'step3-p':               'La transici\u00f3n del plano a la realidad. Entregamos el marco terminado, asegurando su plena integraci\u00f3n en sus operaciones con la capacitaci\u00f3n necesaria para que la estructura perdure.',
+        'about-label':           'Acerca de',
+        'about-bio1':            'Durante m\u00e1s de 20 a\u00f1os he ayudado a organizaciones a navegar la compleja intersecci\u00f3n entre estrategia de compensaci\u00f3n y arquitectura de puestos \u2014 en Capital One, Cabela\u2019s, Year Up United y el Estado de Louisiana.',
+        'about-bio2':            'Fund\u00e9 Atlas Strategies porque las organizaciones del mercado medio merecen experiencia s\u00e9nior en compensaci\u00f3n sin el costo de una gran consultora. Cada compromiso se entrega personalmente, usando herramientas propias desarrolladas en el taller Atlas Atelier.',
+        'proof-label':           'Resultados',
+        'proof-headline':        'Notas de Campo',
+        'test1-q':               '[MARCADOR \u2014 Insertar testimonio real del cliente aqu\u00ed antes del lanzamiento.]',
+        'test1-name':            '[Nombre del Cliente]',
+        'test1-role':            '[T\u00edtulo, Empresa]',
+        'test2-q':               'En el Atelier, no hacemos trabajo \u2018predefinido\u2019. Creo en soluciones a medida que respetan el terreno \u00fanico de su negocio. Si no es preciso, defendible y construido para alcanzar sus objetivos organizacionales, no es una estructura Atlas.',
+        'test2-name':            'Jared Jarreau',
+        'test2-role':            'Mis Valores',
+        'test3-q':               'Pon tu dinero donde est\u00e1 tu boca.',
+        'test3-name':            'Proverbio Ingl\u00e9s Tradicional',
+        'test3-role':            'Si sus valores no se reflejan en su estructura salarial, no son sus valores',
+        'stat1-label':           'Alianzas con Proveedores de Encuestas',
+        'stat2-label':           'Puestos Evaluados',
+        'stat3-label':           'A\u00f1os de Experiencia',
+        'cta-headline':          '\u00bfListo para construir algo que funcione?',
+        'cta-sub':               'Entremos al taller y comencemos a esbozar su organizaci\u00f3n.',
+        'btn-cta-schedule':      'Agendar una Sesi\u00f3n de Descubrimiento',
+        'footer-copy':           '&copy; 2026 Atlas Strategies. Todos los derechos reservados.',
+        'footer-crafted':        'Creado por Atlas Atelier'
+    }
+};
+
+function applyTranslations(lang) {
+    var dict = i18n[lang];
+    if (!dict) return;
+
+    // Plain-text elements
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+        var key = el.getAttribute('data-i18n');
+        if (dict[key] !== undefined) {
+            el.textContent = dict[key];
+        }
+    });
+
+    // HTML elements (may contain <br>, <em>, &amp; etc.)
+    document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+        var key = el.getAttribute('data-i18n-html');
+        if (dict[key] !== undefined) {
+            el.innerHTML = dict[key];
+        }
+    });
+
+    // Update aria-labels on external-link buttons when language changes
+    var scheduleAriaLabel = lang === 'es'
+        ? 'Agendar una Sesi\u00f3n de Descubrimiento (se abre en una pesta\u00f1a nueva)'
+        : 'Schedule a Discovery Session (opens in new tab)';
+    document.querySelectorAll('[data-i18n="btn-hero-schedule"], [data-i18n="btn-cta-schedule"]').forEach(function (el) {
+        el.setAttribute('aria-label', scheduleAriaLabel);
+    });
+
+    // Update page language attribute for assistive technologies
+    document.documentElement.setAttribute('lang', lang);
+
+    // Update the switcher button label
+    var btn = document.getElementById('lang-btn');
+    var label = document.getElementById('lang-btn-label');
+    if (lang === 'es') {
+        label.textContent = 'EN';
+        btn.setAttribute('aria-label', 'Switch to English');
+    } else {
+        label.textContent = 'ES';
+        btn.setAttribute('aria-label', 'Switch to Spanish / Cambiar a espa\u00f1ol');
+    }
+}
+
+function toggleLang() {
+    currentLang = (currentLang === 'en') ? 'es' : 'en';
+    applyTranslations(currentLang);
+}
+
+
+// ── SUBWAY NAV — IntersectionObserver ──────────────────────
+(function () {
+    var nodes = document.querySelectorAll('.subway-node');
+    var sections = ['hero', 'problem', 'services', 'process', 'about', 'proof', 'cta'];
+
+    // Click: smooth scroll and prevent default anchor jump
+    nodes.forEach(function (node) {
+        node.addEventListener('click', function (e) {
+            e.preventDefault();
+            var target = document.getElementById(node.dataset.target);
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
         });
+    });
 
-        // Track active section
-        const observer = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) {
-                if (entry.isIntersecting) {
-                    const id = entry.target.id;
-                    nodes.forEach(function (node) {
-                        node.classList.toggle('active', node.dataset.target === id);
-                    });
-                }
-            });
-        }, { threshold: 0.35 });
-
-        sections.forEach(function (id) {
-            const el = document.getElementById(id);
-            if (el) observer.observe(el);
+    // Track active section and update aria-current
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                var id = entry.target.id;
+                nodes.forEach(function (node) {
+                    var isActive = node.dataset.target === id;
+                    node.classList.toggle('active', isActive);
+                    if (isActive) {
+                        node.setAttribute('aria-current', 'location');
+                    } else {
+                        node.removeAttribute('aria-current');
+                    }
+                });
+            }
         });
-    })();
+    }, { threshold: 0.35 });
+
+    sections.forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) observer.observe(el);
+    });
+})();
 </script>
 
 </body>
