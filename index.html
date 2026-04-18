@@ -34,6 +34,9 @@
     <a class="subway-node" href="#services" data-target="services" aria-label="Services section">
         <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">SV</text></svg>
     </a>
+    <a class="subway-node" href="#projects" data-target="projects" aria-label="Projects section">
+        <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">PK</text></svg>
+    </a>
     <a class="subway-node" href="#process" data-target="process" aria-label="How It Works section">
         <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">HW</text></svg>
     </a>
@@ -42,6 +45,9 @@
     </a>
     <a class="subway-node" href="#proof" data-target="proof" aria-label="Client Results section">
         <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">CR</text></svg>
+    </a>
+    <a class="subway-node" href="#partners" data-target="partners" aria-label="Partners section">
+        <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">TP</text></svg>
     </a>
     <a class="subway-node" href="#cta" data-target="cta" aria-label="Contact section">
         <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">CT</text></svg>
@@ -180,14 +186,14 @@
         <div class="pricing-row">
 
             <div class="pricing-tier">
-                <p class="pricing-label" data-i18n="price-hourly-label">Hourly</p>
-                <p class="pricing-amount">$250<span style="font-size:1.1rem; color:rgba(255,255,255,0.5)" aria-hidden="true">/hr</span><span class="sr-only"> per hour</span></p>
-                <p class="pricing-detail" data-i18n="price-hourly-detail">For targeted advisory &amp; analysis</p>
+                <p class="pricing-label" data-i18n="price-hourly-label">Compensation Cycle</p>
+                <p class="pricing-amount" style="font-size:1.4rem; letter-spacing:1px;">Let's discuss</p>
+                <p class="pricing-detail" data-i18n="price-hourly-detail">Annual cycle management &amp; support</p>
             </div>
 
             <div class="pricing-tier">
                 <p class="pricing-label" data-i18n="price-project-label">Project</p>
-                <p class="pricing-amount">$15K–$35K</p>
+                <p class="pricing-amount">$10k–$55k</p>
                 <p class="pricing-detail" data-i18n="price-project-detail">8–16 week engagements with defined deliverables</p>
             </div>
 
@@ -199,12 +205,198 @@
 
         </div>
 
+
+        <!-- SVG Branch Connector → tier columns (Assess=50%, Design=70%, Build=90% of 667px wrap) -->
+        <!-- SVG is 110px tall; dots at y=110 land directly on the table header row below -->
+        <div class="project-branch" aria-hidden="true">
+            <svg viewBox="0 0 100 110" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                <!-- Trunk drops from Design column center (x=70) -->
+                <line x1="70" y1="0" x2="70" y2="28" stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.65" vector-effect="non-scaling-stroke"/>
+                <!-- Branch left → Assess (x=50) -->
+                <path d="M 70 28 C 70 75 50 75 50 110" stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.65" fill="none" vector-effect="non-scaling-stroke"/>
+                <!-- Straight down → Design (x=70) -->
+                <line x1="70" y1="28" x2="70" y2="110" stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.65" vector-effect="non-scaling-stroke"/>
+                <!-- Branch right → Build (x=90) -->
+                <path d="M 70 28 C 70 75 90 75 90 110" stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.65" fill="none" vector-effect="non-scaling-stroke"/>
+                <!-- Terminal dots land on table header row -->
+                <circle cx="50" cy="110" r="3" fill="#C9A84C" fill-opacity="0.65" vector-effect="non-scaling-stroke"/>
+                <circle cx="70" cy="110" r="3" fill="#C9A84C" fill-opacity="0.65" vector-effect="non-scaling-stroke"/>
+                <circle cx="90" cy="110" r="3" fill="#C9A84C" fill-opacity="0.65" vector-effect="non-scaling-stroke"/>
+            </svg>
+        </div>
+
     </div>
 </section>
 
 
 <!-- ============================================================
-     SECTION 4 — HOW IT WORKS
+     SECTION 4 — PROJECTS (TIER CARDS)
+     ============================================================ -->
+<section id="projects">
+    <div class="container">
+
+        <div class="deliverables-wrap">
+        <table class="deliverables-table" aria-label="Deliverables by engagement tier">
+            <thead>
+                <tr>
+                    <th scope="col" class="dt-col-deliverable">Deliverable</th>
+                    <th scope="col" class="dt-col-tier dt-col-assess">
+                        <span class="dt-tier-name">Assess</span>
+                        <span class="dt-tier-price">$10k</span>
+                    </th>
+                    <th scope="col" class="dt-col-tier dt-col-design">
+                        <span class="dt-tier-name">Design</span>
+                        <span class="dt-tier-price">$35k</span>
+                    </th>
+                    <th scope="col" class="dt-col-tier dt-col-build">
+                        <span class="dt-tier-name">Build</span>
+                        <span class="dt-tier-price">$55k</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <!--
+                    ### HOW TO ADD A ROW
+                    Copy the block below and paste it anywhere inside <tbody> before </tbody>.
+                    Replace the strong text (deliverable name), li items (sub-details), and
+                    swap the span classes for each column:
+                      chk-assess  → teal check   (Assess tier)
+                      chk-design  → gold check    (Design tier)
+                      chk-build   → orange check  (Build tier)
+                      chk-lite    → ghost check   (partial/foundational)
+                      chk-none    → dash —        (not included)
+
+                    <tr>
+                        <td class="dt-deliverable">
+                            <strong>Deliverable name</strong>
+                            <ul class="dt-sub-items">
+                                <li>Sub-item one</li>
+                                <li>Sub-item two</li>
+                            </ul>
+                        </td>
+                        <td class="dt-cell-check"><span class="chk chk-assess" role="img" aria-label="Included"></span></td>
+                        <td class="dt-cell-check"><span class="chk chk-design" role="img" aria-label="Included"></span></td>
+                        <td class="dt-cell-check"><span class="chk chk-build"  role="img" aria-label="Included"></span></td>
+                    </tr>
+                -->
+
+                <tr>
+                    <td class="dt-deliverable">
+                        <strong>Total rewards philosophy</strong>
+                        <ul class="dt-sub-items">
+                            <li>Strategy session</li>
+                            <li>Stakeholder mapping &amp; outreach</li>
+                            <li>Total rewards positioning framework</li>
+                            <li>Philosophy &amp; guiding principles document</li>
+                            <li>Compensation policies</li>
+                            <li>Communication plan</li>
+                        </ul>
+                    </td>
+                    <td class="dt-cell-check"><span class="chk chk-assess" role="img" aria-label="Included"></span></td>
+                    <td class="dt-cell-check"><span class="chk chk-design" role="img" aria-label="Included"></span></td>
+                    <td class="dt-cell-check"><span class="chk chk-build" role="img" aria-label="Included"></span></td>
+                </tr>
+
+                <tr>
+                    <td class="dt-deliverable">
+                        <strong>Compensation compliance</strong>
+                        <ul class="dt-sub-items">
+                            <li>FLSA tutorial &amp; classification checklist</li>
+                            <li>Min wage / living wage gap analysis</li>
+                            <li>Pay transparency compliance</li>
+                        </ul>
+                    </td>
+                    <td class="dt-cell-check"><span class="chk chk-assess" role="img" aria-label="Included"></span></td>
+                    <td class="dt-cell-check"><span class="chk chk-design" role="img" aria-label="Included"></span></td>
+                    <td class="dt-cell-check"><span class="chk chk-build" role="img" aria-label="Included"></span></td>
+                </tr>
+
+                <tr>
+                    <td class="dt-deliverable">
+                        <strong>Job architecture</strong>
+                        <ul class="dt-sub-items">
+                            <li>Career levels &amp; job families</li>
+                            <li>Architecture matrix</li>
+                            <li>Job title taxonomy</li>
+                            <li>Career path visualization</li>
+                        </ul>
+                    </td>
+                    <td class="dt-cell-check"><span class="chk chk-lite" role="img" aria-label="Foundational review"></span></td>
+                    <td class="dt-cell-check"><span class="chk chk-design" role="img" aria-label="Included"></span></td>
+                    <td class="dt-cell-check"><span class="chk chk-build" role="img" aria-label="Included"></span></td>
+                </tr>
+
+                <tr>
+                    <td class="dt-deliverable">
+                        <strong>Job descriptions</strong>
+                        <ul class="dt-sub-items">
+                            <li>Template creation &amp; review</li>
+                            <li>FLSA classification per role</li>
+                            <li>ADA-compliant language review</li>
+                            <li>Storage solution &amp; library protocol</li>
+                        </ul>
+                    </td>
+                    <td class="dt-cell-check"><span class="chk chk-lite" role="img" aria-label="Foundational review"></span></td>
+                    <td class="dt-cell-check"><span class="chk chk-design" role="img" aria-label="Included"></span></td>
+                    <td class="dt-cell-check"><span class="chk chk-build" role="img" aria-label="Included"></span></td>
+                </tr>
+
+                <tr>
+                    <td class="dt-deliverable">
+                        <strong>Compensation benchmarking</strong>
+                        <ul class="dt-sub-items">
+                            <li>Market survey data (3+ sources)</li>
+                            <li>Peer benchmarking analysis</li>
+                            <li>Pay positioning recommendations</li>
+                        </ul>
+                    </td>
+                    <td class="dt-cell-check"><span class="chk chk-lite" role="img" aria-label="Foundational review"></span></td>
+                    <td class="dt-cell-check"><span class="chk chk-design" role="img" aria-label="Included"></span></td>
+                    <td class="dt-cell-check"><span class="chk chk-build" role="img" aria-label="Included"></span></td>
+                </tr>
+
+                <tr>
+                    <td class="dt-deliverable">
+                        <strong>Salary band architecture</strong>
+                        <ul class="dt-sub-items">
+                            <li>Grade structure design</li>
+                            <li>Band midpoint modeling</li>
+                            <li>Range spread &amp; compression analysis</li>
+                        </ul>
+                    </td>
+                    <td class="dt-cell-check"><span class="chk-none" aria-label="Not included">—</span></td>
+                    <td class="dt-cell-check"><span class="chk-none" aria-label="Not included">—</span></td>
+                    <td class="dt-cell-check"><span class="chk chk-build" role="img" aria-label="Included"></span></td>
+                </tr>
+
+                <tr>
+                    <td class="dt-deliverable">
+                        <strong>Manager &amp; HR toolkit</strong>
+                        <ul class="dt-sub-items">
+                            <li>Interactive compensation model</li>
+                            <li>Offer &amp; promotion decision guide</li>
+                            <li>90-day post-launch support</li>
+                        </ul>
+                    </td>
+                    <td class="dt-cell-check"><span class="chk-none" aria-label="Not included">—</span></td>
+                    <td class="dt-cell-check"><span class="chk-none" aria-label="Not included">—</span></td>
+                    <td class="dt-cell-check"><span class="chk chk-build" role="img" aria-label="Included"></span></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        </div><!-- /deliverables-wrap -->
+
+        <p class="tier-footnote">Phases are designed to build on each other — but each stands on its own. Most clients begin with Assess.</p>
+
+    </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 5 — PROCESS / HOW IT WORKS
      ============================================================ -->
 <section id="process">
     <div class="container">
@@ -251,7 +443,7 @@
 
 
 <!-- ============================================================
-     SECTION 5 — ABOUT
+     SECTION 6 — ABOUT
      ============================================================ -->
 <section id="about">
     <div class="container">
@@ -295,7 +487,7 @@
 
 
 <!-- ============================================================
-     SECTION 6 — SOCIAL PROOF
+     SECTION 7 — SOCIAL PROOF
      ============================================================ -->
 <section id="proof">
     <div class="container">
@@ -365,7 +557,50 @@
 
 
 <!-- ============================================================
-     SECTION 7 — CTA FOOTER
+     SECTION 8 — PARTNERS
+     ============================================================ -->
+<section id="partners">
+    <div class="container">
+
+        <div class="section-intro">
+            <span class="section-label">Network</span>
+            <h2 class="section-headline">Trusted Partners.</h2>
+        </div>
+
+        <!--
+            ### HOW TO ADD A PARTNER
+            For each new partner, add one block inside .partners-row.
+
+            OPTION A — You have a logo file:
+              1. Drop the logo into the images/ folder (e.g. images/partner-name-logo.png)
+              2. Add this block (update href, src, alt, and width/height to match the file):
+
+                <a class="partner-logo-wrap" href="https://partner-website.com" target="_blank" rel="noopener noreferrer" aria-label="Partner Name (opens in new tab)">
+                    <img src="images/partner-name-logo.png" alt="Partner Name" width="140" height="34">
+                </a>
+
+            OPTION B — No logo yet (text placeholder):
+                <div class="partner-placeholder" aria-label="Partner Name">Partner Name</div>
+        -->
+
+        <div class="partners-row">
+            <!-- Logo file: drop images/lenhardt-partners-logo.png (or .svg) into the images/ folder, then remove the partner-placeholder and uncomment the img block below -->
+            <div class="partner-placeholder" aria-label="Lenhardt Partners">Lenhardt Partners</div>
+            <!--
+            <a class="partner-logo-wrap" href="#" target="_blank" rel="noopener noreferrer" aria-label="Lenhardt Partners (opens in new tab)">
+                <img src="images/lenhardt-partners-logo.png" alt="Lenhardt Partners" width="140" height="34">
+            </a>
+            -->
+        </div>
+
+        <p class="partners-note">Atlas works with a curated network of specialists. When your engagement requires expertise beyond compensation, you get the right person — not a generalist.</p>
+
+    </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 9 — CTA FOOTER
      ============================================================ -->
 <section id="cta">
 
@@ -399,11 +634,7 @@
      FOOTER BAR
      ============================================================ -->
 <footer id="footer-bar" role="contentinfo">
-    <span class="footer-bar-left" data-i18n-html="footer-copy">
-        &copy; 2026 Atlas Strategies. All rights reserved.
-    </span>
-    <span class="footer-bar-center">www.atlas-strategies.co</span>
-    <span class="footer-bar-right" data-i18n="footer-crafted">Crafted by Atlas Atelier</span>
+    <span class="footer-bar-center" data-i18n-html="footer-copy">&copy; 2026 Atlas Strategies. All rights reserved.</span>
 </footer>
 
 
@@ -434,8 +665,8 @@ var i18n = {
         'svc-card2-p':           'We engineer your Compensation Blueprint, establishing the core philosophy that guides your structural decisions. We design the salary bands, job leveling, and career pathways that serve as the necessary scaffolding for your organization\u2019s growth.',
         'svc-card3-h3':          'Build',
         'svc-card3-p':           'We deliver the interactive tools and frameworks\u2014including benchmarked salary bands and skill-to-job mappings\u2014that allow you to lead with a map in hand.',
-        'price-hourly-label':    'Hourly',
-        'price-hourly-detail':   'For targeted advisory &amp; analysis',
+        'price-hourly-label':    'Compensation Cycle',
+        'price-hourly-detail':   'Annual cycle management &amp; support',
         'price-project-label':   'Project',
         'price-project-detail':  '8\u201316 week engagements with defined deliverables',
         'price-retainer-label':  'Retainer',
@@ -493,8 +724,8 @@ var i18n = {
         'svc-card2-p':           'Dise\u00f1amos su Plano de Compensaci\u00f3n, estableciendo la filosof\u00eda central que gu\u00eda sus decisiones estructurales. Creamos las bandas salariales, la nivelaci\u00f3n de puestos y las trayectorias profesionales que sirven como el andamiaje necesario para el crecimiento de su organizaci\u00f3n.',
         'svc-card3-h3':          'Construir',
         'svc-card3-p':           'Entregamos las herramientas y marcos interactivos \u2014 incluidas bandas salariales comparativas y mapeos de habilidades a puestos \u2014 que le permiten liderar con un mapa en mano.',
-        'price-hourly-label':    'Por Hora',
-        'price-hourly-detail':   'Para asesor\u00eda y an\u00e1lisis espec\u00edficos',
+        'price-hourly-label':    'Ciclo de Compensaci\u00f3n',
+        'price-hourly-detail':   'Gesti\u00f3n y soporte del ciclo anual',
         'price-project-label':   'Proyecto',
         'price-project-detail':  'Compromisos de 8 a 16 semanas con entregables definidos',
         'price-retainer-label':  'Mensualidad',
@@ -585,7 +816,7 @@ function toggleLang() {
 // ── SUBWAY NAV — IntersectionObserver ──────────────────────
 (function () {
     var nodes = document.querySelectorAll('.subway-node');
-    var sections = ['hero', 'problem', 'services', 'process', 'about', 'proof', 'cta'];
+    var sections = ['hero', 'problem', 'services', 'projects', 'process', 'about', 'proof', 'partners', 'cta'];
 
     // Click: smooth scroll and prevent default anchor jump
     nodes.forEach(function (node) {
@@ -617,6 +848,22 @@ function toggleLang() {
     sections.forEach(function (id) {
         var el = document.getElementById(id);
         if (el) observer.observe(el);
+    });
+})();
+
+// ── TIER CARDS — scroll-reveal ──────────────────────────────
+(function () {
+    var tierObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('tier-visible');
+                tierObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('[data-tier]').forEach(function (card) {
+        tierObserver.observe(card);
     });
 })();
 </script>

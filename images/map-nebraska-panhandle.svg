@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <!-- Nebraska panhandle region: WY (left/upper), NE panhandle (right/upper), CO (lower) -->
+  <!-- Coordinate system: x = (lon + 105.5) * 100, y = (43.5 - lat) * 100 -->
+  <!-- Key cities: Sidney NE (41.14N, 102.98W) x=252 y=236 -->
+  <!--             Cheyenne WY (41.14N, 104.82W) x=68 y=236 -->
+  <!--             Denver CO (39.74N, 104.98W) x=52 y=376 -->
+
+  <!-- Wyoming (south-east portion in view) -->
+  <polygon points="0,0 150,0 150,250 0,250" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Nebraska panhandle -->
+  <polygon points="150,50 400,50 400,250 150,250" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Colorado (visible portion) -->
+  <polygon points="0,250 350,250 350,500 0,500" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Latitude reference line at 41°N (WY-NE-CO border) -->
+  <line x1="0" y1="250" x2="400" y2="250" stroke="#1a1a1a" stroke-width="0.8" stroke-dasharray="6,5" opacity="0.4"/>
+
+  <!-- Longitude reference line at 104°W (WY-NE border) -->
+  <line x1="150" y1="0" x2="150" y2="500" stroke="#1a1a1a" stroke-width="0.8" stroke-dasharray="6,5" opacity="0.4"/>
+
+  <!-- Road/rail connector line: Cheyenne → Sidney (east along 41°N) -->
+  <line x1="68" y1="236" x2="252" y2="236" stroke="#1a1a1a" stroke-width="1.2" stroke-dasharray="8,5" opacity="0.55"/>
+
+  <!-- Road/rail connector: Cheyenne → Denver (south through CO) -->
+  <line x1="68" y1="236" x2="52" y2="376" stroke="#1a1a1a" stroke-width="1.2" stroke-dasharray="8,5" opacity="0.55"/>
+
+  <!-- City markers: open circle with inner dot -->
+  <circle cx="252" cy="236" r="7" fill="none" stroke="#1a1a1a" stroke-width="1.8"/>
+  <circle cx="252" cy="236" r="2.5" fill="#1a1a1a"/>
+
+  <circle cx="68" cy="236" r="7" fill="none" stroke="#1a1a1a" stroke-width="1.8"/>
+  <circle cx="68" cy="236" r="2.5" fill="#1a1a1a"/>
+
+  <circle cx="52" cy="376" r="7" fill="none" stroke="#1a1a1a" stroke-width="1.8"/>
+  <circle cx="52" cy="376" r="2.5" fill="#1a1a1a"/>
+
+  <!-- City labels -->
+  <text x="266" y="231" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#1a1a1a" letter-spacing="2">SIDNEY</text>
+  <text x="84" y="220" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#1a1a1a" letter-spacing="2">CHEYENNE</text>
+  <text x="66" y="396" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#1a1a1a" letter-spacing="2">DENVER</text>
+
+  <!-- State labels (faint) -->
+  <text x="38" y="135" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="20" font-weight="300" fill="#1a1a1a" letter-spacing="5" opacity="0.35">WY</text>
+  <text x="255" y="155" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="20" font-weight="300" fill="#1a1a1a" letter-spacing="5" opacity="0.35">NE</text>
+  <text x="155" y="410" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="20" font-weight="300" fill="#1a1a1a" letter-spacing="5" opacity="0.35">CO</text>
+
+  <!-- Compass tick marks at border corners (cartographic detail) -->
+  <line x1="148" y1="248" x2="152" y2="252" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="148" y1="252" x2="152" y2="248" stroke="#1a1a1a" stroke-width="1.5"/>
+</svg>
