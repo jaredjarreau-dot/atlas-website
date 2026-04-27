@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 50">
+  <rect width="190" height="50" fill="white"/>
+  <!-- S-fish icon -->
+  <path d="M18,8 C18,8 30,8 30,16 C30,22 18,23 18,23" fill="#E5271B"/>
+  <path d="M18,23 C18,23 8,23 8,31 C8,39 18,40 18,40" fill="#C4200F"/>
+  <path d="M18,8 L10,2 L9,13 Z" fill="#E5271B"/>
+  <path d="M18,40 L26,47 L28,36 Z" fill="#C4200F"/>
+  <circle cx="26.5" cy="14" r="2" fill="white" opacity="0.85"/>
+  <!-- SmithPilot text -->
+  <text x="44" y="31" font-family="'Arial Black', Arial, Helvetica, sans-serif" font-weight="900" font-size="20">
+    <tspan fill="#1B2333">Smith</tspan><tspan fill="#E5271B">Pilot</tspan>
+  </text>
+  <text x="44" y="43" font-family="Arial, Helvetica, sans-serif" font-size="6.5" fill="#aaa" letter-spacing="0.8" font-weight="600">COMPENSATION SOLUTIONS FOR NONPROFITS</text>
+</svg>

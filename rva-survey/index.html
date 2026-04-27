@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Does RVA want 24/7 self-service pet washing stations? Help us find out.">
+    <title>Community Suds RVA Survey</title>
+    <style>
+        :root {
+            --navy:      #0F2648;
+            --gold:      #CD853F;
+            --gold-light:#d9955a;
+            --offwhite:  #F0F0F0;
+            --text:      #1A1A2E;
+            --white:     #FFFFFF;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background: var(--offwhite);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* ── Header ── */
+        header {
+            background: var(--navy);
+            padding: 18px 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        header a {
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 0.85rem;
+            letter-spacing: 0.04em;
+            opacity: 0.85;
+            transition: opacity 0.2s;
+        }
+        header a:hover { opacity: 1; }
+        header span { color: var(--white); opacity: 0.3; }
+
+        /* ── Hero ── */
+        .hero {
+            background: var(--navy);
+            color: var(--white);
+            padding: 64px 24px 56px;
+            text-align: center;
+        }
+        .hero .eyebrow {
+            display: inline-block;
+            background: rgba(205,133,63,0.18);
+            color: var(--gold);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 4px 14px;
+            border-radius: 20px;
+            margin-bottom: 22px;
+        }
+        .hero h1 {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 800;
+            line-height: 1.15;
+            max-width: 700px;
+            margin: 0 auto 28px;
+        }
+        .hero h1 em {
+            font-style: normal;
+            color: var(--gold);
+        }
+        .cta-btn {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--navy);
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 0.04em;
+            padding: 14px 36px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.1s;
+        }
+        .cta-btn:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+        /* ── Body ── */
+        .content {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 56px 24px 0;
+        }
+        .content p {
+            font-size: 1.05rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .content p strong {
+            color: var(--navy);
+            font-weight: 700;
+        }
+        .render-label {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 16px;
+        }
+        .render-img {
+            width: 100%;
+            max-width: 760px;
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto 48px;
+            box-shadow: 0 4px 24px rgba(15,38,72,0.15);
+        }
+
+        /* ── Survey embed ── */
+        .survey-section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 80px;
+        }
+        .survey-section h2 {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--navy);
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .airtable-embed-wrap {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 16px rgba(15,38,72,0.10);
+        }
+
+        /* ── Footer ── */
+        footer {
+            background: var(--navy);
+            color: rgba(255,255,255,0.45);
+            text-align: center;
+            font-size: 0.8rem;
+            padding: 28px 24px;
+            letter-spacing: 0.03em;
+        }
+        footer a { color: var(--gold); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+
+        @media (max-width: 600px) {
+            .hero { padding: 48px 20px 40px; }
+            .content, .survey-section { padding-left: 16px; padding-right: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="https://www.atlas-strategies.co">&#8592; Atlas Strategies</a>
+    <span>/</span>
+    <a href="#">Community Suds RVA</a>
+</header>
+
+<section class="hero">
+    <div class="eyebrow">Community Research</div>
+    <h1>Does <em>RVA</em> want 24/7 self-service<br>pet washing stations?</h1>
+    <a class="cta-btn" href="#survey">Take the Survey</a>
+</section>
+
+<div class="content">
+    <p>RVA's dog population is booming, but our apartments and homes aren't designed for the mess. We're researching a way to take the "Battle of the Bathtub" out of your home and into a sustainable, community-focused space.</p>
+
+    <p class="render-label"><strong>This is an AI render of the self-service dog-wash cabins we envision as a solution:</strong></p>
+    <img
+        class="render-img"
+        src="../images/Community Suds.jpg"
+        alt="AI render of self-service dog-wash cabins — Community Suds concept"
+    >
+</div>
+
+<div class="survey-section" id="survey">
+    <h2>Tell us what you think</h2>
+    <div class="airtable-embed-wrap">
+        <iframe
+            class="airtable-embed"
+            src="https://airtable.com/embed/appWiysYnqWTc5zAm/pagQwI83s2bL38UXj/form"
+            frameborder="0"
+            onmousewheel=""
+            width="100%"
+            height="900"
+            style="background: transparent; border: 0;"
+            title="Community Suds RVA Survey"
+        ></iframe>
+    </div>
+</div>
+
+<footer>
+    A <a href="https://www.atlas-strategies.co">Atlas Strategies</a> community project &nbsp;|&nbsp; Richmond, VA
+</footer>
+
+</body>
+</html>

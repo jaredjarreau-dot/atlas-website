@@ -59,33 +59,36 @@
   <text x="530" y="494" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#2A4A5A">Lake Pontchartrain</text>
 
   <!-- ── Mississippi River (filled wide path) ── -->
+  <!-- Redrawn: flows south through central LA, then curves east toward New Orleans (per actual geography) -->
   <path d="M 395,105 C 390,145 384,183 380,220 C 376,258 373,295 372,330
-           C 371,365 371,400 373,433 C 375,466 379,498 383,528
-           C 387,558 391,586 393,612 L 395,638
-           C 396,654 397,668 396,680 L 393,700"
+           C 371,362 372,394 374,422 C 377,442 380,462 383,476
+           C 395,492 420,510 444,526 C 460,534 472,543 476,552
+           C 476,560 474,568 470,576 C 464,590 454,610 444,630
+           L 440,652 C 437,668 434,682 430,700"
         stroke="#2A4A5A" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.5"/>
   <path d="M 395,105 C 390,145 384,183 380,220 C 376,258 373,295 372,330
-           C 371,365 371,400 373,433 C 375,466 379,498 383,528
-           C 387,558 391,586 393,612 L 395,638
-           C 396,654 397,668 396,680 L 393,700"
+           C 371,362 372,394 374,422 C 377,442 380,462 383,476
+           C 395,492 420,510 444,526 C 460,534 472,543 476,552
+           C 476,560 474,568 470,576 C 464,590 454,610 444,630
+           L 440,652 C 437,668 434,682 430,700"
         stroke="#6B9BB8" stroke-width="9" stroke-linecap="round" fill="none" opacity="0.85"/>
-  <text x="352" y="320" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#2A4A5A" transform="rotate(88,352,320)">Mississippi River</text>
+  <text x="370" y="320" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#2A4A5A" transform="rotate(88,370,320)">Mississippi River</text>
 
   <!-- ── Bird-foot delta ── -->
-  <path d="M 393,700 C 391,718 389,736 387,752 L 385,770"
+  <path d="M 430,700 C 428,718 426,736 424,752 L 422,770"
         stroke="#6B9BB8" stroke-width="8" stroke-linecap="round" fill="none"/>
-  <path d="M 390,712 C 378,724 366,736 356,749 C 348,760 343,772 341,784"
+  <path d="M 427,712 C 415,724 403,736 393,749 C 385,760 380,772 378,784"
         stroke="#6B9BB8" stroke-width="5" stroke-linecap="round" fill="none"/>
-  <path d="M 394,716 C 406,728 416,740 424,754 C 431,764 436,776 437,788"
+  <path d="M 431,716 C 443,728 453,740 461,754 C 468,764 473,776 474,788"
         stroke="#6B9BB8" stroke-width="5" stroke-linecap="round" fill="none"/>
-  <path d="M 388,718 C 372,730 356,743 346,757 C 337,768 332,781 330,793"
+  <path d="M 425,718 C 409,730 393,743 383,757 C 374,768 369,781 367,793"
         stroke="#6B9BB8" stroke-width="3.5" stroke-linecap="round" fill="none"/>
-  <path d="M 396,720 C 412,733 426,745 436,759 C 446,770 452,783 454,795"
+  <path d="M 433,720 C 449,733 463,745 473,759 C 483,770 489,783 491,795"
         stroke="#6B9BB8" stroke-width="3.5" stroke-linecap="round" fill="none"/>
 
-  <!-- ── Atchafalaya River ── -->
-  <path d="M 370,335 C 318,370 280,408 254,450 C 234,482 222,516 218,550
-           C 214,574 214,596 217,616 L 222,644 C 226,664 229,680 231,700"
+  <!-- ── Atchafalaya River — branches from Mississippi north of Baton Rouge ── -->
+  <path d="M 374,422 C 330,452 296,482 268,514 C 246,538 232,562 226,586
+           C 220,608 218,630 220,652 L 222,672 C 224,686 226,696 228,700"
         stroke="#6B9BB8" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.75"/>
   <text x="248" y="488" text-anchor="middle" font-family="Georgia,serif" font-size="8" font-style="italic" fill="#2A4A5A" transform="rotate(82,248,488)">Atchafalaya</text>
 
@@ -150,13 +153,13 @@
   <text x="350" y="760" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-style="italic" fill="#2A4A5A" letter-spacing="3">Gulf of Mexico</text>
 
   <!-- ── City markers ── -->
-  <!-- New Orleans -->
-  <circle cx="488" cy="542" r="6" fill="#4A2E0A" fill-opacity="0.4" stroke="#4A2E0A" stroke-width="1.2"/>
-  <text x="488" y="528" text-anchor="middle" font-family="Georgia,serif" font-size="11" font-weight="bold" fill="#4A2E0A">New Orleans</text>
+  <!-- New Orleans — crescent apex where river curves south -->
+  <circle cx="476" cy="552" r="6" fill="#4A2E0A" fill-opacity="0.4" stroke="#4A2E0A" stroke-width="1.2"/>
+  <text x="476" y="538" text-anchor="middle" font-family="Georgia,serif" font-size="11" font-weight="bold" fill="#4A2E0A">New Orleans</text>
 
-  <!-- Baton Rouge -->
-  <circle cx="415" cy="472" r="5" fill="#4A2E0A" fill-opacity="0.4" stroke="#4A2E0A" stroke-width="1"/>
-  <text x="415" y="459" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-weight="bold" fill="#4A2E0A">Baton Rouge</text>
+  <!-- Baton Rouge — east bank, before the eastward curve -->
+  <circle cx="383" cy="476" r="5" fill="#4A2E0A" fill-opacity="0.4" stroke="#4A2E0A" stroke-width="1"/>
+  <text x="383" y="462" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-weight="bold" fill="#4A2E0A">Baton Rouge</text>
 
   <!-- Shreveport -->
   <circle cx="124" cy="146" r="5" fill="#4A2E0A" fill-opacity="0.3" stroke="#4A2E0A" stroke-width="1"/>
