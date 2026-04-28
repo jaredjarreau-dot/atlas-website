@@ -1317,6 +1317,15 @@ a {
 
 .fn-article-body a:hover { border-color: var(--gold); }
 
+.fn-article-body .btn-primary {
+    color: var(--navy);
+    border-bottom: none;
+}
+.fn-article-body .btn-primary:hover {
+    color: var(--navy);
+    border-bottom: none;
+}
+
 .fn-article-body blockquote {
     border-left: 3px solid var(--gold);
     margin: 32px 0;
