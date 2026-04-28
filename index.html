@@ -12,8 +12,9 @@
 <!-- Skip to main content (ADA) -->
 <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<!-- Language Switcher -->
+<!-- Language Switcher + Field Notes -->
 <div id="lang-switcher" role="navigation" aria-label="Language selector">
+    <a href="/field-notes.html" class="header-fn-link">Field Notes</a>
     <button id="lang-btn" aria-label="Switch to Spanish / Cambiar a español" onclick="toggleLang()">
         <span class="lang-globe" aria-hidden="true">&#127760;</span>
         <span id="lang-btn-label">ES</span>
@@ -42,9 +43,6 @@
     </a>
     <a class="subway-node" href="#about" data-target="about" aria-label="About section">
         <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">AB</text></svg>
-    </a>
-    <a class="subway-node" href="#partners" data-target="partners" aria-label="Partners section">
-        <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">TP</text></svg>
     </a>
     <a class="subway-node" href="#cta" data-target="cta" aria-label="Contact section">
         <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false"><polygon class="hex-bg" points="14,2 25,8.5 25,19.5 14,26 3,19.5 3,8.5"/><text class="hex-label" x="14" y="14.5">CT</text></svg>
@@ -198,7 +196,7 @@
 
             <div class="pricing-tier">
                 <p class="pricing-label">Projects</p>
-                <p class="pricing-amount" style="font-size:1.5rem; letter-spacing:0.5px;">$10,000–$55,000</p>
+                <p class="pricing-amount" style="letter-spacing:0.5px;">$10,000–$55,000</p>
                 <p class="pricing-detail">Foundation through Build — scoped to your starting point</p>
             </div>
 
@@ -213,22 +211,22 @@
         <!-- SVG Branch Connector → tier columns (Foundation=44%, Assess=60%, Design=76%, Build=92% of 800px wrap) -->
         <!-- SVG is 110px tall; dots at y=110 land directly on the table header row below -->
         <div class="project-branch" aria-hidden="true">
-            <svg viewBox="0 0 100 110" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-                <!-- Trunk drops from center (x=50) -->
-                <line x1="50" y1="0" x2="50" y2="28" stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.65" vector-effect="non-scaling-stroke"/>
+            <svg viewBox="0 0 100 130" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                <!-- Trunk drops from center (x=50) — extended to connect to Projects tile above -->
+                <line x1="50" y1="0" x2="50" y2="50" stroke="#CD853F" stroke-width="2" stroke-opacity="0.8" vector-effect="non-scaling-stroke"/>
                 <!-- Branch far-left → Foundation (x=44) -->
-                <path d="M 50 28 C 50 55 44 55 44 110" stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.65" fill="none" vector-effect="non-scaling-stroke"/>
+                <path d="M 50 50 C 50 75 44 75 44 130" stroke="#CD853F" stroke-width="2" stroke-opacity="0.8" fill="none" vector-effect="non-scaling-stroke"/>
                 <!-- Branch left → Assess (x=60) -->
-                <path d="M 50 28 C 50 55 60 55 60 110" stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.65" fill="none" vector-effect="non-scaling-stroke"/>
+                <path d="M 50 50 C 50 75 60 75 60 130" stroke="#CD853F" stroke-width="2" stroke-opacity="0.8" fill="none" vector-effect="non-scaling-stroke"/>
                 <!-- Branch right → Design (x=76) -->
-                <path d="M 50 28 C 50 70 76 70 76 110" stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.65" fill="none" vector-effect="non-scaling-stroke"/>
+                <path d="M 50 50 C 50 90 76 90 76 130" stroke="#CD853F" stroke-width="2" stroke-opacity="0.8" fill="none" vector-effect="non-scaling-stroke"/>
                 <!-- Branch far-right → Build (x=92) -->
-                <path d="M 50 28 C 50 80 92 80 92 110" stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.65" fill="none" vector-effect="non-scaling-stroke"/>
+                <path d="M 50 50 C 50 100 92 100 92 130" stroke="#CD853F" stroke-width="2" stroke-opacity="0.8" fill="none" vector-effect="non-scaling-stroke"/>
                 <!-- Terminal dots land on table header row -->
-                <circle cx="44" cy="110" r="3" fill="#C9A84C" fill-opacity="0.65" vector-effect="non-scaling-stroke"/>
-                <circle cx="60" cy="110" r="3" fill="#C9A84C" fill-opacity="0.65" vector-effect="non-scaling-stroke"/>
-                <circle cx="76" cy="110" r="3" fill="#C9A84C" fill-opacity="0.65" vector-effect="non-scaling-stroke"/>
-                <circle cx="92" cy="110" r="3" fill="#C9A84C" fill-opacity="0.65" vector-effect="non-scaling-stroke"/>
+                <circle cx="44" cy="130" r="3.5" fill="#CD853F" fill-opacity="0.8" vector-effect="non-scaling-stroke"/>
+                <circle cx="60" cy="130" r="3.5" fill="#CD853F" fill-opacity="0.8" vector-effect="non-scaling-stroke"/>
+                <circle cx="76" cy="130" r="3.5" fill="#CD853F" fill-opacity="0.8" vector-effect="non-scaling-stroke"/>
+                <circle cx="92" cy="130" r="3.5" fill="#CD853F" fill-opacity="0.8" vector-effect="non-scaling-stroke"/>
             </svg>
         </div>
 
@@ -563,50 +561,7 @@
 </section>
 
 
-<!-- ============================================================
-     SECTION 8 — PARTNERS
-     ============================================================ -->
-<section id="partners">
-    <div class="container">
-
-        <div class="section-intro">
-            <span class="section-label">Network</span>
-            <h2 class="section-headline">Trusted Partners.</h2>
-        </div>
-
-        <!--
-            ### HOW TO ADD A PARTNER
-            For each new partner, add one block inside .partners-row.
-
-            OPTION A — You have a logo file:
-              1. Drop the logo into the images/ folder (e.g. images/partner-name-logo.png)
-              2. Add this block (update href, src, alt, and width/height to match the file):
-
-                <a class="partner-logo-wrap" href="https://partner-website.com" target="_blank" rel="noopener noreferrer" aria-label="Partner Name (opens in new tab)">
-                    <img src="images/partner-name-logo.png" alt="Partner Name" width="140" height="34">
-                </a>
-
-            OPTION B — No logo yet (text placeholder):
-                <div class="partner-placeholder" aria-label="Partner Name">Partner Name</div>
-        -->
-
-        <div class="partners-row">
-            <!-- Logo file: drop images/lenhardt-partners-logo.png (or .svg) into the images/ folder, then remove the partner-placeholder and uncomment the img block below -->
-            <div class="partner-placeholder" aria-label="Lenhardt Partners">Lenhardt Partners</div>
-            <!--
-            <a class="partner-logo-wrap" href="#" target="_blank" rel="noopener noreferrer" aria-label="Lenhardt Partners (opens in new tab)">
-                <img src="images/lenhardt-partners-logo.png" alt="Lenhardt Partners" width="140" height="34">
-            </a>
-            -->
-            <a class="partner-logo-wrap partner-logo-color" href="https://smithpilot.com/" target="_blank" rel="noopener noreferrer" aria-label="SmithPilot — Compensation Solutions for Nonprofits (opens in new tab)">
-                <img src="images/smithpilot-logo.svg" alt="SmithPilot — Compensation Solutions for Nonprofits" width="160" height="42">
-            </a>
-        </div>
-
-        <p class="partners-note">Atlas works with a curated network of specialists. When your engagement requires expertise beyond compensation, you get the right person — not a generalist.</p>
-
-    </div>
-</section>
+<!-- SECTION 8 — PARTNERS (hidden until ready) -->
 
 
 <!-- ============================================================
@@ -839,7 +794,7 @@ function toggleLang() {
 // ── SUBWAY NAV — IntersectionObserver ──────────────────────
 (function () {
     var nodes = document.querySelectorAll('.subway-node');
-    var sections = ['hero', 'problem', 'services', 'projects', 'process', 'about', 'partners', 'cta'];
+    var sections = ['hero', 'problem', 'services', 'projects', 'process', 'about', 'cta'];
 
     // Click: smooth scroll and prevent default anchor jump
     nodes.forEach(function (node) {
