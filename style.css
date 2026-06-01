@@ -1990,8 +1990,8 @@ a {
 /* ── Checkmark icons via CSS background data URI ── */
 .chk {
     display: inline-block;
-    width: 24px;
-    height: 24px;
+    width: 36px;
+    height: 36px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -2053,6 +2053,14 @@ a {
     font-weight: 500;
     vertical-align: middle;
     font-variant-numeric: tabular-nums;
+}
+
+.dt-footnote {
+    font-size: 0.78rem;
+    color: rgba(11,30,59,0.50);
+    margin-top: 12px;
+    padding: 0 4px;
+    font-style: italic;
 }
 
 /* Mobile: shrink padding, hide sub-items */
