@@ -1,5 +1,5 @@
 ---
-title: "AI Is Only as Good as Its Data"
+title: "Clean Data, Better Outcomes"
 slug: ai-and-data-quality
 date: 2026-04-27
 summary: "A thought from TomTom Fest: does a great model with messy data beat a good model with clean data? And what does the answer mean for compensation benchmarking?"

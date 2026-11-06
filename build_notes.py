@@ -25,6 +25,21 @@ OUTPUT_DIR  = "field-notes"
 INDEX_FILE  = "field-notes.html"
 CALENDAR_URL = "https://calendar.app.google/XVKTM5rpDtDagXVy5"
 
+# Google Analytics (GA4), same tag as index.html. Inserted into every generated page.
+GA_TAG = """    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JEK20X5L8E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JEK20X5L8E');
+    </script>"""
+
+# Default call-to-action box. A note can override with cta_heading / cta_text in its frontmatter
+# (cta_heading: "" drops the heading).
+CTA_HEADING = "Discuss your compensation architecture"
+CTA_TEXT = "Ready to build something defensible, clear, and built to last? Let&rsquo;s get into the workshop."
+
 # ── FRONTMATTER PARSER ────────────────────────────────────────
 
 def parse_frontmatter(raw):
@@ -70,6 +85,7 @@ ARTICLE_TEMPLATE = """\
     <meta name="description" content="{summary}">
     <title>{title} | Field Notes — Atlas Strategies</title>
     <link rel="stylesheet" href="../style.css">
+{ga_tag}
 </head>
 <body>
 
@@ -93,8 +109,7 @@ ARTICLE_TEMPLATE = """\
         {body_html}
 
         <div class="fn-cta-box">
-            <h3>Discuss your compensation architecture</h3>
-            <p>Ready to build something defensible, clear, and built to last? Let&rsquo;s get into the workshop.</p>
+            {cta_heading_html}<p>{cta_text}</p>
             <a href="{calendar_url}" class="btn btn-primary" target="_blank" rel="noopener noreferrer"
                aria-label="Schedule a Discovery Session (opens in new tab)">
                 Schedule a Discovery Session
@@ -122,6 +137,7 @@ INDEX_TEMPLATE = """\
     <meta name="description" content="Field Notes from Atlas Strategies — long-form insights on compensation architecture, job design, and skills-based organizations.">
     <title>Field Notes | Atlas Strategies</title>
     <link rel="stylesheet" href="style.css">
+{ga_tag}
 </head>
 <body>
 
@@ -185,12 +201,16 @@ def build():
 
         body_html = markdown.markdown(body, extensions=["extra", "nl2br"])
 
+        cta_heading = meta.get("cta_heading", CTA_HEADING)
         article_html = ARTICLE_TEMPLATE.format(
             title=title,
             summary=summary,
             date=date_str,
             body_html=body_html,
             calendar_url=CALENDAR_URL,
+            ga_tag=GA_TAG,
+            cta_heading_html=f"<h3>{cta_heading}</h3>\n            " if cta_heading else "",
+            cta_text=meta.get("cta_text", CTA_TEXT),
         )
 
         out_path = os.path.join(OUTPUT_DIR, f"{slug}.html")
@@ -199,10 +219,11 @@ def build():
 
         print(f"  ✓ {out_path}")
 
+        # The index card can use a shorter title/summary than the article itself
         posts.append({
-            "title": title,
+            "title": meta.get("card_title", title),
             "slug": slug,
-            "summary": summary,
+            "summary": meta.get("card_summary", summary),
             "date_str": date_str,
             "dt": dt,
         })
@@ -220,7 +241,7 @@ def build():
         for p in posts
     )
 
-    index_html = INDEX_TEMPLATE.format(cards=cards)
+    index_html = INDEX_TEMPLATE.format(cards=cards, ga_tag=GA_TAG)
     with open(INDEX_FILE, "w", encoding="utf-8") as f:
         f.write(index_html)
 

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A free, copy-and-paste AI prompt that compares a current job description with the redesigned role, shows the skills gap, and suggests how to develop the people in the role today.">
+    <title>The Skills Gap Prompt: Redesigning a Role Without Leaving People Behind | Field Notes — Atlas Strategies</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JEK20X5L8E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JEK20X5L8E');
+    </script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="fn-article-hero">
+    <div class="container">
+        <div class="fn-breadcrumb">
+            <a href="/">Atlas Strategies</a>
+            <span>/</span>
+            <a href="/field-notes.html">Field Notes</a>
+        </div>
+        <h1 class="fn-article-title">The Skills Gap Prompt: Redesigning a Role Without Leaving People Behind</h1>
+        <p class="fn-article-meta">December 11, 2026</p>
+    </div>
+</header>
+
+<main id="main-content">
+    <div class="fn-article-body">
+
+        <p>This prompt compares a current job description with the redesigned version of the role. It identifies the skills and proficiency levels the new role needs, shows the gap, and suggests ways to develop the people in the role today. Paste it into any AI chat tool and replace the [brackets] with your own content.</p>
+<style>
+.sg-prompt { position: relative; margin: 28px 0 36px; border: 1px solid var(--card-border); border-left: 4px solid var(--gold); border-radius: 6px; background: #F7F5F2; }
+.sg-prompt pre { margin: 0; padding: 56px 24px 24px; white-space: pre-wrap; word-wrap: break-word; font-family: 'SFMono-Regular', Menlo, Consolas, monospace; font-size: 14px; line-height: 1.6; color: var(--text); }
+.sg-copy { position: absolute; top: 12px; right: 12px; padding: 8px 18px; border: none; border-radius: 4px; background: var(--navy); color: var(--white); font: 600 14px 'Helvetica Neue', Helvetica, Arial, sans-serif; cursor: pointer; }
+.sg-copy:hover, .sg-copy:focus-visible { background: var(--gold); outline: none; }
+@media (max-width: 600px) { .sg-prompt pre { padding: 56px 16px 16px; font-size: 13px; } }
+</style>
+
+<div class="sg-prompt">
+<button type="button" class="sg-copy" data-target="sg-prompt-text" aria-label="Copy the prompt to your clipboard">Copy prompt</button>
+<pre id="sg-prompt-text">You are an experienced compensation and job-architecture professional. I'm redesigning a job and need to understand how the skills change, and how to help the people in the role today develop the skills to be successful.
+
+CURRENT JOB DESCRIPTION
+[paste the current job description]
+
+REDESIGNED ROLE
+- Outputs this role delivers: [3-4 outputs]
+- Tasks that stay with a person: [list]
+- Tasks moving to AI, automation, contractors or another role: [list]
+
+Use this proficiency scale throughout:
+- Basic: does the task with guidance or a checklist
+- Working: does it independently in routine situations
+- Advanced: handles complex or unusual cases and coaches others
+- Expert: sets the standard others follow; rare below senior or specialist roles
+
+Please do the following.
+
+1. Skills for the redesigned role. Name the closest O*NET occupation, with its SOC code. List the 6-8 most important skills for the tasks that stay with a person, using O*NET names where they fit. At least half must be specific to this job's work (knowledge areas, technical skills or tools), and no more than two can be general skills like communication or critical thinking. Calibrate levels to the role: for most non-manager roles, most skills should be Basic or Working. Table columns: Skill | Task it supports | Importance (1-5) | Level needed | What that level looks like here (one sentence) | Confidence (High, Medium or Low).
+Include an AI skill only where a task uses an AI tool, and say what the person must be able to do with it.
+
+2. The gap. Using the same skill names and scale, rate the level the current job description requires. In one table show: Skill | Current level | Needed level | Change (New, Higher, Same, Lower or No longer needed). Include skills from the current job that drop out.
+
+3. Development plan for the people in the role today. For each New or Higher skill: Skill | Approach (on-the-job practice, mentoring or shadowing, a short course, a certification, or a project assignment) | Time to reach the needed level | Priority (High, Medium or Low). Then add one line that starts "Carry-over skills:" naming the skills marked Lower or No longer needed that could be used in another role.
+
+Rules:
+- Don't add degrees, years of experience or certifications unless a task truly or legally requires one. If you do, explain why.
+- Use neutral, inclusive language.
+- Keep the whole answer under 700 words. Tables only, plus one short sentence before each table.
+- If you're not sure of an O*NET name or SOC code, say so in the Confidence column.
+- End with exactly this line: "This compares two jobs, not people. Confirm each person's actual skills with them and their manager before acting on it."</pre>
+</div>
+
+<script>
+document.querySelectorAll('.sg-copy').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var text = document.getElementById(btn.dataset.target).innerText;
+    var done = function () {
+      btn.textContent = 'Copied!';
+      setTimeout(function () { btn.textContent = 'Copy prompt'; }, 2000);
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(done);
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); done(); } finally { document.body.removeChild(ta); }
+    }
+  });
+});
+</script>
+
+<h2>Review and edit before using</h2>
+<p>This prompt gives you a first draft, not an answer. Before you use the result:</p>
+<ol>
+<li><strong>Check the occupation.</strong> Look up the O*NET code it gives you at <a href="https://www.onetonline.org/">onetonline.org</a>. In testing, the AI tools sometimes picked the wrong occupation or code.</li>
+<li><strong>Check the proficiency levels.</strong> Are they realistic for this role, or inflated? AI tends to rate too many skills Advanced.</li>
+<li><strong>Check what it says is "no longer needed."</strong> AI sometimes drops work that didn't actually move, like opening the office or researching a briefing.</li>
+<li><strong>Add what's missing.</strong> The knowledge only someone who has done the job would know rarely shows up in a first draft.</li>
+<li><strong>Cut what the work doesn't need.</strong> Keep a degree, years of experience or a certification only if a task truly requires it.</li>
+<li><strong>Confirm with people.</strong> The prompt compares jobs, not people. Validate each person's actual skills with them and their manager before you build a development plan around them.</li>
+<li><strong>Keep it confidential.</strong> NEVER paste employee names, pay or other personal data online or into a public AI tool.</li>
+</ol>
+<p><em>Built for the AI Ready RVA HR Cohort workshop, December 11, 2026.</em></p>
+
+        <div class="fn-cta-box">
+            <h3>Discuss your compensation architecture</h3>
+            <p>Ready to build something defensible, clear, and built to last? Let&rsquo;s get into the workshop.</p>
+            <a href="https://calendar.app.google/XVKTM5rpDtDagXVy5" class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+               aria-label="Schedule a Discovery Session (opens in new tab)">
+                Schedule a Discovery Session
+            </a>
+        </div>
+
+    </div>
+</main>
+
+<footer id="footer-bar" role="contentinfo">
+    <span class="footer-bar-center">&copy; 2026 Atlas Strategies. All rights reserved.</span>
+    <a href="/field-notes.html" class="footer-fn-link">Field Notes</a>
+</footer>
+
+</body>
+</html>
