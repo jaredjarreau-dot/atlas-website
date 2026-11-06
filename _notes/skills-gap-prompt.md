@@ -82,4 +82,8 @@ This prompt gives you a first draft, not an answer. Before you use the result:
 6. **Confirm with people.** The prompt compares jobs, not people. Validate each person's actual skills with them and their manager before you build a development plan around them.
 7. **Keep it confidential.** NEVER paste employee names, pay or other personal data online or into a public AI tool.
 
+## What comes next
+
+This prompt maps the **demand side**: the skills a redesigned role needs. The next step is the **supply side**: the skills your people have today. The gap between the two is what drives strategic workforce planning. It tells you where to build, borrow, buy or bot.
+
 *Built for the AI Ready RVA HR Cohort workshop, December 11, 2026.*
