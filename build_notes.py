@@ -122,6 +122,7 @@ ARTICLE_TEMPLATE = """\
 <footer id="footer-bar" role="contentinfo">
     <span class="footer-bar-center">&copy; 2026 Atlas Strategies. All rights reserved.</span>
     <a href="/field-notes.html" class="footer-fn-link">Field Notes</a>
+    <a href="/referrals.html" class="footer-fn-link">Refer a Client</a>
 </footer>
 
 </body>
@@ -158,6 +159,7 @@ INDEX_TEMPLATE = """\
 <footer id="footer-bar" role="contentinfo">
     <span class="footer-bar-center">&copy; 2026 Atlas Strategies. All rights reserved.</span>
     <a href="/field-notes.html" class="footer-fn-link">Field Notes</a>
+    <a href="/referrals.html" class="footer-fn-link">Refer a Client</a>
 </footer>
 
 </body>
