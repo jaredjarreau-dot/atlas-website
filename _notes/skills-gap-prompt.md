@@ -38,9 +38,12 @@ Please do the following.
 1. Skills for the redesigned role. Name the closest O*NET occupation, with its SOC code. List the 6-8 most important skills for the tasks that stay with a person, using O*NET names where they fit. At least half must be specific to this job's work (knowledge areas, technical skills or tools), and no more than two can be general skills like communication or critical thinking. Calibrate levels to the role: for most non-manager roles, most skills should be Basic or Working. Table columns: Skill | Task it supports | Importance (1-5) | Level needed | What that level looks like here (one sentence) | Confidence (High, Medium or Low).
 Include an AI skill only where a task uses an AI tool, and say what the person must be able to do with it.
 
-2. The gap. Using the same skill names and scale, rate the level the current job description requires. In one table show: Skill | Current level | Needed level | Change (New, Higher, Same, Lower or No longer needed). Include skills from the current job that drop out.
-
-3. Development plan for the people in the role today. For each New or Higher skill: Skill | Approach (on-the-job practice, mentoring or shadowing, a short course, a certification, or a project assignment) | Time to reach the needed level | Priority (High, Medium or Low). Then add one line that starts "Carry-over skills:" naming the skills marked Lower or No longer needed that could be used in another role.
+2. The gap and how to close it (always include this table). Using the same skill names and scale, rate the level the current job description requires. Show one table: Skill | Current level | Needed level | Gap | How to close it | Time to close | Priority (High, Medium or Low).
+- Gap: use only New, +2, +1, 0, -1 or Drops out.
+- Order the rows by Gap, top to bottom: New, +2, +1, 0, -1, Drops out.
+- How to close it: exactly one label per row, never two (if more than one fits, choose the main one): No gap, On-the-job practice, Mentoring, Short course, Project assignment, Certification, or Keep it warm (needed less, but keep it sharp as a backup). Use No gap for 0 and Keep it warm for -1 or Drops out.
+- Time to close: in weeks or months, or "None" for No gap and Keep it warm.
+Include skills from the current job that drop out or go down a level. Then add one line that starts "Carry-over skills:" naming skills that are needed less here but could be used in another role.
 
 Rules:
 - Don't add degrees, years of experience or certifications unless a task truly or legally requires one. If you do, explain why.
@@ -76,11 +79,12 @@ This prompt gives you a first draft, not an answer. Before you use the result:
 
 1. **Check the occupation.** Look up the O*NET code it gives you at [onetonline.org](https://www.onetonline.org/). In testing, the AI tools sometimes picked the wrong occupation or code.
 2. **Check the proficiency levels.** Are they realistic for this role, or inflated? AI tends to rate too many skills Advanced.
-3. **Check what it says is "no longer needed."** AI sometimes drops work that didn't actually move, like opening the office or researching a briefing.
-4. **Add what's missing.** The knowledge only someone who has done the job would know rarely shows up in a first draft.
-5. **Cut what the work doesn't need.** Keep a degree, years of experience or a certification only if a task truly requires it.
-6. **Confirm with people.** The prompt compares jobs, not people. Validate each person's actual skills with them and their manager before you build a development plan around them.
-7. **Keep it confidential.** NEVER paste employee names, pay or other personal data online or into a public AI tool.
+3. **Check what it says "drops out."** AI sometimes drops work that didn't actually move, like opening the office or researching a briefing.
+4. **Check "How to close it."** The plan defaults to developing the people in the role. If a gap is too big or too slow to close that way, that's your cue to revisit the plan: bring in outside help while you build, or hire for it.
+5. **Add what's missing.** The knowledge only someone who has done the job would know rarely shows up in a first draft.
+6. **Cut what the work doesn't need.** Keep a degree, years of experience or a certification only if a task truly requires it.
+7. **Confirm with people.** The prompt compares jobs, not people. Validate each person's actual skills with them and their manager before you build a development plan around them.
+8. **Keep it confidential.** NEVER paste employee names, pay or other personal data online or into a public AI tool.
 
 ## What comes next
 
