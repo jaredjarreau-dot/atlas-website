@@ -1,5 +1,6 @@
 ---
 title: "The Skills Gap Prompt: Redesigning a Role Without Leaving People Behind"
+seo_title: "The Skills Gap Prompt for Redesigned Roles"
 slug: skills-gap-prompt
 date: 2026-12-11
 summary: "A free, copy-and-paste AI prompt that compares a current job description with the redesigned role, shows the skills gap, and suggests how to develop the people in the role today."

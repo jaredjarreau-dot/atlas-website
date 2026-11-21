@@ -10,7 +10,7 @@ Requires: pip install markdown
 """
 
 import os
-import re
+import html, re
 import glob
 from datetime import datetime
 
@@ -24,6 +24,10 @@ NOTES_DIR   = "_notes"
 OUTPUT_DIR  = "field-notes"
 INDEX_FILE  = "field-notes.html"
 CALENDAR_URL = "https://calendar.app.google/XVKTM5rpDtDagXVy5"
+SITE = "https://atlas-strategies.co"
+OG_IMAGE = f"{SITE}/images/logo.png"
+# Static pages for sitemap.xml (referral-thanks and rva-survey are noindex, so they're left out).
+STATIC_PAGES = ["/", "/referrals.html", "/referral-terms.html", "/field-notes.html"]
 
 # Google Analytics (GA4), same tag as index.html. Inserted into every generated page.
 GA_TAG = """    <!-- Google tag (gtag.js) -->
@@ -34,6 +38,32 @@ GA_TAG = """    <!-- Google tag (gtag.js) -->
         gtag('js', new Date());
         gtag('config', 'G-JEK20X5L8E');
     </script>"""
+
+def seo_head(title, description, path, kind="website", published=None):
+    """Canonical URL, Open Graph / social preview tags and JSON-LD for one page (added Nov 2026, SEO phase 1)."""
+    import json
+    url = f"{SITE}{path}"
+    esc = lambda t: html.escape(t, quote=True)
+    tags = [
+        f'    <link rel="canonical" href="{url}">',
+        f'    <meta property="og:type" content="{kind}">',
+        f'    <meta property="og:title" content="{esc(title)}">',
+        f'    <meta property="og:description" content="{esc(description)}">',
+        f'    <meta property="og:url" content="{url}">',
+        f'    <meta property="og:image" content="{OG_IMAGE}">',
+        '    <meta property="og:site_name" content="Atlas Strategies">',
+        '    <meta name="twitter:card" content="summary">',
+    ]
+    if kind == "article":
+        ld = {"@context": "https://schema.org", "@type": "Article", "headline": title, "description": description,
+              "url": url, "image": OG_IMAGE,
+              "author": {"@type": "Person", "name": "Jared Jarreau", "url": SITE},
+              "publisher": {"@type": "Organization", "name": "Atlas Strategies", "url": SITE, "logo": OG_IMAGE}}
+        if published:
+            ld["datePublished"] = published
+        tags.append('    <script type="application/ld+json">' + json.dumps(ld) + "</script>")
+    return "\n".join(tags)
+
 
 # Default call-to-action box. A note can override with cta_heading / cta_text in its frontmatter
 # (cta_heading: "" drops the heading).
@@ -83,8 +113,9 @@ ARTICLE_TEMPLATE = """\
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{summary}">
-    <title>{title} | Field Notes — Atlas Strategies</title>
+    <title>{page_title} | Atlas Strategies</title>
     <link rel="stylesheet" href="../style.css">
+{seo_head}
 {ga_tag}
 </head>
 <body>
@@ -138,6 +169,7 @@ INDEX_TEMPLATE = """\
     <meta name="description" content="Field Notes from Atlas Strategies — long-form insights on compensation architecture, job design, and skills-based organizations.">
     <title>Field Notes | Atlas Strategies</title>
     <link rel="stylesheet" href="style.css">
+{seo_head}
 {ga_tag}
 </head>
 <body>
@@ -211,6 +243,9 @@ def build():
             body_html=body_html,
             calendar_url=CALENDAR_URL,
             ga_tag=GA_TAG,
+            page_title=meta.get("seo_title", title),
+            seo_head=seo_head(meta.get("seo_title", title), summary, f"/{OUTPUT_DIR}/{slug}.html", "article",
+                              dt.strftime("%Y-%m-%d") if dt else None),
             cta_heading_html=f"<h3>{cta_heading}</h3>\n            " if cta_heading else "",
             cta_text=meta.get("cta_text", CTA_TEXT),
         )
@@ -243,12 +278,22 @@ def build():
         for p in posts
     )
 
-    index_html = INDEX_TEMPLATE.format(cards=cards, ga_tag=GA_TAG)
+    index_html = INDEX_TEMPLATE.format(cards=cards, ga_tag=GA_TAG, seo_head=seo_head(
+        "Field Notes | Atlas Strategies",
+        "Field Notes from Atlas Strategies — long-form insights on compensation architecture, job design, and skills-based organizations.",
+        "/field-notes.html"))
     with open(INDEX_FILE, "w", encoding="utf-8") as f:
         f.write(index_html)
 
     print(f"  ✓ {INDEX_FILE}  ({len(posts)} article{'s' if len(posts) != 1 else ''})")
-    print("\nDone. Deploy the field-notes/ directory and field-notes.html.")
+    # sitemap.xml: static pages + every field note (regenerated on each build)
+    urls = [f"{SITE}{u}" for u in STATIC_PAGES] + [f"{SITE}/{OUTPUT_DIR}/{p['slug']}.html" for p in posts]
+    with open("sitemap.xml", "w", encoding="utf-8") as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
+        f.writelines(f"  <url><loc>{u}</loc></url>\n" for u in urls)
+        f.write("</urlset>\n")
+    print(f"  ✓ sitemap.xml  ({len(urls)} URLs)")
+    print("\nDone. Deploy the field-notes/ directory, field-notes.html and sitemap.xml.")
 
 if __name__ == "__main__":
     build()

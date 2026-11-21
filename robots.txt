@@ -1,0 +1,6 @@
+# atlas-strategies.co
+# All crawlers welcome, including AI assistants (GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended).
+User-agent: *
+Allow: /
+
+Sitemap: https://atlas-strategies.co/sitemap.xml
