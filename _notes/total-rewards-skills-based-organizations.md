@@ -4,6 +4,7 @@ seo_title: "Skills-Based Organizations Still Need Job Architecture"
 slug: total-rewards-skills-based-organizations
 date: 2026-07-29
 summary: "Skills data alone doesn't answer the question that lands on a Total Rewards desk: what do we pay for a skill? Survey vendors price jobs, not skills — and job architecture is still the foundation that makes a skills-based organization possible."
+seo_description: "Survey vendors price jobs, not skills. Why skills data alone can't say what to pay for a skill, and why job architecture is still the foundation."
 card_title: "Total Rewards & Skills-Based Organizations"
 card_summary: "Skills data alone doesn’t answer the question that lands on a Total Rewards desk: what do we pay for a skill? Survey vendors price jobs, not skills."
 ---

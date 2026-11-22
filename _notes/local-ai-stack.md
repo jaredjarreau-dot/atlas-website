@@ -3,6 +3,7 @@ title: "The Case for Keeping Client Data Local"
 slug: local-ai-stack
 date: 2026-05-26
 summary: "How an HR consultant rebuilt his workflow around data security, local models, and hardware he already owned — and why keeping client data off the cloud is a professional obligation."
+seo_description: "How an HR consultant rebuilt his workflow around local AI models and hardware he already owned, and why keeping client data off the cloud matters."
 ---
 
 I am not a software engineer. My background is in HR and compensation consulting — the work of designing pay structures, building skills frameworks, and advising organizations on their most sensitive workforce decisions. It is, almost by definition, work that touches the most confidential data a company holds.

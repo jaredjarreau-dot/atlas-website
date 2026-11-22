@@ -4,6 +4,7 @@ seo_title: "The Skills Gap Prompt for Redesigned Roles"
 slug: skills-gap-prompt
 date: 2026-12-11
 summary: "A free, copy-and-paste AI prompt that compares a current job description with the redesigned role, shows the skills gap, and suggests how to develop the people in the role today."
+seo_description: "A free, copy-and-paste AI prompt that compares a current job with the redesigned role, shows the skills gap, and suggests how to develop your people."
 ---
 
 This prompt compares a current job description with the redesigned version of the role. It identifies the skills and proficiency levels the new role needs, shows the gap, and suggests ways to develop the people in the role today. Paste it into any AI chat tool and replace the [brackets] with your own content.

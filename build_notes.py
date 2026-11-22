@@ -65,6 +65,8 @@ def seo_head(title, description, path, kind="website", published=None):
     return "\n".join(tags)
 
 
+# seo_description (optional frontmatter): a shorter search snippet (~155 characters) for the meta and social
+# description tags. The page and its card keep using summary.
 # Default call-to-action box. A note can override with cta_heading / cta_text in its frontmatter
 # (cta_heading: "" drops the heading).
 CTA_HEADING = "Discuss your compensation architecture"
@@ -112,7 +114,7 @@ ARTICLE_TEMPLATE = """\
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{summary}">
+    <meta name="description" content="{meta_description}">
     <title>{page_title} | Atlas Strategies</title>
     <link rel="stylesheet" href="../style.css">
 {seo_head}
@@ -244,7 +246,8 @@ def build():
             calendar_url=CALENDAR_URL,
             ga_tag=GA_TAG,
             page_title=meta.get("seo_title", title),
-            seo_head=seo_head(meta.get("seo_title", title), summary, f"/{OUTPUT_DIR}/{slug}.html", "article",
+            meta_description=html.escape(meta.get("seo_description", summary), quote=True),
+            seo_head=seo_head(meta.get("seo_title", title), meta.get("seo_description", summary), f"/{OUTPUT_DIR}/{slug}.html", "article",
                               dt.strftime("%Y-%m-%d") if dt else None),
             cta_heading_html=f"<h3>{cta_heading}</h3>\n            " if cta_heading else "",
             cta_text=meta.get("cta_text", CTA_TEXT),
