@@ -694,6 +694,23 @@ a {
     opacity: 0.6;
 }
 
+.testimonial-quote.values-headline {
+    font-size: 1.35rem;
+    line-height: 1.4;
+}
+
+.testimonial-role.values-tagline {
+    margin-top: -14px;
+}
+
+.testimonial-quote.values-statement {
+    font-style: normal;
+}
+
+.testimonial-quote.values-statement::before {
+    content: none;
+}
+
 .testimonial-attribution {
     border-top: 1px solid var(--card-border);
     padding-top: 20px;
