@@ -25,7 +25,7 @@ OUTPUT_DIR  = "field-notes"
 INDEX_FILE  = "field-notes.html"
 CALENDAR_URL = "https://calendar.app.google/XVKTM5rpDtDagXVy5"
 SITE = "https://atlas-strategies.co"
-OG_IMAGE = f"{SITE}/images/logo.png"
+OG_IMAGE = f"{SITE}/images/share-card.png"   # 1200x627 social preview (Nov 23, 2026)
 # Static pages for sitemap.xml (referral-thanks and rva-survey are noindex, so they're left out).
 STATIC_PAGES = ["/", "/referrals.html", "/referral-terms.html", "/field-notes.html"]
 
