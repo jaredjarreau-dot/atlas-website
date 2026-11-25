@@ -4,6 +4,7 @@ seo_title: "AI Job Redesign Checklist: Cost, Scale and Risk"
 slug: before-you-finalize-the-plan
 date: 2026-12-11
 summary: "Part 3 of 3: checklists for the all-in cost, scale and urgency, and risk and governance of an AI redesign, plus how to test it before it goes live."
+seo_description: "Before an AI job redesign goes live, check the all-in cost, scale and urgency, and risk and governance, then test it. Part 3 of 3."
 ---
 
 <style>

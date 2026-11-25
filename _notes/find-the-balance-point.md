@@ -4,6 +4,7 @@ seo_title: "Find the Human-AI Balance Point, Task by Task"
 slug: find-the-balance-point
 date: 2026-12-11
 summary: "Part 2 of 3: six levels of human-AI balance and a five-question decision tree for deciding how much AI each task should get."
+seo_description: "Six levels of human-AI balance and a five-question decision tree for deciding how much AI each task in a job should get. Part 2 of 3."
 ---
 
 <style>

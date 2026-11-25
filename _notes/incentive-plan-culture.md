@@ -3,6 +3,7 @@ title: "Your Comp Plan Is the Culture Document"
 slug: incentive-plan-culture
 date: 2026-06-08
 summary: "The single biggest driver of your sales team's culture isn't your values statement. Harvard Business School research and field experience agree: it's your comp plan."
+seo_description: "Your sales team's culture isn't set by your values statement. Harvard Business School research and field experience agree: it's your comp plan."
 card_summary: "The single biggest driver of your sales team’s culture isn’t your values statement. Harvard Business School research and field experience agree: it’s your comp plan."
 cta_heading: ""
 cta_text: "Working through an incentive plan redesign or building a comp structure from scratch? I would be glad to think through it with you."

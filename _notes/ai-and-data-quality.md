@@ -3,6 +3,7 @@ title: "Clean Data, Better Outcomes"
 slug: ai-and-data-quality
 date: 2026-04-27
 summary: "A thought from TomTom Fest: does a great model with messy data beat a good model with clean data? And what does the answer mean for compensation benchmarking?"
+seo_description: "Does a great model with messy data beat a good model with clean data? What the answer means for compensation benchmarking."
 ---
 
 Last week I attended the TomTom Festival in Charlottesville. It was my first time adventuring at this festival and I really loved how they weave the Innovation Summit through the festival — there are events for the entire city, so not just a conference, a community event. I think that is cool, well done Charlottesville.

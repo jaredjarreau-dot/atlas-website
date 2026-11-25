@@ -4,6 +4,7 @@ seo_title: "Should We Use AI? Ask It Task by Task"
 slug: should-we-use-ai
 date: 2026-12-11
 summary: "AI doesn't do jobs; it does tasks. Part 1 of 3: break a job into the work it delivers, then ask whether each task should exist before deciding how much AI it gets."
+seo_description: "AI doesn't do jobs; it does tasks. Break a job into the work it delivers, then decide task by task whether AI belongs. Part 1 of 3."
 ---
 
 <style>
